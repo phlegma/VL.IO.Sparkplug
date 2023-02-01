@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Pack>
+  <Topic title="Overview">
+    <UriItem title="Explanation An Introduction to Sparkplug from HiveMQ" link="https://www.youtube.com/watch?v=4lunu8XBZqo" mediaType="video"/>
+    <UriItem title="Reference Sparkplug 3.0 Specification" link="https://www.eclipse.org/tahu/spec/sparkplug_spec.pdf" mediaType="text"/>
+  </Topic>
+  <Topic title="Basics">
+	<VLDocument link="Basics\Explanation Sparkplug.vl"/>
+	<VLDocument link="Basics\HowTo Primary Application.vl"/>
+  </Topic>
+</Pack>

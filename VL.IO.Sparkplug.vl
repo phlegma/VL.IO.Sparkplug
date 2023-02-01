@@ -1,0 +1,1061 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="VlX5OhfyZnxMWqcoHkm2Is" LanguageVersion="2022.5.0-0335-51a4ee189d" Version="0.128">
+  <NugetDependency Id="QKn6N6THAJaLUpRIvNHVXs" Location="VL.CoreLib" Version="2022.5.0-0335-g51a4ee189d" />
+  <Patch Id="MoSn4hOwqL5OBCfssyLksN">
+    <Canvas Id="HXbBkRjXBF8LB6dwVlV9g5" DefaultCategory="VL.IO.Sparkplug" CanvasType="FullCategory">
+      <!--
+
+    ************************ Application ************************
+
+-->
+      <Node Name="Application" Bounds="386,368" Id="UsupZERJCZkNZwu1sWcDcC">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+          <Choice Kind="ClassDefinition" Name="Class" />
+        </p:NodeReference>
+        <Patch Id="I5ndg8OFCnSMxHKZjw3o7Q">
+          <Canvas Id="TzePgPfXOduLvYDWdsJsRW" CanvasType="Group">
+            <Node Bounds="494,480,93,26" Id="VfQmmUA2medOO8eZ5s8pk3">
+              <p:NodeReference LastCategoryFullName="SparkplugNet.VersionB.SparkplugApplication" LastSymbolSource="SparkplugNet.dll" OverloadStrategy="AllPinsThatAreNotCommon">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="SparkplugNet" />
+                <CategoryReference Kind="AssemblyCategory" Name="VersionB" />
+                <CategoryReference Kind="AssemblyCategory" Name="SparkplugApplication" />
+                <AssemblyReference ID="SparkplugNet.dll" />
+                <Choice Kind="OperationCallFlag" Name="Create" />
+                <PinReference Kind="InputPin" Name="Known Metrics" />
+              </p:NodeReference>
+              <Pin Id="GevOk67oFtlNQH7AmNsGb4" Name="Known Metrics" Kind="InputPin" />
+              <Pin Id="BtSuh1eAVGBMYz30kNfDjy" Name="Logger" Kind="InputPin" />
+              <Pin Id="KONXArTuGBXPt3C13gXk8B" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Pad Id="F4FO4lbxpMtPa5PqRdZNl2" SlotId="C9htPviyVUkNH8x25Omprl" Bounds="498,562" />
+            <Node Bounds="494,385,39,26" Id="R8Pe0f2IL09QZPjJP6u1vU">
+              <p:NodeReference LastCategoryFullName="SparkplugNet.VersionB.Data.Metric" LastSymbolSource="SparkplugNet.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="SparkplugNet" />
+                <CategoryReference Kind="AssemblyCategory" Name="VersionB" />
+                <CategoryReference Kind="AssemblyCategory" Name="Data" />
+                <CategoryReference Kind="AssemblyCategory" Name="Metric" />
+                <Choice Kind="OperationCallFlag" Name="Alias" />
+              </p:NodeReference>
+              <Pin Id="HrrGDsAvvLVLWF2xGvLO4J" Name="Input" Kind="StateInputPin" />
+              <Pin Id="G7zHPwc5C15L97a3UwKVxc" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="FLlmQSkvn2JP3ibNqH7OH5" Name="Alias" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="494,324,46,26" Id="PLvAevgyebwPqmpX1PSyTb">
+              <p:NodeReference LastCategoryFullName="SparkplugNet.VersionB.Data.Metric" LastSymbolSource="SparkplugNet.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="Metric" />
+                <Choice Kind="OperationCallFlag" Name="Create" />
+              </p:NodeReference>
+              <Pin Id="EROxzrRNeRmPog31RFNoqP" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Node Bounds="494,432,65,26" Id="R7B64e48677OzDwM8UfYOr">
+              <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="MutableInterfaceType" Name="Sequence" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="FromValue" />
+              </p:NodeReference>
+              <Pin Id="VyfH5NoSjXgNvt57XmGzlg" Name="Input" Kind="InputPin" />
+              <Pin Id="JluvNAGZ3EYOz2JCQmYL71" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="502,784,196,80" Id="PTbHBwVKL7LOaG95uO4DpJ">
+              <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Application.SparkplugApplicationOptions" LastSymbolSource="SparkplugNet.dll" OverloadStrategy="AllPinsThatAreNotCommon">
+                <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="SparkplugApplicationOptions" />
+                <Choice Kind="OperationCallFlag" Name="Create" />
+                <PinReference Kind="InputPin" Name="Broker Address" />
+                <PinReference Kind="InputPin" Name="Port" />
+                <PinReference Kind="InputPin" Name="Client Id" />
+                <PinReference Kind="InputPin" Name="User Name" />
+                <PinReference Kind="InputPin" Name="Password" />
+                <PinReference Kind="InputPin" Name="Use Tls" />
+                <PinReference Kind="InputPin" Name="Scada Host Identifier" />
+                <PinReference Kind="InputPin" Name="Is Primary Application" />
+                <PinReference Kind="InputPin" Name="Get Tls Parameters" />
+                <PinReference Kind="InputPin" Name="Web Socket Parameters" />
+                <PinReference Kind="InputPin" Name="Proxy Options" />
+              </p:NodeReference>
+              <Pin Id="DDABW0bAtSMMmTPzXwjZIU" Name="Broker Address" Kind="InputPin" />
+              <Pin Id="QKHntUj2ZVONqHcMmEpjZ9" Name="Port" Kind="InputPin" />
+              <Pin Id="I9CYiLznMUmNz9ICAuryuF" Name="Client Id" Kind="InputPin" />
+              <Pin Id="UbwhPdAePu5PKFIENSZxC5" Name="User Name" Kind="InputPin" />
+              <Pin Id="EvTZWFVtGYWLRs2fgrU3TW" Name="Password" Kind="InputPin" />
+              <Pin Id="VsAonSwQ8R4MiLqAQcm6O9" Name="Use Tls" Kind="InputPin" />
+              <Pin Id="HXiX4iyjwuYOtgM2nxchfz" Name="Scada Host Identifier" Kind="InputPin" />
+              <Pin Id="KAQWEqA2wzeOEVbJkXfeS7" Name="Is Primary Application" Kind="InputPin" DefaultValue="False" />
+              <Pin Id="EkgBKSH0CoHL8LF0mWVVMo" Name="Web Socket Parameters" Kind="InputPin" />
+              <Pin Id="NRdeUsWrguVPpXu4OWjX3D" Name="Proxy Options" Kind="InputPin" />
+              <Pin Id="O7umLE6XQgdMs5iUtM9GfO" Name="Output" Kind="StateOutputPin" />
+              <Patch Id="DLQwUbszUdiLRjz2sKlEPl" Name="Get Tls Parameters" ManuallySortedPins="true">
+                <Pin Id="KL6prc4wtDZLpu74gFOJUh" Name="Result" Kind="OutputPin" />
+                <ControlPoint Id="I2AUZoJDLafMketxgxhcMY" Bounds="524,834" />
+              </Patch>
+            </Node>
+            <Node Bounds="393,897,118,26" Id="UfOsRwsJZRLOyiXC0kVWiY">
+              <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Application.SparkplugApplicationBase`1" LastSymbolSource="SparkplugNet.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="SparkplugApplicationBase`1" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="Start" />
+              </p:NodeReference>
+              <Pin Id="GeGIZuAmYXMP58jyxZYvSv" Name="Input" Kind="StateInputPin" />
+              <Pin Id="J1iXa1FjkMzQMZnyOzv2QB" Name="Application Options" Kind="InputPin" />
+              <Pin Id="RaaAq9Dfd4rNhZQ65jcz8c" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="NmiwnSnK005MFxJc0L1yNw" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="PNHLuO34bkuOTQvbfozn7c" Bounds="501,692" />
+            <ControlPoint Id="LTrBRKa2mZ0PtqJ27sFZR2" Bounds="524,732" />
+            <Node Bounds="912,850,118,26" Id="VLgWlhiyPFiLbhL9lImAMX">
+              <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Application.SparkplugApplicationBase`1" LastSymbolSource="SparkplugNet.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="SparkplugApplicationBase`1" />
+                <Choice Kind="OperationCallFlag" Name="Stop" />
+              </p:NodeReference>
+              <Pin Id="RjayhnsPmpWNzkbnFpWmtf" Name="Input" Kind="StateInputPin" />
+              <Pin Id="MX1BRJcB1x7LEnpFSNk4ii" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="NVMdM1TKMBVLPYniZpoziQ" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="1087,764,77,26" Id="LQrtIp2VbwrNd38UGWzJdW">
+              <p:NodeReference LastCategoryFullName="SparkplugNet.Core.SparkplugBase`1" LastSymbolSource="SparkplugNet.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="SparkplugBase`1" />
+                <Choice Kind="OperationCallFlag" Name="IsConnected" />
+              </p:NodeReference>
+              <Pin Id="KH0B60OKX9WQO7OR4OVyhq" Name="Input" Kind="StateInputPin" />
+              <Pin Id="TCxZnzZPaYRNaa2pytMEt7" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="PlsDJfLrwmYPOosU938QC8" Name="Is Connected" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="FvITTNvuHU5Lq9HFupxlhF" Bounds="496,568" />
+            <ControlPoint Id="CQIjd69HI6DN5I8sSgV1hJ" Bounds="1160,790" />
+            <Pad Id="CP0U40AClqcQQOltToI5k8" Comment="Is Connected" Bounds="1160,816,35,35" ShowValueBox="true" isIOBox="true" />
+            <ControlPoint Id="U2koeSqzKosOZ06UW9O9lB" Bounds="1160,872" />
+            <ControlPoint Id="MQIsNEl8tWXLrJcRrv7Itl" Bounds="652,741" />
+            <Pad Id="B5tuGJqyoVlOSxJrFkTwLd" Comment="" Bounds="1029,914,190,132" ShowValueBox="true" isIOBox="true" />
+            <ControlPoint Id="Hc79dlkma0ZMYGEa2qOERX" Bounds="546,760" />
+            <ControlPoint Id="UFyvCHCtzsANEaY9uFKj8Q" Bounds="630,701" />
+            <Node Bounds="135,892,119,26" Id="SJSNbAikCtXOMOnsQmVR3y">
+              <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Application.SparkplugApplicationBase`1" LastSymbolSource="SparkplugNet.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="SparkplugApplicationBase`1" />
+                <Choice Kind="OperationCallFlag" Name="PublishNodeCommand" />
+              </p:NodeReference>
+              <Pin Id="QRtW5irb8B9MZcOVz9mbuL" Name="Input" Kind="StateInputPin" />
+              <Pin Id="V4ll8a3Ey1SQCgvpa7OhYN" Name="Metrics" Kind="InputPin" />
+              <Pin Id="PGGKKe17nWkOtMGrYgtKqb" Name="Group Identifier" Kind="InputPin" />
+              <Pin Id="KEQeOwRzCqdMNmV718armb" Name="Edge Node Identifier" Kind="InputPin" />
+              <Pin Id="OLOB14Wfcj3MSBvOlG0P2n" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="KKIUmn9EC9sLpJfBsMLRYB" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="SntVNJqaV7zMwNewobuH8o" Bounds="215,851" />
+            <ControlPoint Id="Q9dTJTLhA66PFtnzpIwZkn" Bounds="249,876" />
+            <ControlPoint Id="J1TrpTpVbGeLMHhEQDUDvq" Bounds="179,808" />
+            <ControlPoint Id="Ey5qnL4FxLiQNGDwLc24vZ" Bounds="793,589" />
+            <Node Bounds="500,962,82,26" Id="PyYZVupA3HiN4LJgZIgZH2">
+              <p:NodeReference LastCategoryFullName="Reactive.Task (NonGeneric)" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="ClassType" Name="Task (NonGeneric)" />
+                <Choice Kind="OperationCallFlag" Name="ToObservable" />
+              </p:NodeReference>
+              <Pin Id="SJB1b3Nze6tNq7f9miT5Rt" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Jisd6xtYQZOMOepMe9Xy85" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="JE3czCrwfVAOsnoICg6l4h" Bounds="502,1022" />
+            <Node Bounds="1235,744,118,26" Id="AQeJndsb6T8Mmz8RAYw3Un">
+              <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Application.SparkplugApplicationBase`1" LastSymbolSource="SparkplugNet.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="Application" />
+                <CategoryReference Kind="AssemblyCategory" Name="SparkplugApplicationBase`1" />
+                <Choice Kind="OperationCallFlag" Name="NodeStates" />
+              </p:NodeReference>
+              <Pin Id="HHK3RRxXDNcONrpr1NP0FZ" Name="Input" Kind="StateInputPin" />
+              <Pin Id="DsKFwhywpK8QMmP1ZB76bZ" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="A9mtgSv5RO9MjfbvXhF4NM" Name="Node States" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="I9pCIe30NEQNNUTyIBGJo3" Bounds="1351,813" />
+            <Node Bounds="244,540,65,19" Id="UPH87btin8EQKqYW4IgrRM">
+              <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.BaseEventWrapper" LastSymbolSource="VL.IO.Sparkplug.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Connected" />
+              </p:NodeReference>
+              <Pin Id="Jhq5SsPrPYjP3wRZxUpn2H" Name="Instance" Kind="InputPin" />
+              <Pin Id="AenWi7WEyAdOr63JkzjeUt" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pad Id="QJ496Daw7fYOTk46OPgIol" SlotId="KPVAYgz33pNPTy4LsQOMxS" Bounds="246,596" />
+            <ControlPoint Id="JD2Y6yPedOrOhJmDg1DKpI" Bounds="246,626" />
+          </Canvas>
+          <ProcessDefinition Id="K0VZ7ysnlhyPHYV3Wk6EYc" IsHidden="true">
+            <Fragment Id="Q4GFcSp3m4KOLTsPT6LCoo" Patch="R0ZmSRV5M2aPzlFiwLG59J" Enabled="true" />
+            <Fragment Id="Ogp630VEPnvQNGc4mMEO2T" Patch="BsS2sfXQn4KO71FPYkJeda" />
+            <Fragment Id="OpEjLFedFnxNmRGUiI6obL" Patch="K4jKyEXv2WjNxyXYwNCQwq" Enabled="true" />
+            <Fragment Id="DkfzgyZLhiRPM25g8mP3E9" Patch="IWuiZFwooujMNbEfCKdf8x" />
+            <Fragment Id="NWyO7drAFJvO1tKveV1xYo" Patch="B0qayyESIVaNm8FLfXA8Pr" />
+          </ProcessDefinition>
+          <Slot Id="C9htPviyVUkNH8x25Omprl" Name="App" />
+          <Link Id="MESNPP4953gPemWtgmRaIY" Ids="KONXArTuGBXPt3C13gXk8B,F4FO4lbxpMtPa5PqRdZNl2" />
+          <Link Id="GTuj8O8SaD3OP6WmOnxu1I" Ids="EROxzrRNeRmPog31RFNoqP,HrrGDsAvvLVLWF2xGvLO4J" />
+          <Link Id="VXHrftEukeEL94NhAKNYDp" Ids="G7zHPwc5C15L97a3UwKVxc,VyfH5NoSjXgNvt57XmGzlg" />
+          <Link Id="VF1tNMIGBHEQBQMHZOV5nd" Ids="JluvNAGZ3EYOz2JCQmYL71,GevOk67oFtlNQH7AmNsGb4" />
+          <Link Id="VBzUNERsWzhLFwCrBXwwP8" Ids="F4FO4lbxpMtPa5PqRdZNl2,GeGIZuAmYXMP58jyxZYvSv" />
+          <Link Id="RGxsi9AnFjXMEreV57ag5L" Ids="F4FO4lbxpMtPa5PqRdZNl2,RjayhnsPmpWNzkbnFpWmtf" />
+          <Link Id="BL1XxfobLXINFOQXyQ7VV0" Ids="I2AUZoJDLafMketxgxhcMY,KL6prc4wtDZLpu74gFOJUh" IsHidden="true" />
+          <Link Id="PWYsLhRoWCHLnd50Ow3gHu" Ids="PNHLuO34bkuOTQvbfozn7c,DDABW0bAtSMMmTPzXwjZIU" />
+          <Link Id="SdJNRoHkK6LLSq1ERyWUSC" Ids="L0mzFfFL18OLJvu7KksZAp,PNHLuO34bkuOTQvbfozn7c" IsHidden="true" />
+          <Link Id="TDgnyCnNv0uPiyt2HS2FMf" Ids="LTrBRKa2mZ0PtqJ27sFZR2,QKHntUj2ZVONqHcMmEpjZ9" />
+          <Link Id="VtxZMS572e4Nb2MH8tMI4v" Ids="EnH9aCjYiz3OudHtimEm9m,LTrBRKa2mZ0PtqJ27sFZR2" IsHidden="true" />
+          <Link Id="N0ajxaQtWLzNdA4ula9tmO" Ids="O7umLE6XQgdMs5iUtM9GfO,J1iXa1FjkMzQMZnyOzv2QB" />
+          <Link Id="B96seq84cGhNgtDqZ2wpHb" Ids="F4FO4lbxpMtPa5PqRdZNl2,FvITTNvuHU5Lq9HFupxlhF,KH0B60OKX9WQO7OR4OVyhq" />
+          <Link Id="U6YkFEHNL7QPythU4fncVb" Ids="PlsDJfLrwmYPOosU938QC8,CQIjd69HI6DN5I8sSgV1hJ,CP0U40AClqcQQOltToI5k8" />
+          <Link Id="SVpU4nciWpvOceJm04K2ie" Ids="CP0U40AClqcQQOltToI5k8,U2koeSqzKosOZ06UW9O9lB" />
+          <Link Id="A7P7h08732oM1X2xJ9JTqm" Ids="U2koeSqzKosOZ06UW9O9lB,V2YnhJ4l3zfPvXRRD5IoSJ" IsHidden="true" />
+          <Link Id="CpHNAj7a0WgPE6oxdt9pGf" Ids="MQIsNEl8tWXLrJcRrv7Itl,KAQWEqA2wzeOEVbJkXfeS7" />
+          <Link Id="GVHIcUBqizlLYyYOaekx4z" Ids="Aqz2NxLPriLLDxipPY6lTE,MQIsNEl8tWXLrJcRrv7Itl" IsHidden="true" />
+          <Link Id="QO8eNIbXQX4LJAt6slKolp" Ids="NVMdM1TKMBVLPYniZpoziQ,B5tuGJqyoVlOSxJrFkTwLd" />
+          <Link Id="MHoHvNmWTwRNl3h3zHqROX" Ids="Hc79dlkma0ZMYGEa2qOERX,I9CYiLznMUmNz9ICAuryuF" />
+          <Link Id="BBn9WcjCrIPPJ0g0xmrOrx" Ids="JtP5Er42ujnP0ByPAtPzyV,Hc79dlkma0ZMYGEa2qOERX" IsHidden="true" />
+          <Link Id="TCCpFTLsvYMMdHYZ6KsakH" Ids="UFyvCHCtzsANEaY9uFKj8Q,HXiX4iyjwuYOtgM2nxchfz" />
+          <Link Id="Dfjqty4vBRlNjEP6FuL4uV" Ids="JbAznBMOVOYNqI8BxjdIVe,UFyvCHCtzsANEaY9uFKj8Q" IsHidden="true" />
+          <Link Id="DTRX8wXEKFYMdSfV9yWFCI" Ids="F4FO4lbxpMtPa5PqRdZNl2,QRtW5irb8B9MZcOVz9mbuL" />
+          <Link Id="OEkvz0NcBCTQD1oOI9HOo6" Ids="SntVNJqaV7zMwNewobuH8o,PGGKKe17nWkOtMGrYgtKqb" />
+          <Link Id="CnRDrO3nGWmL6QEEVtvm6z" Ids="Lo0SMFDTPZANT842qiB81D,SntVNJqaV7zMwNewobuH8o" IsHidden="true" />
+          <Link Id="QAqLS4Yh39mOxb02ylYmH5" Ids="Q9dTJTLhA66PFtnzpIwZkn,KEQeOwRzCqdMNmV718armb" />
+          <Link Id="VfV54G6r1ioOydYzSHOzMC" Ids="RPz22co4LqzPu6c8cn0dT4,Q9dTJTLhA66PFtnzpIwZkn" IsHidden="true" />
+          <Link Id="SlXYxrTykyaLdJAkyFCH2r" Ids="J1TrpTpVbGeLMHhEQDUDvq,V4ll8a3Ey1SQCgvpa7OhYN" />
+          <Link Id="PLD5gCezaFfQV0vWy6CF33" Ids="OCPvhRuU8SZOYDfvMPoKcz,J1TrpTpVbGeLMHhEQDUDvq" IsHidden="true" />
+          <Link Id="EJ4h4HagW0WLRD6hxFGQxv" Ids="F4FO4lbxpMtPa5PqRdZNl2,Ey5qnL4FxLiQNGDwLc24vZ" />
+          <Link Id="AcPAKdLpqBgN12ggnSm6wv" Ids="Ey5qnL4FxLiQNGDwLc24vZ,Rdzhu4xGfccLmWgQ4vy8Q1" IsHidden="true" />
+          <Link Id="S1gybHfmugzMAEnhZBVsiS" Ids="NmiwnSnK005MFxJc0L1yNw,SJB1b3Nze6tNq7f9miT5Rt" />
+          <Link Id="H6K3UuuQhXTQQ8JTJqs44m" Ids="Jisd6xtYQZOMOepMe9Xy85,JE3czCrwfVAOsnoICg6l4h" />
+          <Link Id="NPzoKNUITZRQRQFL6DXPtM" Ids="JE3czCrwfVAOsnoICg6l4h,AMgJlWZ4Ai6N7ODLzRoP1U" IsHidden="true" />
+          <Link Id="RWYP7UI8UnjMEbg4HRpgCG" Ids="F4FO4lbxpMtPa5PqRdZNl2,HHK3RRxXDNcONrpr1NP0FZ" />
+          <Link Id="MiZGdEJZJz7LsMPjSOxuyY" Ids="A9mtgSv5RO9MjfbvXhF4NM,I9pCIe30NEQNNUTyIBGJo3" />
+          <Link Id="RiWFaEFpMGiPbgufyag9m8" Ids="I9pCIe30NEQNNUTyIBGJo3,FzBJKabyvPPLwp7zafDK5U" IsHidden="true" />
+          <Link Id="T4j4C4Q2hckN74mz5NHe95" Ids="KONXArTuGBXPt3C13gXk8B,Jhq5SsPrPYjP3wRZxUpn2H" />
+          <Slot Id="KPVAYgz33pNPTy4LsQOMxS" Name="Result" />
+          <Link Id="RzaFJYopwjRLGfVFfbdnDy" Ids="AenWi7WEyAdOr63JkzjeUt,QJ496Daw7fYOTk46OPgIol" />
+          <Link Id="LQjiwk7q6e3PpZkrSv7hhx" Ids="QJ496Daw7fYOTk46OPgIol,JD2Y6yPedOrOhJmDg1DKpI" />
+          <Link Id="NlUTQ6N42IoOPVnhBBDJUz" Ids="JD2Y6yPedOrOhJmDg1DKpI,Vh4HaIxdzJkLJ6eQim1P9h" IsHidden="true" />
+          <Patch Id="R0ZmSRV5M2aPzlFiwLG59J" Name="Create" ParticipatingElements="VfQmmUA2medOO8eZ5s8pk3,R8Pe0f2IL09QZPjJP6u1vU,PLvAevgyebwPqmpX1PSyTb" />
+          <Patch Id="BsS2sfXQn4KO71FPYkJeda" Name="Start" ParticipatingElements="PTbHBwVKL7LOaG95uO4DpJ,UfOsRwsJZRLOyiXC0kVWiY,VBzUNERsWzhLFwCrBXwwP8,N0ajxaQtWLzNdA4ula9tmO">
+            <Pin Id="L0mzFfFL18OLJvu7KksZAp" Name="Broker Address" Kind="InputPin" />
+            <Pin Id="EnH9aCjYiz3OudHtimEm9m" Name="Port" Kind="InputPin" />
+            <Pin Id="JtP5Er42ujnP0ByPAtPzyV" Name="Client Id" Kind="InputPin" Bounds="548,758" />
+            <Pin Id="JbAznBMOVOYNqI8BxjdIVe" Name="Scada Host Identifier" Kind="InputPin" Bounds="634,698" />
+            <Pin Id="Aqz2NxLPriLLDxipPY6lTE" Name="Is Primary Application" Kind="InputPin" Bounds="784,698" />
+            <Pin Id="AMgJlWZ4Ai6N7ODLzRoP1U" Name="Result" Kind="OutputPin" Bounds="524,1026" />
+          </Patch>
+          <Patch Id="K4jKyEXv2WjNxyXYwNCQwq" Name="Update" ParticipatingElements="LQrtIp2VbwrNd38UGWzJdW">
+            <Pin Id="Vh4HaIxdzJkLJ6eQim1P9h" Name="Connected" Kind="OutputPin" />
+            <Pin Id="Rdzhu4xGfccLmWgQ4vy8Q1" Name="App" Kind="OutputPin" />
+            <Pin Id="V2YnhJ4l3zfPvXRRD5IoSJ" Name="Output" Kind="OutputPin" Bounds="1178,890" />
+            <Pin Id="FzBJKabyvPPLwp7zafDK5U" Name="Node States" Kind="OutputPin" Bounds="885,1047" />
+          </Patch>
+          <Patch Id="IWuiZFwooujMNbEfCKdf8x" Name="Stop" ParticipatingElements="VLgWlhiyPFiLbhL9lImAMX,RGxsi9AnFjXMEreV57ag5L" />
+          <Patch Id="B0qayyESIVaNm8FLfXA8Pr" Name="PublishNodeCommand" ParticipatingElements="SJSNbAikCtXOMOnsQmVR3y">
+            <Pin Id="OCPvhRuU8SZOYDfvMPoKcz" Name="Metrics" Kind="InputPin" Bounds="179,808" />
+            <Pin Id="Lo0SMFDTPZANT842qiB81D" Name="Group Identifier" Kind="InputPin" Bounds="212,857" />
+            <Pin Id="RPz22co4LqzPu6c8cn0dT4" Name="Edge Node Identifier" Kind="InputPin" Bounds="249,876" />
+          </Patch>
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ Application ************************
+
+-->
+      <Node Name="Application" Bounds="386,460" Id="AiirJfEaAg1L89Hxf8xYLz">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+          <Choice Kind="ContainerDefinition" Name="Process" />
+        </p:NodeReference>
+        <Patch Id="JUcCwIt6xjPMH414uDDG6Q">
+          <Canvas Id="GzhwRlkYuBvOwAxiOu6y55" CanvasType="Group">
+            <Node Bounds="392,291,52,26" Id="GBsMjUbfvvuP4k5sAgRGl3">
+              <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.Sparkplug" LastSymbolSource="VL.IO.Sparkplug.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="Category" Name="IO" />
+                <CategoryReference Kind="Category" Name="Application" />
+                <CategoryReference Kind="ClassType" Name="Application" />
+                <Choice Kind="OperationCallFlag" Name="Create" />
+              </p:NodeReference>
+              <Pin Id="HYWsrChN0mXMk7AuTg37Jw" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Pad Id="BbckQ5NTHx0LeFzieTtS2i" SlotId="Ga7BGJsXDaPMaXmvAATdn1" Bounds="395,367" />
+            <ControlPoint Id="OPsU3Z6Fg4cMqHoqWU4FD8" Bounds="396,370" />
+            <ControlPoint Id="Le3msiAq1MdPzzgiZgj9AT" Bounds="244,505" />
+            <ControlPoint Id="BZ3eyHPahpVNGcz9A3WbAK" Bounds="263,531" />
+            <Node Bounds="740,432,52,26" Id="NnNnaw4ek2YPqSetEmeegX">
+              <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.Sparkplug" LastSymbolSource="VL.IO.Sparkplug.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="ClassType" Name="Application" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="Update" />
+              </p:NodeReference>
+              <Pin Id="TNkdh609EJvPTXZcvGZjf2" Name="Input" Kind="StateInputPin" />
+              <Pin Id="IqgwMzdXltRPYwGUHaKIjj" Name="State Output" Kind="StateOutputPin" />
+              <Pin Id="EZFZA8eUqN9Ngry4xkzwci" Name="Connected" Kind="OutputPin" />
+              <Pin Id="Jpm7HLZJlrnPXgCrkZ39KD" Name="App" Kind="OutputPin" />
+              <Pin Id="OthLpu9Af9vPEWeNnzgMLL" Name="Output" Kind="OutputPin" />
+              <Pin Id="QIgVJtkLPIbP0TyD8YZUH3" Name="Node States" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="IbkYbvI0VdzLF87bz2aHoQ" Bounds="792,521" />
+            <ControlPoint Id="AjFp83R8h1WN3XqmEtKtoW" Bounds="322,579" />
+            <Node Bounds="442,662,57,26" Id="HWbkQuMMxxENpiMzbMKVIK">
+              <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.Sparkplug" LastSymbolSource="VL.IO.Sparkplug.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="ClassType" Name="Application" />
+                <Choice Kind="OperationCallFlag" Name="Stop" />
+              </p:NodeReference>
+              <Pin Id="PW0REmwsoVtNrUU4KW479T" Name="Input" Kind="StateInputPin" />
+              <Pin Id="DIlEa1WNnT9NgzZ3azAC0J" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <ControlPoint Id="TVb9xdXykbtN4phEJtn2aA" Bounds="282,554" />
+            <ControlPoint Id="UMmh630LmbZPpPjn9YSk0X" Bounds="301,604" />
+            <ControlPoint Id="Sg8OZYGOYTXLzKCakKpTth" Bounds="765,575" />
+            <ControlPoint Id="CJTMH03UEt7NO2xV3ufpqn" Bounds="318,876" />
+            <Node Bounds="203,748,132,84" Id="LvLrL77fnU7LsKkJ6wViEh">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+              </p:NodeReference>
+              <Pin Id="BLxLJ9hjsGGMIKZL4lZCPQ" Name="Condition" Kind="InputPin" />
+              <Patch Id="NoriKerpW0oOGD5Nl6QL1p" ManuallySortedPins="true">
+                <Node Bounds="215,777,105,26" Id="SxsSrxbFDhSMu0BFVyei7z">
+                  <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.Sparkplug" LastSymbolSource="VL.IO.Sparkplug.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="ClassType" Name="Application" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="Start" />
+                  </p:NodeReference>
+                  <Pin Id="EC4mkWtsHnEMzjQNDMD724" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Cv9yPXPq9YIQWUvdlBo9UC" Name="Broker Address" Kind="InputPin" />
+                  <Pin Id="VkzZFZ4JNRXLIJHvanbYG2" Name="Port" Kind="InputPin" />
+                  <Pin Id="HNq2BFMTMaGPSHOQ5Fm2dq" Name="Client Id" Kind="InputPin" />
+                  <Pin Id="A5E1Sjj1EY9LOcOreCQgaz" Name="Scada Host Identifier" Kind="InputPin" />
+                  <Pin Id="LXvwJnqpaluL0fR3EiZ4Ee" Name="Is Primary Application" Kind="InputPin" DefaultValue="False" />
+                  <Pin Id="OuDAOd92BFVP8RXE15MdFS" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="KqKfK7Fc4mgLtw0H0Xg7nl" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Patch Id="Gyb1UOSV2ZvQI3ZtToXOJx" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="VF6nKhrGXnSP18E6Xn1Dc3" Name="Then" ManuallySortedPins="true" />
+              </Patch>
+              <ControlPoint Id="OqrcecQjeo8Lg11WkfTOcU" Bounds="318,826" Alignment="Bottom" />
+              <ControlPoint Id="G6ZbDgYrluhPi8i9XfEuDC" Bounds="276,754" Alignment="Top" />
+            </Node>
+            <ControlPoint Id="Kvc2Zwq2U87NeI5Lq3Lcgk" Bounds="154,575" />
+            <ControlPoint Id="ExIpDlJscUsMCELEZ09E9G" Bounds="850,589" />
+            <ControlPoint Id="QDieirSrGNkOFVOtPohQNK" Bounds="766,694" />
+          </Canvas>
+          <ProcessDefinition Id="FvcSOKNFnLTNZddMR1VB9C">
+            <Fragment Id="GrHsEeOELREOCw636uPkFg" Patch="Tdnk5EyAhUOMZzkTIzugG0" Enabled="true" />
+            <Fragment Id="MacGr7i2zCsNi9ViBpcacf" Patch="SM5s8js7vhKLgyGnWoTKNe" Enabled="true" />
+            <Fragment Id="Axb9f7aTu4fPvqRuaMmzmT" Patch="J9y0Pjtvv48L7Et1rH7t66" Enabled="true" />
+            <Fragment Id="GkyzdXWardkPEDp471yqmW" Patch="G9zXFdfdtvPPNJQD1Yoiig" Enabled="true" />
+          </ProcessDefinition>
+          <Slot Id="Ga7BGJsXDaPMaXmvAATdn1" Name="Output" />
+          <Link Id="Owd7LXk28isPFjTLY6DTkq" Ids="HYWsrChN0mXMk7AuTg37Jw,BbckQ5NTHx0LeFzieTtS2i" />
+          <Link Id="ID7zWm2iQavK9buKwnOsSL" Ids="BbckQ5NTHx0LeFzieTtS2i,OPsU3Z6Fg4cMqHoqWU4FD8,EC4mkWtsHnEMzjQNDMD724" />
+          <Link Id="AeOWddROAIZMwQNpeWuYUN" Ids="Le3msiAq1MdPzzgiZgj9AT,Cv9yPXPq9YIQWUvdlBo9UC" />
+          <Link Id="G2TjoyKdLEqNgxnbhVQb8s" Ids="JRMct5safbyN1GMkDf17vC,Le3msiAq1MdPzzgiZgj9AT" IsHidden="true" />
+          <Link Id="V0u1tuXPLp7LwtgXHe4u56" Ids="BZ3eyHPahpVNGcz9A3WbAK,VkzZFZ4JNRXLIJHvanbYG2" />
+          <Link Id="HHr1KNebneENaOydw3fDMJ" Ids="FdC44TAz5y5MQ6aWSW4HeB,BZ3eyHPahpVNGcz9A3WbAK" IsHidden="true" />
+          <Link Id="AjPzw2K7JbNLdidYQsQ7PB" Ids="BbckQ5NTHx0LeFzieTtS2i,TNkdh609EJvPTXZcvGZjf2" />
+          <Link Id="R4WPNvAmVd7QYMMb7WQnpS" Ids="OthLpu9Af9vPEWeNnzgMLL,IbkYbvI0VdzLF87bz2aHoQ" />
+          <Link Id="LBxWvmV29TUPBBxrBMmRiF" Ids="IbkYbvI0VdzLF87bz2aHoQ,NV7XoDOv3QGO6jAI6zYjAW" IsHidden="true" />
+          <Link Id="N0g6NFJyaBJQKhpQm0h9Zz" Ids="AjFp83R8h1WN3XqmEtKtoW,LXvwJnqpaluL0fR3EiZ4Ee" />
+          <Link Id="UMv8Q9lHgeGNnKAO85aj9J" Ids="TDvWXNC5BcFN8pxELyWITC,AjFp83R8h1WN3XqmEtKtoW" IsHidden="true" />
+          <Link Id="BCOFwszEagINci0lNuJg8e" Ids="BbckQ5NTHx0LeFzieTtS2i,PW0REmwsoVtNrUU4KW479T" />
+          <Link Id="IUmmjrw9udRMfco5VkI6qS" Ids="TVb9xdXykbtN4phEJtn2aA,HNq2BFMTMaGPSHOQ5Fm2dq" />
+          <Link Id="DLnpEm4Wl2JLA9ABRzWK4L" Ids="LuQ6i9KP5mpMj6m9RKAZDk,TVb9xdXykbtN4phEJtn2aA" IsHidden="true" />
+          <Link Id="Pp5OxbQ7zesNxTPVVdyMeT" Ids="UMmh630LmbZPpPjn9YSk0X,A5E1Sjj1EY9LOcOreCQgaz" />
+          <Link Id="OqmTWwfLGGkQcqXnWNbwus" Ids="MgGHtxLDs3SOIwvMGC1INi,UMmh630LmbZPpPjn9YSk0X" IsHidden="true" />
+          <Link Id="MQlBNXIrQ94MOo1BGnlkrG" Ids="Jpm7HLZJlrnPXgCrkZ39KD,Sg8OZYGOYTXLzKCakKpTth" />
+          <Link Id="SHzMPcvZRjcO0YzuTBCwuP" Ids="Sg8OZYGOYTXLzKCakKpTth,PRUijJ5BHUmPc1ByfjHbtD" IsHidden="true" />
+          <Link Id="GJIIEKW1geFL3JHwYr9hfn" Ids="CJTMH03UEt7NO2xV3ufpqn,Ip3zo55i6jDOz7eDpr43pb" IsHidden="true" />
+          <Link Id="LjheeQZVwVOQGN6ujgXhNP" Ids="G6ZbDgYrluhPi8i9XfEuDC,OqrcecQjeo8Lg11WkfTOcU" IsFeedback="true" />
+          <Link Id="EpOfOLyzFMcMri2ZkHTC3M" Ids="KqKfK7Fc4mgLtw0H0Xg7nl,OqrcecQjeo8Lg11WkfTOcU" />
+          <Link Id="Isv8ciUyieKPkhxDcTKfXj" Ids="OqrcecQjeo8Lg11WkfTOcU,CJTMH03UEt7NO2xV3ufpqn" />
+          <Link Id="JTlNLC4WQA3LxnAl8eMbga" Ids="Kvc2Zwq2U87NeI5Lq3Lcgk,BLxLJ9hjsGGMIKZL4lZCPQ" />
+          <Link Id="FJZ3YUSlThHLlkBvZ0qiUQ" Ids="TaiNy3rTFYxQNKQE1LQcU6,Kvc2Zwq2U87NeI5Lq3Lcgk" IsHidden="true" />
+          <Link Id="GonnTcK1og2PzpCoZYXJNj" Ids="QIgVJtkLPIbP0TyD8YZUH3,ExIpDlJscUsMCELEZ09E9G" />
+          <Link Id="VGfgT6vpv7SQXb9kd0sXsl" Ids="ExIpDlJscUsMCELEZ09E9G,JdTiH6jQk76QFNXf1mZXeK" IsHidden="true" />
+          <Link Id="LK7ocszVTk1LThiIjTLzoc" Ids="EZFZA8eUqN9Ngry4xkzwci,QDieirSrGNkOFVOtPohQNK" />
+          <Link Id="DyeLfj4UVZhLWcLjFtKwU8" Ids="QDieirSrGNkOFVOtPohQNK,NgcfornBFGzOTndV6PDMy5" IsHidden="true" />
+          <Patch Id="Tdnk5EyAhUOMZzkTIzugG0" Name="Create" ParticipatingElements="GBsMjUbfvvuP4k5sAgRGl3" />
+          <Patch Id="SM5s8js7vhKLgyGnWoTKNe" Name="Update">
+            <Pin Id="PRUijJ5BHUmPc1ByfjHbtD" Name="App 2" Kind="OutputPin" Bounds="765,575" />
+            <Pin Id="NgcfornBFGzOTndV6PDMy5" Name="Connected" Kind="OutputPin" Bounds="766,696" />
+            <Pin Id="NV7XoDOv3QGO6jAI6zYjAW" Name="Output" Kind="OutputPin" Bounds="648,490" />
+            <Pin Id="JdTiH6jQk76QFNXf1mZXeK" Name="Node States" Kind="OutputPin" Bounds="850,588" />
+          </Patch>
+          <Patch Id="J9y0Pjtvv48L7Et1rH7t66" Name="Start">
+            <Pin Id="TaiNy3rTFYxQNKQE1LQcU6" Name="Send" Kind="InputPin" Bounds="154,574" />
+            <Pin Id="JRMct5safbyN1GMkDf17vC" Name="Broker Address" Kind="InputPin" />
+            <Pin Id="FdC44TAz5y5MQ6aWSW4HeB" Name="Port" Kind="InputPin" />
+            <Pin Id="LuQ6i9KP5mpMj6m9RKAZDk" Name="Client Id" Kind="InputPin" Bounds="284,562" />
+            <Pin Id="MgGHtxLDs3SOIwvMGC1INi" Name="Scada Host Identifier" Kind="InputPin" Bounds="300,594" />
+            <Pin Id="TDvWXNC5BcFN8pxELyWITC" Name="Is Primary Application" Kind="InputPin" Bounds="488,415" />
+            <Pin Id="Ip3zo55i6jDOz7eDpr43pb" Name="Result" Kind="OutputPin" Bounds="309,724" />
+          </Patch>
+          <Patch Id="G9zXFdfdtvPPNJQD1Yoiig" Name="Stop" ParticipatingElements="BCOFwszEagINci0lNuJg8e" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ Metric ************************
+
+-->
+      <Node Name="Metric" Bounds="1089,324" Id="IVrirSJr0b7QKUhaHXmYwE">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastSymbolSource="SparkplugNet.dll">
+          <Choice Kind="TypeFlag" Name="Metric" />
+        </p:TypeAnnotation>
+        <Patch Id="FaiEk5KSjYDMDmgFPlyNLH">
+          <Canvas Id="C8HuEd8qShyMo9LrxNjItR" CanvasType="Group" />
+          <ProcessDefinition Id="TuQKerX7gMvO7tK3rF2NUB" IsHidden="true" />
+        </Patch>
+      </Node>
+      <Pad Id="TfJbhlmUBiiP2rsKlNLjcM" Bounds="546,452,35,19" ShowValueBox="true" isIOBox="true" Value="">
+        <p:TypeAnnotation>
+          <Choice Kind="TypeFlag" Name="String" />
+        </p:TypeAnnotation>
+        <p:ValueBoxSettings>
+          <p:fontsize p:Type="Int32">9</p:fontsize>
+          <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+        </p:ValueBoxSettings>
+      </Pad>
+      <!--
+
+    ************************ PublishNodeCommand ************************
+
+-->
+      <Node Name="PublishNodeCommand" Bounds="575,361,274,80" Id="AzWVekZS1tPPT2ZvOK68xD">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" Name="Operation" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+        <Patch Id="DayXgC0eRvLMp81uMr460R" IsGeneric="true">
+          <Node Bounds="587,390,250,26" AutoConnect="true" Id="TEzuD8LuvQrMsSxSM6njBk">
+            <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Application.SparkplugApplicationBase`1" LastSymbolSource="SparkplugNet.dll">
+              <Choice Kind="OperationNode" Name="PublishNodeCommand" />
+              <FullNameCategoryReference ID="SparkplugNet.Core.Application.SparkplugApplicationBase`1" />
+            </p:NodeReference>
+            <Pin Id="BVz12rzua7zNWWAPNqJWJA" Name="Input" Kind="StateInputPin" />
+            <Pin Id="Pt0zu5foMjRLjdTb02enRZ" Name="Metrics" Kind="InputPin" />
+            <Pin Id="N2sXBzTPCuFOiSMCsrZyDP" Name="Group Identifier" Kind="InputPin" />
+            <Pin Id="H36bpn1JtCtQOr9DFUuDnZ" Name="Edge Node Identifier" Kind="InputPin" />
+            <Pin Id="GmrSm7qWZHbOOaULgqz0s6" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="R1vjhzpQ8DyPgzX13jJW1q" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pin Id="KbJyeoGQK0qNtFx598p7eH" Name="Input" Kind="InputPin" />
+          <Pin Id="Lz3SvybBGxiNgguNuuW7An" Name="Metrics" Kind="InputPin" />
+          <Pin Id="BqQbhnPcK2fQVVWmdKPFuC" Name="Group Identifier" Kind="InputPin" />
+          <Pin Id="OOaTw8iUtU9NXNSuQsPbQg" Name="Edge Node Identifier" Kind="InputPin" />
+          <Pin Id="O19Ff86rYghP2DjKTWBbPT" Name="Output" Kind="OutputPin" />
+          <Pin Id="DhIqz49QKxvQV7fDti8snX" Name="Result" Kind="OutputPin" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ SendCommand ************************
+
+-->
+      <Node Name="SendCommand" Bounds="388,542" Id="Vc77j1o2xMuLsVZ63TQ6BO">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" Name="Process" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <Patch Id="S88mcCIykEWPFr6FH7MmID" IsGeneric="true">
+          <Canvas Id="DEvQWVmD62lLJxwLNAJKUx" CanvasType="Group">
+            <Node Bounds="399,559,119,26" Id="L9mU6R5ZI99QD4bVweJG6H">
+              <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug" LastSymbolSource="VL.IO.Sparkplug.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Sparkplug" NeedsToBeDirectParent="true">
+                  <p:OuterCategoryReference Kind="Category" Name="IO" NeedsToBeDirectParent="true" />
+                </CategoryReference>
+                <Choice Kind="OperationCallFlag" Name="PublishNodeCommand" />
+              </p:NodeReference>
+              <Pin Id="C4UbgsRyPrbQLQdrvNLkHo" Name="Input" Kind="InputPin" />
+              <Pin Id="QdSQxShTmRVQVojqKjDQOJ" Name="Metrics" Kind="InputPin" />
+              <Pin Id="EVh5LT1dAMTOx9fosnxvdj" Name="Group Identifier" Kind="InputPin" />
+              <Pin Id="UbXugZO0yqsQIRiBxUYCMu" Name="Edge Node Identifier" Kind="InputPin" />
+              <Pin Id="I96D91k4vpDLPO44u21bp0" Name="Output" Kind="OutputPin" />
+              <Pin Id="RO4GAI3epp2NDhn2hUuRbA" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="VSJUtjqG8QsQMcmigIplBq" Bounds="400,462" />
+            <ControlPoint Id="AyaaVpHPPctONNEGe4nX7s" Bounds="438,496" />
+            <ControlPoint Id="Rzy7rabV1m1PRuvglEdBzL" Bounds="506,486" />
+            <ControlPoint Id="MuNlYDQVmuWMOBUj9lJfTa" Bounds="620,477" />
+          </Canvas>
+          <Patch Id="LyBxGt8bqaMPbAew7IJJ08" Name="Send">
+            <Pin Id="Am9sxhAUgmVLaNfeVLj3Vk" Name="Input" Kind="InputPin" Bounds="396,464" />
+            <Pin Id="E7yTz7qV5OjLVFmCHhEOg9" Name="Metrics" Kind="InputPin" Bounds="438,496" />
+            <Pin Id="Mqxs9vuDRP5QNAq4kmpQFH" Name="Group Identifier" Kind="InputPin" Bounds="506,486" />
+            <Pin Id="NWRAinxCM3iOYQ3xbiEg7Z" Name="Edge Node Identifier" Kind="InputPin" Bounds="622,477" />
+          </Patch>
+          <ProcessDefinition Id="VJ3Gdm580RoLvbCnsSfZyz">
+            <Fragment Id="UvymH4yy3twN0xtlm6YvwK" Patch="LyBxGt8bqaMPbAew7IJJ08" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="DYyodscQ4vHLkQBUiGRwWh" Ids="VSJUtjqG8QsQMcmigIplBq,C4UbgsRyPrbQLQdrvNLkHo" />
+          <Link Id="EeXwDDjSGI8MbAwguHuafI" Ids="Am9sxhAUgmVLaNfeVLj3Vk,VSJUtjqG8QsQMcmigIplBq" IsHidden="true" />
+          <Link Id="HOKoZslfzN9OREnBv82wmJ" Ids="AyaaVpHPPctONNEGe4nX7s,QdSQxShTmRVQVojqKjDQOJ" />
+          <Link Id="IORPUdpK0qrP1RrUJu5URc" Ids="E7yTz7qV5OjLVFmCHhEOg9,AyaaVpHPPctONNEGe4nX7s" IsHidden="true" />
+          <Link Id="DzIiKVPKETXQKweIynfNr6" Ids="Rzy7rabV1m1PRuvglEdBzL,EVh5LT1dAMTOx9fosnxvdj" />
+          <Link Id="RxS7lm9B5XKNR8k0GRvl4S" Ids="Mqxs9vuDRP5QNAq4kmpQFH,Rzy7rabV1m1PRuvglEdBzL" IsHidden="true" />
+          <Link Id="DgWW7Vn7QRxPGcb1QfdlMU" Ids="MuNlYDQVmuWMOBUj9lJfTa,UbXugZO0yqsQIRiBxUYCMu" />
+          <Link Id="AKe4Pm7J8k1LxbpxAEiN8H" Ids="NWRAinxCM3iOYQ3xbiEg7Z,MuNlYDQVmuWMOBUj9lJfTa" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ PublishDeviceData ************************
+
+-->
+      <Node Name="PublishDeviceData" Bounds="430,940,124,80" Id="JJbQC4qM9KvPAjVKbWZrYl">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" Name="Operation" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+        <Patch Id="TUpyKT68jYSMgSkIFfdejx" IsGeneric="true">
+          <Node Bounds="442,969,100,26" AutoConnect="true" Id="CJEKLcRYBbmPP7NzMytsHb">
+            <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Node.SparkplugNodeBase`1" LastSymbolSource="SparkplugNet.dll">
+              <Choice Kind="OperationNode" Name="PublishDeviceData" />
+              <FullNameCategoryReference ID="SparkplugNet.Core.Node.SparkplugNodeBase`1" />
+            </p:NodeReference>
+            <Pin Id="E37Wf3FvFzcPJp9NZXFIJK" Name="Input" Kind="StateInputPin" />
+            <Pin Id="JdFVYQuI3Z3MwumGmOtOkw" Name="Metrics" Kind="InputPin" />
+            <Pin Id="S7Px7qhC9FYM5fWmxskD46" Name="Device Identifier" Kind="InputPin" />
+            <Pin Id="P9e4vCeoabvLmvOXqJsOcq" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="RoR25HHZABDQSzRTRH0f5H" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pin Id="Q5uTvLq9khjPApooxUxiRl" Name="Input" Kind="InputPin" />
+          <Pin Id="KNXEnZVNiqHQOwaKa0pCSS" Name="Metrics" Kind="InputPin" />
+          <Pin Id="Gkl50lgCitELWazXD0Llbb" Name="Device Identifier" Kind="InputPin" />
+          <Pin Id="F5vqvS3f2GELuFcRoEDkFp" Name="Output" Kind="OutputPin" />
+          <Pin Id="I5LLTQqWPxAP8KaVZShyiG" Name="Result" Kind="OutputPin" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ PublishDeviceBirthMessage ************************
+
+-->
+      <Node Name="PublishDeviceBirthMessage" Bounds="662,942,163,80" Id="GwNqUBL5yTdLpyKZrLggBM">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" Name="Operation" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+        <Patch Id="MQM3qHfLuLsNVAqGQB5ZoG" IsGeneric="true">
+          <Node Bounds="674,971,139,26" AutoConnect="true" Id="EfBD83Bn4xTMcL6kRiSBqn">
+            <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Node.SparkplugNodeBase`1" LastSymbolSource="SparkplugNet.dll">
+              <Choice Kind="OperationNode" Name="PublishDeviceBirthMessage" />
+              <FullNameCategoryReference ID="SparkplugNet.Core.Node.SparkplugNodeBase`1" />
+            </p:NodeReference>
+            <Pin Id="BNZumZPkDtfMrCXSKkm1f7" Name="Input" Kind="StateInputPin" />
+            <Pin Id="J8dDOAihVw5QICQhlzk3c4" Name="Known Metrics" Kind="InputPin" />
+            <Pin Id="HajMIkV8OIyNCsPmS19Dhe" Name="Device Identifier" Kind="InputPin" />
+            <Pin Id="Qg9UedBC8vQOuZofFuI9av" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="BSM14OEQWF7OOrMausnynj" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pin Id="PDWLwZqi5WfLVEsV6PEg5P" Name="Input" Kind="InputPin" />
+          <Pin Id="VudkySfHHZkOIMFsxg6mws" Name="Known Metrics" Kind="InputPin" />
+          <Pin Id="FRbnKvO7kzyMO7U6S8f7or" Name="Device Identifier" Kind="InputPin" />
+          <Pin Id="OLklDQygYCLP4FhP7sn7kH" Name="Output" Kind="OutputPin" />
+          <Pin Id="LOFd5rIEWuGOAIDSRwv3Zu" Name="Result" Kind="OutputPin" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ PublishDeviceDeathMessage ************************
+
+-->
+      <Node Name="PublishDeviceDeathMessage" Bounds="562,1102,169,80" Id="DtYIPPTc16zP2sg6cDsP2B">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" Name="Operation" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+        <Patch Id="VYhBqsIKQJpQPeZ30GDCLf" IsGeneric="true">
+          <Node Bounds="574,1130,145,26" AutoConnect="true" Id="T77wg48nB4uNULHXs6l11C">
+            <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Node.SparkplugNodeBase`1" LastSymbolSource="SparkplugNet.dll">
+              <Choice Kind="OperationNode" Name="PublishDeviceDeathMessage" />
+              <FullNameCategoryReference ID="SparkplugNet.Core.Node.SparkplugNodeBase`1" />
+            </p:NodeReference>
+            <Pin Id="EYLgkLoYmy3MO2xFTPeOrB" Name="Input" Kind="StateInputPin" />
+            <Pin Id="N4tNqSqnGYwOyxmhrThyDl" Name="Device Identifier" Kind="InputPin" />
+            <Pin Id="HboRskcyPcTMrvocUfNgW6" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="O5isWdjYHP8QUVh5BFwd0r" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pin Id="N5jJzkZtJZ0OaEMZMNFyWV" Name="Input" Kind="InputPin" />
+          <Pin Id="Ffetti3E5njQWRGL4lieer" Name="Device Identifier" Kind="InputPin" />
+          <Pin Id="UgvuIzyvHtCNiyKv0qJczC" Name="Output" Kind="OutputPin" />
+          <Pin Id="SsmsEivKBoxNSw4OOSFcTV" Name="Result" Kind="OutputPin" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ PublishMetrics ************************
+
+-->
+      <Node Name="PublishMetrics" Bounds="337,1108,120,80" Id="IoU1DcyUcv9PvIoLyWV0l3">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" Name="Operation" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+        <Patch Id="J7uqVpO8Xb8PSMHjXrj3n2" IsGeneric="true">
+          <Node Bounds="349,1136,96,26" AutoConnect="true" Id="DPycZMYRgpoMa2qMdW2INH">
+            <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Node.SparkplugNodeBase`1" LastSymbolSource="SparkplugNet.dll">
+              <Choice Kind="OperationNode" Name="PublishMetrics" />
+              <FullNameCategoryReference ID="SparkplugNet.Core.Node.SparkplugNodeBase`1" />
+            </p:NodeReference>
+            <Pin Id="Vt00FSprlGKNd58hUzXWdt" Name="Input" Kind="StateInputPin" />
+            <Pin Id="Bcf7LfZsrQxLLiCXoZMaQs" Name="Metrics" Kind="InputPin" />
+            <Pin Id="UMUVZkgvlH2Qd0in6bnOrJ" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="Tp4l1rGkeZdLey3Wr7pyoZ" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pin Id="FtY0BzY8W7lOuwjnXX9FyW" Name="Input" Kind="InputPin" />
+          <Pin Id="E9LYyMDAZfqP0MqQYfTP4A" Name="Metrics" Kind="InputPin" />
+          <Pin Id="SfZCuWlSzEGLq3ECxauShB" Name="Output" Kind="OutputPin" />
+          <Pin Id="AUBKPlq31alOIFSgHFLWxs" Name="Result" Kind="OutputPin" />
+        </Patch>
+      </Node>
+      <Overlay Id="NaB0BpiMT2ALfudaY2Ftts" Name="Application" Bounds="316,289,608,333" />
+      <Overlay Id="U0GtTqTtcdINLcdtRdLAi2" Name="Node" Bounds="316,692,598,485" />
+      <!--
+
+    ************************ Node ************************
+
+-->
+      <Node Name="Node" Bounds="378,794" Id="NDZV1OAp30eMmoAIBPbgsA">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+          <Choice Kind="ClassDefinition" Name="Class" />
+        </p:NodeReference>
+        <Patch Id="EvVd6eqp4LeLeHLfiViOg4">
+          <Canvas Id="Or0jtyjjAXiMyZDhVedExl" CanvasType="Group">
+            <Node Bounds="414,384" Id="AxCnzmJgnPANhtG8Gxz2Lf">
+              <p:NodeReference LastCategoryFullName="SparkplugNet.VersionB.SparkplugNode" LastSymbolSource="SparkplugNet.dll" OverloadStrategy="AllPinsThatAreNotCommon">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="SparkplugNode" NeedsToBeDirectParent="true">
+                  <p:OuterCategoryReference Kind="AssemblyCategory" Name="VersionB" NeedsToBeDirectParent="true" />
+                </CategoryReference>
+                <Choice Kind="OperationCallFlag" Name="Create" />
+                <PinReference Kind="InputPin" Name="Known Metrics" />
+              </p:NodeReference>
+              <Pin Id="KAU5U2R6urfMRsvfITJ8Bc" Name="Known Metrics" Kind="InputPin" />
+              <Pin Id="CRXq3R9VOiHObqz4k7Cnzq" Name="Logger" Kind="InputPin" />
+              <Pin Id="IEL9uKPETi3OnIFGNKbJmZ" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Pad Id="K7LAJ4evQinOXk5zWgIAT7" SlotId="QvsTW3jk6E6NQPhVG8m5xg" Bounds="415,456" />
+            <ControlPoint Id="ON80lcBPXjgMw3q6tzUZii" Bounds="416,294" />
+            <ControlPoint Id="FYoSIZa8jliNsLNuHChUK6" Bounds="415,621" />
+            <Node Bounds="574,710,96,26" Id="FiUvkiYTTw2P4vvEuibnjN">
+              <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Node.SparkplugNodeBase`1" LastSymbolSource="SparkplugNet.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="SparkplugNet" />
+                <CategoryReference Kind="AssemblyCategory" Name="Core" />
+                <CategoryReference Kind="AssemblyCategory" Name="Node" />
+                <CategoryReference Kind="AssemblyCategory" Name="SparkplugNodeBase`1" />
+                <Choice Kind="OperationCallFlag" Name="Start" />
+              </p:NodeReference>
+              <Pin Id="CKiupz4WlENLaOSxJI6ARK" Name="Input" Kind="StateInputPin" />
+              <Pin Id="DH39RPY9Oz8OliwdvB1rnI" Name="Node Options" Kind="InputPin" />
+              <Pin Id="BwYu5iaqp7HLVu0TuG4T1q" Name="Known Metrics Storage" Kind="InputPin" />
+              <Pin Id="GI2tCiTQUGZPh6Fwe7nYta" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="SuuOfxFMeBFNNKsfz2bsHu" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="619,480,245,26" Id="Fl2IECWqLRwPlDw6oqDDsT">
+              <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Node.SparkplugNodeOptions" LastSymbolSource="SparkplugNet.dll" OverloadStrategy="AllPinsThatAreNotCommon">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="SparkplugNodeOptions" />
+                <Choice Kind="OperationCallFlag" Name="Create" />
+                <PinReference Kind="InputPin" Name="Broker Address" />
+                <PinReference Kind="InputPin" Name="Port" />
+                <PinReference Kind="InputPin" Name="Client Id" />
+                <PinReference Kind="InputPin" Name="User Name" />
+                <PinReference Kind="InputPin" Name="Password" />
+                <PinReference Kind="InputPin" Name="Use Tls" />
+                <PinReference Kind="InputPin" Name="Scada Host Identifier" />
+                <PinReference Kind="InputPin" Name="Group Identifier" />
+                <PinReference Kind="InputPin" Name="Edge Node Identifier" />
+                <PinReference Kind="InputPin" Name="Reconnect Interval" />
+                <PinReference Kind="InputPin" Name="Web Socket Parameters" />
+                <PinReference Kind="InputPin" Name="Proxy Options" />
+                <PinReference Kind="InputPin" Name="Cancellation Token" />
+              </p:NodeReference>
+              <Pin Id="Juqu4wqaX2ANhQizd4Xtl5" Name="Broker Address" Kind="InputPin" />
+              <Pin Id="DBF2XYAxUkMMAUQwTWDy1K" Name="Port" Kind="InputPin" />
+              <Pin Id="G3gWr2RgYopNFpg5NmiDuE" Name="Client Id" Kind="InputPin" />
+              <Pin Id="PHAC0nMISicPLSTbO1inWV" Name="User Name" Kind="InputPin" />
+              <Pin Id="Db8vNnJSapOPsJ6pmjdV9Q" Name="Password" Kind="InputPin" />
+              <Pin Id="SsyciCqwNjyPlMBQhD9AvF" Name="Use Tls" Kind="InputPin" />
+              <Pin Id="GH1KgToa5AQOTLYGNoh1I7" Name="Scada Host Identifier" Kind="InputPin" />
+              <Pin Id="H5ofktwkk5xLBZlBtAWFUL" Name="Group Identifier" Kind="InputPin" />
+              <Pin Id="OlhfEsVAIUANnhLu6AIfKB" Name="Edge Node Identifier" Kind="InputPin" />
+              <Pin Id="Iz2RmA9f2nlO5qzmMKI9Rk" Name="Reconnect Interval" Kind="InputPin" />
+              <Pin Id="SDgwmaosMTaNnoHzKmrC8R" Name="Web Socket Parameters" Kind="InputPin" />
+              <Pin Id="VSWscF8BFMwPABZrSp1G9R" Name="Proxy Options" Kind="InputPin" />
+              <Pin Id="SsikBIXTPo9O0K8Xf3YOXa" Name="Cancellation Token" Kind="InputPin" />
+              <Pin Id="VTW6zBz7EFRNRY7MQUcYWj" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <ControlPoint Id="BUizfEZHR9mLK3tvm9wlbs" Bounds="621,376" />
+            <ControlPoint Id="OVL86lGrN6nNvw8GPHo7ZB" Bounds="640,408" />
+            <ControlPoint Id="FksMyq4usRsMuINcfkAj5O" Bounds="662,438" />
+            <ControlPoint Id="LOTs2Hmfc9NOus6rZUQunp" Bounds="801,443" />
+            <ControlPoint Id="JhDX33NYGPjOM9JWXkMUBm" Bounds="782,416" />
+            <ControlPoint Id="D7il1TBqNUVMO2Yo3bw3ux" Bounds="763,385" />
+            <ControlPoint Id="HypaUHQAbPbLlLkSsTMnjs" Bounds="741,353" />
+            <Node Bounds="879,715,96,26" Id="Vnug9oof1CtPsoMeSuH3YL">
+              <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Node.SparkplugNodeBase`1" LastSymbolSource="SparkplugNet.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="SparkplugNodeBase`1" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="Stop" />
+              </p:NodeReference>
+              <Pin Id="JXcLcKcY7dOOw7yiMGAGKw" Name="Input" Kind="StateInputPin" />
+              <Pin Id="MlEdEtKaPWCMulkSAnJI16" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="SXwlREpNKj9OzPS9FegXJY" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="664,660,89,26" Id="HSzgxEfrJwsQMVdGS7aZCs">
+              <p:NodeReference LastCategoryFullName="SparkplugNet.Core.SparkplugBase`1.KnownMetricStorage" LastSymbolSource="SparkplugNet.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="KnownMetricStorage" />
+                <Choice Kind="OperationCallFlag" Name="Create" />
+              </p:NodeReference>
+              <Pin Id="ExMwZmECBrvLWWgnbtruwT" Name="Known Metrics" Kind="InputPin" />
+              <Pin Id="Aod0icN34NtNbNRK7KSXfb" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <ControlPoint Id="RIU18DqojuYOkclxJFrD1C" Bounds="667,608" />
+            <Node Bounds="1059,700,96,26" Id="QlmABYJ1GERQChG5u8eELD">
+              <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Node.SparkplugNodeBase`1" LastSymbolSource="SparkplugNet.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="SparkplugNodeBase`1" />
+                <Choice Kind="OperationCallFlag" Name="KnownDevices" />
+              </p:NodeReference>
+              <Pin Id="IoAMuZPVp5nN3zOJejCt4A" Name="Input" Kind="StateInputPin" />
+              <Pin Id="N9Cf6ifhEjWQMtBrnYEzfZ" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="UAl9EVlIufkLDRY2iiZtEc" Name="Known Devices" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="LuqpV2bGuIYO0L8pOE9wh2" Bounds="1155,769" />
+            <Node Bounds="665,776,82,26" Id="FwTb4iJuyprPwUP3vjjom8">
+              <p:NodeReference LastCategoryFullName="Reactive.Task (NonGeneric)" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="ClassType" Name="Task (NonGeneric)" />
+                <Choice Kind="OperationCallFlag" Name="ToObservable" />
+              </p:NodeReference>
+              <Pin Id="HeN6vWJk2YwLPn0WQyMUKn" Name="Input" Kind="StateInputPin" />
+              <Pin Id="DbISjaXRgFoOoiAPwEHMFS" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="Qrj6hHozhKOP2mOLJ0tM96" Bounds="668,834" />
+            <Node Bounds="115,667,141,19" Id="H9Lp419UEVVP7iuezRXgiI">
+              <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.EventWrapper" LastSymbolSource="VL.IO.Sparkplug.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="DeviceBirthPublishing" />
+              </p:NodeReference>
+              <Pin Id="KMF0IsjIvMtNDtricCcoDw" Name="Instance" Kind="InputPin" />
+              <Pin Id="O4qnHbACSp6Pg0sS39eX8K" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="JuISgcd1Rq2PHyFsUsj7bL" Bounds="119,867" />
+            <Pad Id="OMlAglEeyLlPsBcARztWdl" Bounds="120,837" />
+            <ControlPoint Id="K7g7Z7yFgBtLKHHkJkiNLB" Bounds="324,792" />
+            <Pad Id="ObrywtAKxzeOsEidFrfObw" Bounds="323,751" />
+            <Node Bounds="319,704" Id="Fwcc6kF1fZXOaGHJLlL88C">
+              <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.BaseEventWrapper" LastSymbolSource="VL.IO.Sparkplug.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Connected" />
+              </p:NodeReference>
+              <Pin Id="TaPFOCBzS0rP530br8iS96" Name="Instance" Kind="InputPin" />
+              <Pin Id="SRa8bqT4t0MNBEbMSVHv7L" Name="Result" Kind="OutputPin" />
+            </Node>
+          </Canvas>
+          <ProcessDefinition Id="RnzEwMv6VeTL5PqcmVFFfa" IsHidden="true">
+            <Fragment Id="SlEFgf23SfzPZrJebhn56R" Patch="ElVRPGz9K7LPh4enRjOTzo" Enabled="true" />
+            <Fragment Id="Abq8LnHwpsoQCYGggeTjif" Patch="VEqAKoEs6lPMaXpsb6qQiB" Enabled="true" />
+            <Fragment Id="DnGNkhh5ZmKPx8mysc2K7c" Patch="G1MtK7rLb9fMB5wepC4xgY" />
+            <Fragment Id="HZfDNXFQ5j3LOnJE4YoQIx" Patch="M50MlwCbvpcNPK0mpO1C4b" />
+          </ProcessDefinition>
+          <Slot Id="QvsTW3jk6E6NQPhVG8m5xg" Name="Node" />
+          <Link Id="Gd9xbNjI4gcK9s3Ri8jqSw" Ids="IEL9uKPETi3OnIFGNKbJmZ,K7LAJ4evQinOXk5zWgIAT7" />
+          <Link Id="OhgzJs5dwK6LXBL73Wp2ar" Ids="ON80lcBPXjgMw3q6tzUZii,KAU5U2R6urfMRsvfITJ8Bc" />
+          <Link Id="GJwMGwbLi1YOUsHITVgYwq" Ids="FzR6Tps3oMZPzE7Cf4Kxoc,ON80lcBPXjgMw3q6tzUZii" IsHidden="true" />
+          <Link Id="P8FtSoS4e7fQORq6AVre49" Ids="K7LAJ4evQinOXk5zWgIAT7,FYoSIZa8jliNsLNuHChUK6" />
+          <Link Id="VNuRfnHgBWfLLWZmm4eB96" Ids="FYoSIZa8jliNsLNuHChUK6,UwoVFSYSpFFNuVBnD3jde0" IsHidden="true" />
+          <Link Id="UDx7D0EeANMNNX1uwrqb3W" Ids="K7LAJ4evQinOXk5zWgIAT7,CKiupz4WlENLaOSxJI6ARK" />
+          <Link Id="VWxM6bz9W78NvOPRF9aGLA" Ids="VTW6zBz7EFRNRY7MQUcYWj,DH39RPY9Oz8OliwdvB1rnI" />
+          <Link Id="LwCozT61iiyOZTj1FjCmN6" Ids="BUizfEZHR9mLK3tvm9wlbs,Juqu4wqaX2ANhQizd4Xtl5" />
+          <Link Id="OAGkTLGzU9HMqrrcGERqSu" Ids="KPi0zG208KuNkTNagk4mHu,BUizfEZHR9mLK3tvm9wlbs" IsHidden="true" />
+          <Link Id="T3ZC3mO6nnrLeSfOqsturb" Ids="OVL86lGrN6nNvw8GPHo7ZB,DBF2XYAxUkMMAUQwTWDy1K" />
+          <Link Id="KffAyxYJGS6PB2rLlUFSKu" Ids="FtfYBPtPbItNO72QgmlXFL,OVL86lGrN6nNvw8GPHo7ZB" IsHidden="true" />
+          <Link Id="BJ1oZlhcDaiMk8KEs64I1s" Ids="FksMyq4usRsMuINcfkAj5O,G3gWr2RgYopNFpg5NmiDuE" />
+          <Link Id="PdzIF2RlLbiQSLLF46j1qS" Ids="Gyila5H6NrmOh41waKU3nF,FksMyq4usRsMuINcfkAj5O" IsHidden="true" />
+          <Link Id="DlfRaAChFAbOr8pXrWo7Ip" Ids="LOTs2Hmfc9NOus6rZUQunp,Iz2RmA9f2nlO5qzmMKI9Rk" />
+          <Link Id="JMt1avP5e8BLaIWc09JoGo" Ids="DwL3AQY3fCINBI5uRhKCWt,LOTs2Hmfc9NOus6rZUQunp" IsHidden="true" />
+          <Link Id="A6062tdkAj9PsNhhyoWj3Z" Ids="JhDX33NYGPjOM9JWXkMUBm,OlhfEsVAIUANnhLu6AIfKB" />
+          <Link Id="VyA1iEOLB2tMnOie8sj3h0" Ids="AIMrHR7kL7nO40vHJvCPDW,JhDX33NYGPjOM9JWXkMUBm" IsHidden="true" />
+          <Link Id="PlBX4lCznulLipxE3EfFgm" Ids="D7il1TBqNUVMO2Yo3bw3ux,H5ofktwkk5xLBZlBtAWFUL" />
+          <Link Id="KQRAqxSNHxwMDtRVI9BCaH" Ids="J0ZKplTwoSAL2Z3yYYH5ZX,D7il1TBqNUVMO2Yo3bw3ux" IsHidden="true" />
+          <Link Id="Rj3rtKNtPp9MWAI1Jg4NHG" Ids="HypaUHQAbPbLlLkSsTMnjs,GH1KgToa5AQOTLYGNoh1I7" />
+          <Link Id="FXRO3HYj7ZANkhvWNvxDrr" Ids="UgYzg0TaanRM1UWHzDZXbM,HypaUHQAbPbLlLkSsTMnjs" IsHidden="true" />
+          <Link Id="IIaJCmISDEWNkpxycQ9zka" Ids="K7LAJ4evQinOXk5zWgIAT7,JXcLcKcY7dOOw7yiMGAGKw" />
+          <Link Id="TjBpfYoTsaoM47ZtNVLyQp" Ids="Aod0icN34NtNbNRK7KSXfb,BwYu5iaqp7HLVu0TuG4T1q" />
+          <Link Id="TaaqGV1UpMsMgUG59VtRcE" Ids="RIU18DqojuYOkclxJFrD1C,ExMwZmECBrvLWWgnbtruwT" />
+          <Link Id="QUrBEYpuw9jQO0zy1TDWmo" Ids="IdJaMYc10BhL6OegMg54lc,RIU18DqojuYOkclxJFrD1C" IsHidden="true" />
+          <Link Id="A50b8SAc6MaQSJrDPVagWT" Ids="K7LAJ4evQinOXk5zWgIAT7,IoAMuZPVp5nN3zOJejCt4A" />
+          <Link Id="VVN4rKjoD48PmwrF84IPpZ" Ids="UAl9EVlIufkLDRY2iiZtEc,LuqpV2bGuIYO0L8pOE9wh2" />
+          <Link Id="F3hl29p4HpPOdNbefLNO1z" Ids="LuqpV2bGuIYO0L8pOE9wh2,IiA6rhz4G2KOokWoKAAWwo" IsHidden="true" />
+          <Link Id="JvfaOE2LZgbM0FpSe34uJz" Ids="SuuOfxFMeBFNNKsfz2bsHu,HeN6vWJk2YwLPn0WQyMUKn" />
+          <Link Id="Qs68gyC3X0wNrXeYzIuaUq" Ids="DbISjaXRgFoOoiAPwEHMFS,Qrj6hHozhKOP2mOLJ0tM96" />
+          <Link Id="FB8yvze5MXULiBXv4XfKO2" Ids="Qrj6hHozhKOP2mOLJ0tM96,EJbgJ4RS08xMldWgrT4kDY" IsHidden="true" />
+          <Link Id="UdTPOtd5VvuMjGuOnjh2nz" Ids="O4qnHbACSp6Pg0sS39eX8K,OMlAglEeyLlPsBcARztWdl" />
+          <Link Id="DOw59u4pkrZM08th7q6Dc1" Ids="JuISgcd1Rq2PHyFsUsj7bL,L7HX1kWSMc4MKhsoYgQJGC" IsHidden="true" />
+          <Link Id="LXToiZtqXtiOgjrUFCrZ8B" Ids="OMlAglEeyLlPsBcARztWdl,JuISgcd1Rq2PHyFsUsj7bL" />
+          <Link Id="FIDsxr28BH1OrrFyM1C5sb" Ids="ObrywtAKxzeOsEidFrfObw,K7g7Z7yFgBtLKHHkJkiNLB" />
+          <Link Id="TJqDAfq0iQ5MoFMo8cyESK" Ids="K7g7Z7yFgBtLKHHkJkiNLB,Ligw5liCM7bLYtu6lHY9Ss" IsHidden="true" />
+          <Patch Id="ElVRPGz9K7LPh4enRjOTzo" Name="Create" ParticipatingElements="AxCnzmJgnPANhtG8Gxz2Lf,H8gqOT3PRpFOESWDPM4TwB,HLs15qUcPZdL6gltebJIjY">
+            <Pin Id="FzR6Tps3oMZPzE7Cf4Kxoc" Name="Known Metrics" Kind="InputPin" Bounds="416,294" />
+          </Patch>
+          <Patch Id="VEqAKoEs6lPMaXpsb6qQiB" Name="Update">
+            <Pin Id="L7HX1kWSMc4MKhsoYgQJGC" Name="Result" Kind="OutputPin" Bounds="768,1072" />
+            <Pin Id="Ligw5liCM7bLYtu6lHY9Ss" Name="Connected" Kind="OutputPin" />
+            <Pin Id="UwoVFSYSpFFNuVBnD3jde0" Name="Node" Kind="OutputPin" />
+            <Pin Id="IiA6rhz4G2KOokWoKAAWwo" Name="Known Devices" Kind="OutputPin" Bounds="1155,769" />
+          </Patch>
+          <Patch Id="G1MtK7rLb9fMB5wepC4xgY" Name="Start" ParticipatingElements="UDx7D0EeANMNNX1uwrqb3W">
+            <Pin Id="KPi0zG208KuNkTNagk4mHu" Name="Broker Address" Kind="InputPin" Bounds="633,397" DefaultValue="localhost" />
+            <Pin Id="FtfYBPtPbItNO72QgmlXFL" Name="Port" Kind="InputPin" Bounds="652,427" DefaultValue="1883" />
+            <Pin Id="Gyila5H6NrmOh41waKU3nF" Name="Client Id" Kind="InputPin" Bounds="670,440" DefaultValue="ClientID" />
+            <Pin Id="IdJaMYc10BhL6OegMg54lc" Name="Known Metrics" Kind="InputPin" Bounds="673,598" />
+            <Pin Id="UgYzg0TaanRM1UWHzDZXbM" Name="Scada Host Identifier" Kind="InputPin" Bounds="749,349" DefaultValue="sdaf" />
+            <Pin Id="J0ZKplTwoSAL2Z3yYYH5ZX" Name="Group Identifier" Kind="InputPin" Bounds="778,380" DefaultValue="asfd" />
+            <Pin Id="AIMrHR7kL7nO40vHJvCPDW" Name="Edge Node Identifier" Kind="InputPin" Bounds="786,427" />
+            <Pin Id="DwL3AQY3fCINBI5uRhKCWt" Name="Reconnect Interval" Kind="InputPin" Bounds="809,445" />
+            <Pin Id="EJbgJ4RS08xMldWgrT4kDY" Name="Result" Kind="OutputPin" Bounds="671,841" />
+          </Patch>
+          <Patch Id="M50MlwCbvpcNPK0mpO1C4b" Name="Stop" ParticipatingElements="Vnug9oof1CtPsoMeSuH3YL" />
+          <Link Id="H8gqOT3PRpFOESWDPM4TwB" Ids="K7LAJ4evQinOXk5zWgIAT7,KMF0IsjIvMtNDtricCcoDw" />
+          <Link Id="IIyDKEHvmZlMWUSFlSF9Ac" Ids="K7LAJ4evQinOXk5zWgIAT7,TaPFOCBzS0rP530br8iS96" />
+          <Link Id="HLs15qUcPZdL6gltebJIjY" Ids="SRa8bqT4t0MNBEbMSVHv7L,ObrywtAKxzeOsEidFrfObw" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ SparkNode ************************
+
+-->
+      <Node Name="SparkNode" Bounds="381,872" Id="MuZ1SB2bN8rPtVkjbZgcGe">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+          <Choice Kind="ContainerDefinition" Name="Process" />
+        </p:NodeReference>
+        <Patch Id="PGkSiKQhcK0MrlKE30lXeH">
+          <Canvas Id="Acsjd2tOcKPNxJeFSjf8Td" CanvasType="Group">
+            <Node Bounds="222,233,46,26" Id="BlWYaiMotPvQUE9pAHL7qU">
+              <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.Node" LastSymbolSource="VL.IO.Sparkplug.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="ClassType" Name="Node" />
+                <Choice Kind="OperationCallFlag" Name="Create" />
+              </p:NodeReference>
+              <Pin Id="NKsE9jlCjjeLGeQ3ZXzgPg" Name="Known Metrics" Kind="InputPin" />
+              <Pin Id="EEgxnfgAkFeM5kjukAfvJM" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <ControlPoint Id="QR1L61mnHO9MS8H1zF279r" Bounds="222,201" />
+            <Pad Id="DxH2avHruT8N0uZkN4pEJP" SlotId="UOCXGCddESzLuzo6WVEILW" Bounds="224,286" />
+            <Node Bounds="225,519,165,26" Id="LIO2wd0kBwdODlCkCrEHJ4">
+              <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.Node" LastSymbolSource="VL.IO.Sparkplug.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="ClassType" Name="Node" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="Start" />
+              </p:NodeReference>
+              <Pin Id="MxqPUVlEZHeNMMRjLoTG9Z" Name="Input" Kind="StateInputPin" />
+              <Pin Id="BJVFDnwig3fOyjw8IfGEnM" Name="Broker Address" Kind="InputPin" />
+              <Pin Id="LxlqPflHm4nOKS3IkKmXFI" Name="Port" Kind="InputPin" />
+              <Pin Id="ODHxkuhalwYPXkDyAcBZeT" Name="Client Id" Kind="InputPin" />
+              <Pin Id="SoOdmqiIZ7AP3bl5GQJABq" Name="Known Metrics" Kind="InputPin" />
+              <Pin Id="E1G3JqGAtn6PRSFpYqpwOw" Name="Scada Host Identifier" Kind="InputPin" />
+              <Pin Id="JFdR7GUh2btL410yw4pffV" Name="Group Identifier" Kind="InputPin" />
+              <Pin Id="ETh5fO3aBIuMXIbVJX61YY" Name="Edge Node Identifier" Kind="InputPin" />
+              <Pin Id="UCJhAv7HSo2OFGP6FPK0zf" Name="Reconnect Interval" Kind="InputPin" />
+              <Pin Id="STPneHAeGxnLbRp91VPgoJ" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="Ba2Aq3FdBNcQBgds0bg0Vo" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="QJrUsDbJQILNJQ0mqrzp5Q" Bounds="243,332" />
+            <ControlPoint Id="E6cmdeFLgJoPA2Sw8IgJeC" Bounds="264,356" />
+            <Pad Id="Tzh6yRCV5KgP3H2Cp62MOS" Bounds="319,260" />
+            <ControlPoint Id="IIQzQZyUBvCPAg6s8L6CHv" Bounds="303,383" />
+            <ControlPoint Id="BUBxkndfC02Pq2wggBvjbl" Bounds="332,343" />
+            <ControlPoint Id="GkLMXfnQFirMMoTkeYYUYc" Bounds="360,384" />
+            <ControlPoint Id="EeF7kByca2zQOOlaiYZGbl" Bounds="363,427" />
+            <ControlPoint Id="VUU051CQC5wNv7KtvpPoUX" Bounds="386,461" />
+            <Node Bounds="580,520,37,26" Id="UxZhhghBetiPVDG1kfpytg">
+              <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.Node" LastSymbolSource="VL.IO.Sparkplug.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="ClassType" Name="Node" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="Stop" />
+              </p:NodeReference>
+              <Pin Id="ALBWSxx5ahyM6bP3f6IExv" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Iu3CuUNnoQ2LVpEYlLWnTD" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <ControlPoint Id="EmyEnp8fzphLNPFkPmHEQE" Bounds="769,491" />
+            <Node Bounds="688,402" Id="Bxti1evmBUzP3NN305mQDf">
+              <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.Node" LastSymbolSource="VL.IO.Sparkplug.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="ClassType" Name="Node" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="Update" />
+              </p:NodeReference>
+              <Pin Id="IOw8tawFqHQLWrN3wptMUx" Name="Input" Kind="StateInputPin" />
+              <Pin Id="AvPjtmS7WClOXa2E84uwwM" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="GAFyW9WdIkYOY99oK0pyBM" Name="Result" Kind="OutputPin" />
+              <Pin Id="SNror6vUFzNNajYgg8mGxi" Name="Connected" Kind="OutputPin" />
+              <Pin Id="CL4mbYbWPyuNyhu3Ui79Kq" Name="Node" Kind="OutputPin" />
+              <Pin Id="BzcFea6ACYTMhPhLLPfyp9" Name="Known Devices" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="KmrwRyObKx6M5atBN8ODnU" Bounds="728,607" />
+            <ControlPoint Id="UAW8nKxHTCiPHjB2Nuttqr" Bounds="892,552" />
+            <ControlPoint Id="VQUbjjFvZ6YNvuv2MunJja" Bounds="792,648" />
+          </Canvas>
+          <ProcessDefinition Id="GNmAKZl5pPSLjd62o3Oox0">
+            <Fragment Id="F3F5vUlKbheMYurpv1fvn9" Patch="PvPqolsnXlVMvxfXpy8Pny" Enabled="true" />
+            <Fragment Id="VnX0qp1oYWoLXwamKV9h7E" Patch="EjEWLiS37i8NS0fGBpEX46" Enabled="true" />
+            <Fragment Id="EMvm6fcDWXbPVrVZkk36yZ" Patch="VyoD3bwNqRPNMwfynSso0S" Enabled="true" />
+            <Fragment Id="Gj2bztXYMXxL6QZ2qYvhfC" Patch="SsvbdSfSYlXOC4wRaQEvpm" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="TzcR7vu8qh6MqGRcoX3xJu" Ids="QR1L61mnHO9MS8H1zF279r,NKsE9jlCjjeLGeQ3ZXzgPg" />
+          <Link Id="LHyHQbl4sH8PoXvJyCY3Io" Ids="Fwz30V3oAyXQDkFQiKOXMj,QR1L61mnHO9MS8H1zF279r" IsHidden="true" />
+          <Slot Id="UOCXGCddESzLuzo6WVEILW" Name="Node" />
+          <Link Id="In3sHZDN9H0QD4aIjPAG24" Ids="EEgxnfgAkFeM5kjukAfvJM,DxH2avHruT8N0uZkN4pEJP" />
+          <Link Id="LPO6jGDN2joNTInTRfHwvR" Ids="DxH2avHruT8N0uZkN4pEJP,MxqPUVlEZHeNMMRjLoTG9Z" />
+          <Link Id="JwLWRA1WYANQSmnDIb20nC" Ids="QJrUsDbJQILNJQ0mqrzp5Q,BJVFDnwig3fOyjw8IfGEnM" />
+          <Link Id="Bc1FDkMP6aTPQqiMaPUgJu" Ids="IXysxrEr54LQKMnIgSGg4F,QJrUsDbJQILNJQ0mqrzp5Q" IsHidden="true" />
+          <Link Id="EdlNRBkIp1mOdHyxNOnC0q" Ids="E6cmdeFLgJoPA2Sw8IgJeC,LxlqPflHm4nOKS3IkKmXFI" />
+          <Link Id="MQVhFghJyD9Mv6cE0KMyI5" Ids="LOmPy3caByQP9p2spAEc5B,E6cmdeFLgJoPA2Sw8IgJeC" IsHidden="true" />
+          <Link Id="JZymTuK0YDxOWxW33wP4w8" Ids="QR1L61mnHO9MS8H1zF279r,Tzh6yRCV5KgP3H2Cp62MOS" />
+          <Link Id="AVgOwujzDaSOusxiMIrpB7" Ids="Tzh6yRCV5KgP3H2Cp62MOS,SoOdmqiIZ7AP3bl5GQJABq" />
+          <Link Id="IKeSONHCcS4ND9rISk2Qz9" Ids="IIQzQZyUBvCPAg6s8L6CHv,ODHxkuhalwYPXkDyAcBZeT" />
+          <Link Id="BLk9MMXerAaQIJ36P2IbSz" Ids="OtUBPDhbnW6QFrxe7EJNWE,IIQzQZyUBvCPAg6s8L6CHv" IsHidden="true" />
+          <Link Id="SbsvQrEQBmxNl2oKbUhZOS" Ids="BUBxkndfC02Pq2wggBvjbl,E1G3JqGAtn6PRSFpYqpwOw" />
+          <Link Id="MQdNwEBRN34LFWf7YXN9AS" Ids="QcQqcPzhhKUL72m446O8CD,BUBxkndfC02Pq2wggBvjbl" IsHidden="true" />
+          <Link Id="RC7aMUPZXqdManTjakKINu" Ids="GkLMXfnQFirMMoTkeYYUYc,JFdR7GUh2btL410yw4pffV" />
+          <Link Id="F5ROyBFcwbrNjyageSfkkd" Ids="CiRMn68jPo2MC1GQvM7JRT,GkLMXfnQFirMMoTkeYYUYc" IsHidden="true" />
+          <Link Id="ARM4v5Da6N4Ljw1ixf9dqr" Ids="EeF7kByca2zQOOlaiYZGbl,ETh5fO3aBIuMXIbVJX61YY" />
+          <Link Id="M9LVAebcRepLo5uBcaKj8v" Ids="U88WrnmQSFLOquKi7jRNft,EeF7kByca2zQOOlaiYZGbl" IsHidden="true" />
+          <Link Id="HDkOWnegCgHNcgNRw1a5fw" Ids="VUU051CQC5wNv7KtvpPoUX,UCJhAv7HSo2OFGP6FPK0zf" />
+          <Link Id="AHtQVMcGGDkMwWFtrnY2bx" Ids="VN1Jd2NcW95QFof44MAQTP,VUU051CQC5wNv7KtvpPoUX" IsHidden="true" />
+          <Link Id="VLs5G22HiBcN08p2AGQlH2" Ids="DxH2avHruT8N0uZkN4pEJP,ALBWSxx5ahyM6bP3f6IExv" />
+          <Link Id="NI3wPKmiYIkNj8gWjAU9dm" Ids="EmyEnp8fzphLNPFkPmHEQE,CzfHll6GgJOPpYyJOy89q8" IsHidden="true" />
+          <Link Id="C5ahtKQfQWlLOiW22HQTml" Ids="DxH2avHruT8N0uZkN4pEJP,IOw8tawFqHQLWrN3wptMUx" />
+          <Link Id="J6lM8jmWpuxNFKqcKmvN3L" Ids="CL4mbYbWPyuNyhu3Ui79Kq,EmyEnp8fzphLNPFkPmHEQE" />
+          <Link Id="CIfDSKP8tHTNYd5tOmo5dd" Ids="GAFyW9WdIkYOY99oK0pyBM,KmrwRyObKx6M5atBN8ODnU" />
+          <Link Id="NOhpGZdaLuSOGQ7uojeitf" Ids="KmrwRyObKx6M5atBN8ODnU,AQjYBDm9cjIM1DxpNUHwX1" IsHidden="true" />
+          <Link Id="CZwVPTvMRW8PClRhzsGJZg" Ids="BzcFea6ACYTMhPhLLPfyp9,UAW8nKxHTCiPHjB2Nuttqr" />
+          <Link Id="Awpv43aPa2FMA1R6gkpxxW" Ids="UAW8nKxHTCiPHjB2Nuttqr,NFpNE4AE2pgNu0cwHSTH0A" IsHidden="true" />
+          <Link Id="EdX9OYPtXmqNcEqGgDPoPy" Ids="SNror6vUFzNNajYgg8mGxi,VQUbjjFvZ6YNvuv2MunJja" />
+          <Link Id="NnCqmcfVP0zPSz3H1ENxFm" Ids="VQUbjjFvZ6YNvuv2MunJja,DaLNqob9xf0L5ZD3SrdzjG" IsHidden="true" />
+          <Patch Id="PvPqolsnXlVMvxfXpy8Pny" Name="Create" ParticipatingElements="BlWYaiMotPvQUE9pAHL7qU">
+            <Pin Id="Fwz30V3oAyXQDkFQiKOXMj" Name="Known Metrics" Kind="InputPin" />
+          </Patch>
+          <Patch Id="EjEWLiS37i8NS0fGBpEX46" Name="Update">
+            <Pin Id="AQjYBDm9cjIM1DxpNUHwX1" Name="Result" Kind="OutputPin" Bounds="833,634" />
+            <Pin Id="CzfHll6GgJOPpYyJOy89q8" Name="Node" Kind="OutputPin" />
+            <Pin Id="DaLNqob9xf0L5ZD3SrdzjG" Name="Connected" Kind="OutputPin" Bounds="794,650" />
+            <Pin Id="NFpNE4AE2pgNu0cwHSTH0A" Name="Known Devices" Kind="OutputPin" Bounds="788,536" />
+          </Patch>
+          <Patch Id="VyoD3bwNqRPNMwfynSso0S" Name="Start" ParticipatingElements="LIO2wd0kBwdODlCkCrEHJ4">
+            <Pin Id="IXysxrEr54LQKMnIgSGg4F" Name="Broker Address" Kind="InputPin" />
+            <Pin Id="LOmPy3caByQP9p2spAEc5B" Name="Port" Kind="InputPin" />
+            <Pin Id="OtUBPDhbnW6QFrxe7EJNWE" Name="Client Id" Kind="InputPin" />
+            <Pin Id="QcQqcPzhhKUL72m446O8CD" Name="Scada Host Identifier" Kind="InputPin" />
+            <Pin Id="CiRMn68jPo2MC1GQvM7JRT" Name="Group Identifier" Kind="InputPin" />
+            <Pin Id="U88WrnmQSFLOquKi7jRNft" Name="Edge Node Identifier" Kind="InputPin" />
+            <Pin Id="VN1Jd2NcW95QFof44MAQTP" Name="Reconnect Interval" Kind="InputPin" />
+          </Patch>
+          <Patch Id="SsvbdSfSYlXOC4wRaQEvpm" Name="Stop" ParticipatingElements="UxZhhghBetiPVDG1kfpytg" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ Node2 ************************
+
+-->
+      <Node Name="Node2" Bounds="200,100" Id="Ld8c3tdsj6mQGi7UBaiKak">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" Name="Process" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <Patch Id="UaWjpiAEv6ZNAMgtz64MDB">
+          <Canvas Id="Hcuob8AAqzMNXDgkwnhlfO" BordersChecked="false" CanvasType="Group" />
+          <Patch Id="UHF3EBvcjmeM2yNnyRfJOf" Name="Create" />
+          <Patch Id="D429I96HhzbQCIgIKWXVtq" Name="Update" />
+          <ProcessDefinition Id="DAVkLbkvVsdQQ39I8ICOq3">
+            <Fragment Id="R9p1ffetJiLPQ8ihVpiSX1" Patch="UHF3EBvcjmeM2yNnyRfJOf" Enabled="true" />
+            <Fragment Id="EgXtxfaVzKxPc8dqp5waIq" Patch="D429I96HhzbQCIgIKWXVtq" Enabled="true" />
+          </ProcessDefinition>
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ DeviceBirthPublishingAsync ************************
+
+-->
+      <Node Name="DeviceBirthPublishingAsync" Bounds="652,550,165,80" Id="VvDntIsbz5AOarj339TPDq">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" Name="Operation" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+        <Patch Id="VD7N9NZMULELpRWGfcE4Ff" IsGeneric="true">
+          <Node Bounds="664,578,141,26" AutoConnect="true" Id="Ktsvf4hXideLGCz6eWIMQ7">
+            <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Node.SparkplugNodeBase`1" LastSymbolSource="SparkplugNet.dll">
+              <Choice Kind="OperationNode" Name="DeviceBirthPublishingAsync" />
+              <FullNameCategoryReference ID="SparkplugNet.Core.Node.SparkplugNodeBase`1" />
+            </p:NodeReference>
+          </Node>
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ DeviceEventArgs ************************
+
+-->
+      <Node Name="DeviceEventArgs" Bounds="940,268" Id="CUYGKTO5fO1LKVNCz0byBq">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="SparkplugNet.Core.SparkplugBase`1" LastSymbolSource="SparkplugNet.dll">
+          <Choice Kind="TypeFlag" Name="DeviceEventArgs" />
+        </p:TypeAnnotation>
+        <Patch Id="LOtNT6kApzONQQFKSPnpPf">
+          <Canvas Id="S4jtKnd7fLKOgQn90p6iRs" BordersChecked="false" CanvasType="Group" />
+          <ProcessDefinition Id="Gsg0fsROfgzNXwj9IOtfos" IsHidden="true" />
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="O10oNmNrKhwOeosSgLHhfu">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="SSxldN2pW4hOd6RCIPMVfZ">
+        <Canvas Id="LR1NqmzbSF5OjXJYWKt42w" CanvasType="Group" />
+        <Patch Id="S9Y6RbkghfiPLxpOkweSWe" Name="Create" />
+        <Patch Id="NszJM8uwKgHN5AnCENjDiQ" Name="Update" />
+        <ProcessDefinition Id="BgQsAN31RDaMRgMeJTsIdo">
+          <Fragment Id="Gp3zMX9SDeRLEJ7XSKTQ5d" Patch="S9Y6RbkghfiPLxpOkweSWe" Enabled="true" />
+          <Fragment Id="D5eWT1NNuAGOjReFtdhTLT" Patch="NszJM8uwKgHN5AnCENjDiQ" Enabled="true" />
+          <Fragment Id="ORfNt2mRzjjP94oZHl6U7G" Patch="IJ0bLTpInSbM7d8zGYbz6y" />
+        </ProcessDefinition>
+        <Slot Id="L4G4dj7eltnQX0MGbXOlaz" Name="Output" />
+        <Patch Id="IJ0bLTpInSbM7d8zGYbz6y" Name="Then" ManuallySortedPins="true" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="DEhFjKILy28QMpkLr3ygSG" Location="SparkplugNet" Version="1.2.0" />
+  <PlatformDependency Id="VAjjQiEVxsHPUhzouaG45j" Location="System.Runtime" />
+  <PlatformDependency Id="DqMgtcWXsdmOmoXYfcGjBo" Location="./src/Whatever/bin/Debug/netstandard2.0/VL.IO.Sparkplug.dll" />
+</Document>

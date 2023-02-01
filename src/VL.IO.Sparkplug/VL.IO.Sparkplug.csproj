@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>phlegma</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/phlegma/VL.IO.Sparkplug</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/phlegma/VL.IO.Sparkplug</PackageProjectUrl>
+    <PackageId>VL.IO.Sparkplug</PackageId>
+    <Version>6.0.10</Version>
+    <Description>Sparkplug for a VL </Description>
+    <Copyright>phlegma 2023</Copyright>
+    <Title>VL.IO.Sparkplug</Title>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\*.vl">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\**\*.vl">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SparkplugNet" Version="1.2.0" />
+    <PackageReference Include="VL.Core" Version="2021.4.12" />
+  </ItemGroup>
+
+</Project>
