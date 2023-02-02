@@ -7,5 +7,7 @@
   <Topic title="Basics">
 	<VLDocument link="Basics\Explanation Sparkplug.vl"/>
 	<VLDocument link="Basics\HowTo Primary Application.vl"/>
+	<VLDocument link="Basics\HowTo Application.vl"/>
+	<VLDocument link="Basics\HowTo Edge Node.vl"/>
   </Topic>
 </Pack>
