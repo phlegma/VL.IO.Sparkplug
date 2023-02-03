@@ -41,6 +41,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Application" />
             </p:NodeReference>
+            <Pin Id="RIBzUU8qN0TOxgQoZIIjx6" Name="Known Metrics" Kind="InputPin" />
             <Pin Id="R3BcWCzvrbTOZIxUYcCOkp" Name="Broker Address" Kind="InputPin" />
             <Pin Id="BqFbJm22cAnN9OOVDFdcMd" Name="Port" Kind="InputPin" />
             <Pin Id="P1X7HgABBlbOLHH78liNPp" Name="Client Id" Kind="InputPin" DefaultValue="vvvvApplicaton" />
@@ -55,6 +56,7 @@
             <Pin Id="JyBwfuCM6PDMGSGZyzalYq" Name="Cancellation Token" Kind="InputPin" />
             <Pin Id="Nq6PZaLR7bsMboOYr3Z0p5" Name="Start" Kind="InputPin" />
             <Pin Id="E2iJUmPlDXlL8XWLWlS10F" Name="Stop" Kind="InputPin" />
+            <Pin Id="CkrkgPcfwXVMTCkMB2XQMp" Name="DeviceDataReceived" Kind="OutputPin" />
             <Pin Id="AFFSkFrxFXSNadsylkB5Bs" Name="Connected" Kind="OutputPin" />
             <Pin Id="VNQqy2yKqlZNqCGTpbXp0u" Name="Application" Kind="OutputPin" />
             <Pin Id="VbQ992EeKPvPvTCkTFUXQo" Name="Is Connected" Kind="OutputPin" />

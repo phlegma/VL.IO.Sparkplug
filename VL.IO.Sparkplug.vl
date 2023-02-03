@@ -24,7 +24,7 @@
                 <Choice Kind="OperationCallFlag" Name="Create" />
                 <PinReference Kind="InputPin" Name="Known Metrics" />
               </p:NodeReference>
-              <Pin Id="GevOk67oFtlNQH7AmNsGb4" Name="Known Metrics" Kind="InputPin" />
+              <Pin Id="QuwygGXJo2kO3evzU5t1IJ" Name="Known Metrics" Kind="InputPin" />
               <Pin Id="BtSuh1eAVGBMYz30kNfDjy" Name="Logger" Kind="InputPin" />
               <Pin Id="KONXArTuGBXPt3C13gXk8B" Name="Output" Kind="StateOutputPin" />
             </Node>
@@ -150,18 +150,18 @@
             </Node>
             <Pad Id="KuD4AdwLX9jOLSNl0tAdyo" Bounds="48,585" />
             <ControlPoint Id="AjHN2vDhxFELSeh7FqDLBB" Bounds="45,611" />
-            <ControlPoint Id="BRK0YkepWLzPdXwg4QUvnZ" Bounds="493,384" />
-            <Node Bounds="654,566" Id="DXQhFgCkBrdLPbxvNzQSyH">
-              <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Application.SparkplugApplicationBase`1.NodeDataEventArgs" LastSymbolSource="SparkplugNet.dll">
+            <ControlPoint Id="BRK0YkepWLzPdXwg4QUvnZ" Bounds="496,352" />
+            <Node Bounds="1306,601,114,26" Id="DTWgBb0lLVMPwFOh3NAIhJ">
+              <p:NodeReference LastCategoryFullName="SparkplugNet.Core.SparkplugBase`1" LastSymbolSource="SparkplugNet.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="AssemblyCategory" Name="SparkplugApplicationBase`1" />
-                <CategoryReference Kind="AssemblyCategory" Name="NodeDataEventArgs" />
-                <Choice Kind="OperationCallFlag" Name="Metric" />
+                <Choice Kind="OperationCallFlag" Name="KnownMetricsStorage" />
               </p:NodeReference>
-              <Pin Id="DlFUh54WfP2QVImABZtO6X" Name="Input" Kind="StateInputPin" />
-              <Pin Id="B3othaNWnpcMmaqF4BfC5J" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="Kh5zutF6atfP7REf7aQSqB" Name="Metric" Kind="OutputPin" />
+              <Pin Id="V1o64oMNdvTO1eeCLLal7c" Name="Input" Kind="StateInputPin" />
+              <Pin Id="JAGRFxUE8GmOSiNH4oinN6" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="BzbUQlzJmeqQH7Cs1wYow3" Name="Known Metrics Storage" Kind="OutputPin" />
             </Node>
+            <ControlPoint Id="VvejH9h5mHdNJTXPhFsYaa" Bounds="1419,698" />
+            <ControlPoint Id="CmevpIdNy7PPtox9fcTu9M" Bounds="500,457" />
           </Canvas>
           <ProcessDefinition Id="K0VZ7ysnlhyPHYV3Wk6EYc" IsHidden="true">
             <Fragment Id="Q4GFcSp3m4KOLTsPT6LCoo" Patch="R0ZmSRV5M2aPzlFiwLG59J" Enabled="true" />
@@ -200,9 +200,8 @@
           <Link Id="Sh5FcRVScXsLMNxJ3o3vzZ" Ids="FZwtbMc04OcPvsWT6A8YpH,KuD4AdwLX9jOLSNl0tAdyo" />
           <Link Id="QMcyR0SIiQ8MvvVBzmmOhl" Ids="KuD4AdwLX9jOLSNl0tAdyo,AjHN2vDhxFELSeh7FqDLBB" />
           <Link Id="EIUUQqRo3s1ONi9VwZTMb8" Ids="AjHN2vDhxFELSeh7FqDLBB,EJ0VvSmYOvQMoI4K4WTmth" IsHidden="true" />
-          <Link Id="HtXdhkXFzIEPUDpRkI0S3S" Ids="BRK0YkepWLzPdXwg4QUvnZ,GevOk67oFtlNQH7AmNsGb4" />
           <Link Id="TGs81Joum3tQMb01tqHY09" Ids="KYmH2zi4H2ZLdyQDckGXL7,BRK0YkepWLzPdXwg4QUvnZ" IsHidden="true" />
-          <Patch Id="R0ZmSRV5M2aPzlFiwLG59J" Name="Create" ParticipatingElements="VfQmmUA2medOO8eZ5s8pk3,Sh5FcRVScXsLMNxJ3o3vzZ,HtXdhkXFzIEPUDpRkI0S3S">
+          <Patch Id="R0ZmSRV5M2aPzlFiwLG59J" Name="Create" ParticipatingElements="VfQmmUA2medOO8eZ5s8pk3,Sh5FcRVScXsLMNxJ3o3vzZ">
             <Pin Id="KYmH2zi4H2ZLdyQDckGXL7" Name="Known Metrics" Kind="InputPin" />
           </Patch>
           <Patch Id="BsS2sfXQn4KO71FPYkJeda" Name="Start" ParticipatingElements="PTbHBwVKL7LOaG95uO4DpJ,UfOsRwsJZRLOyiXC0kVWiY,VBzUNERsWzhLFwCrBXwwP8,N0ajxaQtWLzNdA4ula9tmO">
@@ -225,6 +224,7 @@
             <Pin Id="Rdzhu4xGfccLmWgQ4vy8Q1" Name="App" Kind="OutputPin" />
             <Pin Id="V2YnhJ4l3zfPvXRRD5IoSJ" Name="Is Connected" Kind="OutputPin" Bounds="1178,890" />
             <Pin Id="FzBJKabyvPPLwp7zafDK5U" Name="Node States" Kind="OutputPin" Bounds="885,1047" />
+            <Pin Id="JindCnW0Gy1Ognyh26fk1u" Name="Known Metrics Storage" Kind="OutputPin" Bounds="1418,698" />
           </Patch>
           <Patch Id="IWuiZFwooujMNbEfCKdf8x" Name="Stop" ParticipatingElements="VLgWlhiyPFiLbhL9lImAMX,RGxsi9AnFjXMEreV57ag5L" />
           <Patch Id="B0qayyESIVaNm8FLfXA8Pr" Name="PublishNodeCommand" ParticipatingElements="SJSNbAikCtXOMOnsQmVR3y">
@@ -233,6 +233,10 @@
             <Pin Id="RPz22co4LqzPu6c8cn0dT4" Name="Edge Node Identifier" Kind="InputPin" Bounds="249,876" />
           </Patch>
           <Patch Id="Owz6QxLzO6EP4Yee9C8EdR" Name="Dispose" />
+          <Link Id="BGruNfWOzdhOavOhRoUrf5" Ids="F4FO4lbxpMtPa5PqRdZNl2,V1o64oMNdvTO1eeCLLal7c" />
+          <Link Id="GlAOi3UJit7PhL7xSx45pV" Ids="BzbUQlzJmeqQH7Cs1wYow3,VvejH9h5mHdNJTXPhFsYaa" />
+          <Link Id="SvG8990W0mYOSw0JqTZL8x" Ids="VvejH9h5mHdNJTXPhFsYaa,JindCnW0Gy1Ognyh26fk1u" IsHidden="true" />
+          <Link Id="RRs1cL4oUCZO7z7wELsUOv" Ids="BRK0YkepWLzPdXwg4QUvnZ,CmevpIdNy7PPtox9fcTu9M,QuwygGXJo2kO3evzU5t1IJ" />
         </Patch>
       </Node>
       <!--
@@ -271,6 +275,7 @@
               <Pin Id="Jpm7HLZJlrnPXgCrkZ39KD" Name="App" Kind="OutputPin" />
               <Pin Id="OthLpu9Af9vPEWeNnzgMLL" Name="Is Connected" Kind="OutputPin" />
               <Pin Id="QIgVJtkLPIbP0TyD8YZUH3" Name="Node States" Kind="OutputPin" />
+              <Pin Id="TflAisLbgQWNYJsdxHv3ag" Name="Known Metrics Storage" Kind="OutputPin" />
             </Node>
             <Node Bounds="616,682,57,26" Id="HWbkQuMMxxENpiMzbMKVIK">
               <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.Sparkplug" LastSymbolSource="VL.IO.Sparkplug.vl">
@@ -333,6 +338,7 @@
               <Pin Id="GoRIvd9A2CAQOc4TPSxcL5" Name="Input" Kind="StateInputPin" />
               <Pin Id="U4lu84uiSVYNgXcxFRvXbG" Name="Output" Kind="StateOutputPin" />
             </Node>
+            <ControlPoint Id="EcSpFr7MFe4M3sCJd1asqI" Bounds="856,590" />
           </Canvas>
           <ProcessDefinition Id="FvcSOKNFnLTNZddMR1VB9C">
             <Fragment Id="GrHsEeOELREOCw636uPkFg" Patch="Tdnk5EyAhUOMZzkTIzugG0" Enabled="true" />
@@ -388,6 +394,7 @@
             <Pin Id="GWVQBC5FwQ9NbzfWbyJHYT" Name="Application" Kind="OutputPin" Bounds="782,529" />
             <Pin Id="Iz8xk7RQ48vNdsGgS0Xm0e" Name="Is Connected" Kind="OutputPin" Bounds="796,488" />
             <Pin Id="JdTiH6jQk76QFNXf1mZXeK" Name="Node States" Kind="OutputPin" Bounds="850,588" />
+            <Pin Id="DIlcGZabHpVN0wyM8DyaxW" Name="Known Metrics Storage" Kind="OutputPin" Bounds="864,588" />
           </Patch>
           <Patch Id="J9y0Pjtvv48L7Et1rH7t66" Name="Start" ParticipatingElements="QYxzmpVZB9WMboij9GcTPl" ManuallySortedPins="true">
             <Pin Id="JP0EADOXYMzNGWwzRhWLQW" Name="Broker Address" Kind="InputPin" Bounds="250,518" />
@@ -408,6 +415,8 @@
           <Link Id="D7biv9B04P0OOMEtoc3gXv" Ids="PeqPV7yz6B6QIwFb14NYmJ,ISHt1yM245MPfk2ON0hYxg" IsHidden="true" />
           <Patch Id="H3oLySPAxX9Mr2DBNkEW3t" Name="Dispose" ParticipatingElements="FfPy05QaljnNBwWmUHCJEo" />
           <Link Id="SlEZqaju05vP6yN4fzdxAC" Ids="BbckQ5NTHx0LeFzieTtS2i,GoRIvd9A2CAQOc4TPSxcL5" />
+          <Link Id="Eno54NqbGa9OloFVVtbE8W" Ids="TflAisLbgQWNYJsdxHv3ag,EcSpFr7MFe4M3sCJd1asqI" />
+          <Link Id="RbUnGukroOUOasqnbLpf4J" Ids="EcSpFr7MFe4M3sCJd1asqI,DIlcGZabHpVN0wyM8DyaxW" IsHidden="true" />
         </Patch>
       </Node>
       <!--
@@ -526,14 +535,14 @@
     ************************ PublishDeviceData ************************
 
 -->
-      <Node Name="PublishDeviceData" Bounds="396,935,124,80" Id="JJbQC4qM9KvPAjVKbWZrYl">
+      <Node Name="PublishDeviceData" Bounds="373,930,124,80" Id="JJbQC4qM9KvPAjVKbWZrYl">
         <p:NodeReference>
           <Choice Kind="OperationDefinition" Name="Operation" />
           <CategoryReference Kind="Category" Name="Primitive" />
         </p:NodeReference>
         <p:HideCategory p:Type="Boolean">false</p:HideCategory>
         <Patch Id="TUpyKT68jYSMgSkIFfdejx" IsGeneric="true">
-          <Node Bounds="408,964,100,26" AutoConnect="true" Id="CJEKLcRYBbmPP7NzMytsHb">
+          <Node Bounds="385,959,100,26" AutoConnect="true" Id="CJEKLcRYBbmPP7NzMytsHb">
             <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Node.SparkplugNodeBase`1" LastSymbolSource="SparkplugNet.dll">
               <Choice Kind="OperationNode" Name="PublishDeviceData" />
               <FullNameCategoryReference ID="SparkplugNet.Core.Node.SparkplugNodeBase`1" />
@@ -556,14 +565,14 @@
     ************************ PublishDeviceBirthMessage ************************
 
 -->
-      <Node Name="PublishDeviceBirthMessage" Bounds="584,944,163,80" Id="GwNqUBL5yTdLpyKZrLggBM">
+      <Node Name="PublishDeviceBirthMessage" Bounds="552,931,163,80" Id="GwNqUBL5yTdLpyKZrLggBM">
         <p:NodeReference>
           <Choice Kind="OperationDefinition" Name="Operation" />
           <CategoryReference Kind="Category" Name="Primitive" />
         </p:NodeReference>
         <p:HideCategory p:Type="Boolean">false</p:HideCategory>
         <Patch Id="MQM3qHfLuLsNVAqGQB5ZoG" IsGeneric="true">
-          <Node Bounds="596,973,139,26" AutoConnect="true" Id="EfBD83Bn4xTMcL6kRiSBqn">
+          <Node Bounds="564,960,139,26" AutoConnect="true" Id="EfBD83Bn4xTMcL6kRiSBqn">
             <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Node.SparkplugNodeBase`1" LastSymbolSource="SparkplugNet.dll">
               <Choice Kind="OperationNode" Name="PublishDeviceBirthMessage" />
               <FullNameCategoryReference ID="SparkplugNet.Core.Node.SparkplugNodeBase`1" />
@@ -586,14 +595,14 @@
     ************************ PublishDeviceDeathMessage ************************
 
 -->
-      <Node Name="PublishDeviceDeathMessage" Bounds="609,1084,169,80" Id="DtYIPPTc16zP2sg6cDsP2B">
+      <Node Name="PublishDeviceDeathMessage" Bounds="769,938,169,80" Id="DtYIPPTc16zP2sg6cDsP2B">
         <p:NodeReference>
           <Choice Kind="OperationDefinition" Name="Operation" />
           <CategoryReference Kind="Category" Name="Primitive" />
         </p:NodeReference>
         <p:HideCategory p:Type="Boolean">false</p:HideCategory>
         <Patch Id="VYhBqsIKQJpQPeZ30GDCLf" IsGeneric="true">
-          <Node Bounds="621,1112,145,26" AutoConnect="true" Id="T77wg48nB4uNULHXs6l11C">
+          <Node Bounds="781,966,145,26" AutoConnect="true" Id="T77wg48nB4uNULHXs6l11C">
             <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Node.SparkplugNodeBase`1" LastSymbolSource="SparkplugNet.dll">
               <Choice Kind="OperationNode" Name="PublishDeviceDeathMessage" />
               <FullNameCategoryReference ID="SparkplugNet.Core.Node.SparkplugNodeBase`1" />
@@ -614,14 +623,14 @@
     ************************ PublishMetrics ************************
 
 -->
-      <Node Name="PublishMetrics" Bounds="371,1090,120,80" Id="IoU1DcyUcv9PvIoLyWV0l3">
+      <Node Name="PublishMetrics" Bounds="382,1077,120,80" Id="IoU1DcyUcv9PvIoLyWV0l3">
         <p:NodeReference>
           <Choice Kind="OperationDefinition" Name="Operation" />
           <CategoryReference Kind="Category" Name="Primitive" />
         </p:NodeReference>
         <p:HideCategory p:Type="Boolean">false</p:HideCategory>
         <Patch Id="J7uqVpO8Xb8PSMHjXrj3n2" IsGeneric="true">
-          <Node Bounds="383,1118,96,26" AutoConnect="true" Id="DPycZMYRgpoMa2qMdW2INH">
+          <Node Bounds="394,1105,96,26" AutoConnect="true" Id="DPycZMYRgpoMa2qMdW2INH">
             <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Node.SparkplugNodeBase`1" LastSymbolSource="SparkplugNet.dll">
               <Choice Kind="OperationNode" Name="PublishMetrics" />
               <FullNameCategoryReference ID="SparkplugNet.Core.Node.SparkplugNodeBase`1" />
@@ -798,20 +807,6 @@
             </Node>
             <Pad Id="SSXgbeDKWUyOXU3w1lUO9H" SlotId="Ix0ofiEogmbMup53Y3QmaO" Bounds="0,993" />
             <ControlPoint Id="FL0ReaK6tIRNXaAQOVnkhA" Bounds="0,1025" />
-            <Node Bounds="542,376" Id="ALlwIsbwTqbLcUpyJk4kfk">
-              <p:NodeReference LastCategoryFullName="SparkplugNet.VersionB.SparkplugNode" LastSymbolSource="SparkplugNet.dll" OverloadStrategy="AllPinsThatAreNotCommon">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="AssemblyCategory" Name="SparkplugNode" />
-                <CategoryReference Kind="AssemblyCategory" Name="SparkplugNode" NeedsToBeDirectParent="true">
-                  <p:OuterCategoryReference Kind="AssemblyCategory" Name="VersionB" NeedsToBeDirectParent="true" />
-                </CategoryReference>
-                <Choice Kind="OperationCallFlag" Name="Create" />
-                <PinReference Kind="InputPin" Name="Known Metrics Storage" />
-              </p:NodeReference>
-              <Pin Id="K20F9Z6KAmpP6LunZYajPY" Name="Known Metrics Storage" Kind="InputPin" />
-              <Pin Id="V5TS7PhEk5VP2qnH5AcklN" Name="Logger" Kind="InputPin" />
-              <Pin Id="MmEfg92vzkBMY96Lmn6F73" Name="Output" Kind="StateOutputPin" />
-            </Node>
           </Canvas>
           <ProcessDefinition Id="RnzEwMv6VeTL5PqcmVFFfa" IsHidden="true">
             <Fragment Id="SlEFgf23SfzPZrJebhn56R" Patch="ElVRPGz9K7LPh4enRjOTzo" Enabled="true" />
@@ -1058,26 +1053,6 @@
             <Pin Id="AZbca2OzGVOMilLypro7p7" Name="Cancellation Token" Kind="InputPin" Bounds="490,580" Visibility="Optional" />
           </Patch>
           <Patch Id="SsvbdSfSYlXOC4wRaQEvpm" Name="Stop" ParticipatingElements="UxZhhghBetiPVDG1kfpytg" />
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ DeviceBirthPublishingAsync ************************
-
--->
-      <Node Name="DeviceBirthPublishingAsync" Bounds="592,513,165,80" Id="VvDntIsbz5AOarj339TPDq">
-        <p:NodeReference>
-          <Choice Kind="OperationDefinition" Name="Operation" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-        <Patch Id="VD7N9NZMULELpRWGfcE4Ff" IsGeneric="true">
-          <Node Bounds="604,541,141,26" AutoConnect="true" Id="Ktsvf4hXideLGCz6eWIMQ7">
-            <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Node.SparkplugNodeBase`1" LastSymbolSource="SparkplugNet.dll">
-              <Choice Kind="OperationNode" Name="DeviceBirthPublishingAsync" />
-              <FullNameCategoryReference ID="SparkplugNet.Core.Node.SparkplugNodeBase`1" />
-            </p:NodeReference>
-          </Node>
         </Patch>
       </Node>
       <!--
@@ -1593,14 +1568,14 @@
     ************************ ParseMetric ************************
 
 -->
-      <Node Name="ParseMetric" Bounds="-655,273,754,721" Id="JyQpuADYwx6L6J8tXJ1AC9">
+      <Node Name="ParseMetric" Bounds="-681,278,712,595" Id="JyQpuADYwx6L6J8tXJ1AC9">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="OperationDefinition" Name="Operation" />
         </p:NodeReference>
         <Patch Id="SWNISppFLNsQIXF8cAa3gy">
-          <ControlPoint Id="Fgj3NY9gX3JOK4MrtySVLc" Bounds="-575,400" />
-          <ControlPoint Id="DWeTBRJsdEOPsppok1wwVt" Bounds="-459,810" />
-          <Node Bounds="-579,478,83,26" Id="UhSt0LrCrw0L6rJ5Kk5zaa">
+          <ControlPoint Id="Fgj3NY9gX3JOK4MrtySVLc" Bounds="-663,314" />
+          <ControlPoint Id="DWeTBRJsdEOPsppok1wwVt" Bounds="-533,850" />
+          <Node Bounds="-667,392,83,26" Id="UhSt0LrCrw0L6rJ5Kk5zaa">
             <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.ValueBaseVersionB" LastSymbolSource="VL.IO.Sparkplug.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="DataType" />
@@ -1609,7 +1584,7 @@
             <Pin Id="O0kli4jnJp2MfuumeUtYDw" Name="Output" Kind="StateOutputPin" />
             <Pin Id="F6hLsfU5MhHPH84YWjABV4" Name="Data Type" Kind="OutputPin" />
           </Node>
-          <Node Bounds="-378,521,65,19" Id="UC95elsGQQ8QYFXLEJZZqY">
+          <Node Bounds="-438,434,65,19" Id="UC95elsGQQ8QYFXLEJZZqY">
             <p:NodeReference LastCategoryFullName="Primitive.Enum" LastSymbolSource="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Enum2Ord" />
@@ -1617,7 +1592,7 @@
             <Pin Id="RqFSztI4VlhK98XIA7v8J5" Name="Input" Kind="StateInputPin" />
             <Pin Id="A6o3TjDSnEuOqj4dHyjbIU" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="-562,800,67,26" Id="OhltuyoMks3PaXNTWzVYZZ">
+          <Node Bounds="-142,549,67,26" Id="OhltuyoMks3PaXNTWzVYZZ">
             <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.Metric" LastSymbolSource="VL.IO.Sparkplug.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="Metric" NeedsToBeDirectParent="true" />
@@ -1627,8 +1602,8 @@
             <Pin Id="M4CJJBbQVlsPNr5VU5wbhq" Name="Output" Kind="StateOutputPin" />
             <Pin Id="SsytMxkpSK2MZ8zVhqt71i" Name="Timestamp" Kind="OutputPin" />
           </Node>
-          <ControlPoint Id="UtjTShy5MDsORQLl7zhS1P" Bounds="-498,848" />
-          <Node Bounds="-643,674,42,26" Id="Vl7IhyBLzb9NzIPILg7sZK">
+          <ControlPoint Id="UtjTShy5MDsORQLl7zhS1P" Bounds="-78,597" />
+          <Node Bounds="-669,541,42,26" Id="Vl7IhyBLzb9NzIPILg7sZK">
             <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.Metric" LastSymbolSource="VL.IO.Sparkplug.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="Metric" NeedsToBeDirectParent="true" />
@@ -1638,8 +1613,8 @@
             <Pin Id="S3x17GJTzxjNZpVGqBY33w" Name="Output" Kind="StateOutputPin" />
             <Pin Id="KtkWlUTSLf8M3pWhNn0qlg" Name="Name" Kind="OutputPin" />
           </Node>
-          <ControlPoint Id="GM9oIh4joOALXfdaUWeaZh" Bounds="-603,724" />
-          <Node Bounds="-535,579,41,26" Id="EFb8c3B7yM6P6y9SYNm7rD">
+          <ControlPoint Id="GM9oIh4joOALXfdaUWeaZh" Bounds="-629,591" />
+          <Node Bounds="-567,549,41,26" Id="EFb8c3B7yM6P6y9SYNm7rD">
             <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.Metric" LastSymbolSource="VL.IO.Sparkplug.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="Metric" NeedsToBeDirectParent="true" />
@@ -1649,7 +1624,7 @@
             <Pin Id="J5TaiVWvg96NzdsSUgCLwG" Name="Output" Kind="StateOutputPin" />
             <Pin Id="QOiZNHR8hLCQTpdHo6GQcP" Name="Value" Kind="OutputPin" />
           </Node>
-          <Pad Id="UmBSq5oNoJGPtAPtlsYrgo" Comment="iob" Bounds="-265,302,118,249" ShowValueBox="true" isIOBox="true">
+          <Pad Id="UmBSq5oNoJGPtAPtlsYrgo" Comment="iob" Bounds="-450,329,53,95" ShowValueBox="true" isIOBox="true">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="Spread" />
               <p:TypeArguments>
@@ -1659,7 +1634,7 @@
               </p:TypeArguments>
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
-              <p:maxvisibleentries p:Type="Int32">15</p:maxvisibleentries>
+              <p:maxvisibleentries p:Type="Int32">5</p:maxvisibleentries>
               <p:showentryindex p:Type="Boolean">true</p:showentryindex>
             </p:ValueBoxSettings>
             <p:Value>
@@ -1680,13 +1655,13 @@
               <Item>String</Item>
             </p:Value>
           </Pad>
-          <ControlPoint Id="JaqSMp88VRcNOcrQdSe6pN" Bounds="-196,977" />
-          <Pad Id="HNLAv3taXlcMPiPTvjxLc9" Comment="Type Code" Bounds="-101,301,117,15" ShowValueBox="true" isIOBox="true" Value="Int32">
+          <ControlPoint Id="JaqSMp88VRcNOcrQdSe6pN" Bounds="-410,856" />
+          <Pad Id="HNLAv3taXlcMPiPTvjxLc9" Comment="Type Code" Bounds="-169,306,117,15" ShowValueBox="true" isIOBox="true" Value="Int32">
             <p:TypeAnnotation LastCategoryFullName="System" LastSymbolSource="System.Runtime.dll">
               <Choice Kind="TypeFlag" Name="TypeCode" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="-102,381,73,19" Id="HbNSU2dau7IPJiqBaCbds5">
+          <Node Bounds="-170,386,73,19" Id="HbNSU2dau7IPJiqBaCbds5">
             <p:NodeReference LastCategoryFullName="Primitive.Enum" LastSymbolSource="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="EnumEntries" />
@@ -1694,7 +1669,7 @@
             <Pin Id="Bq9NhiqTrQtLT6MGxiO4wL" Name="Input" Kind="StateInputPin" />
             <Pin Id="P31iqF99OiKPoKLyjbwEOc" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="-193,856,65,19" Id="TOREwMY6jOnOa14ETU4B5P">
+          <Node Bounds="-415,644,65,19" Id="TOREwMY6jOnOa14ETU4B5P">
             <p:NodeReference LastCategoryFullName="Primitive.Enum" LastSymbolSource="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Ord2Enum" />
@@ -1702,13 +1677,7 @@
             <Pin Id="FhW3YtoSj1PMUsTdbPPVkb" Name="Input" Kind="StateInputPin" />
             <Pin Id="PQ2sOUoUDifOJ3ixdnMylz" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="O3N9r1D7IhtPdcIaOxAi0U" Comment="Result" Bounds="-375,559,35,15" ShowValueBox="true" isIOBox="true" Value="0">
-            <p:TypeAnnotation>
-              <Choice Kind="ImmutableTypeFlag" Name="Integer32" />
-              <CategoryReference Kind="Category" Name="Primitive" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Node Bounds="-267,587,52,19" Id="QFr3oVoi4dSMRkd2p0Srfm">
+          <Node Bounds="-452,464,52,19" Id="QFr3oVoi4dSMRkd2p0Srfm">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="Spread" NeedsToBeDirectParent="true" />
@@ -1719,7 +1688,7 @@
             <Pin Id="R5CGi2fYK6lLocfdyB5wvx" Name="Index" Kind="InputPin" />
             <Pin Id="NZyr2Cc6TNoPCzHUEyO7KN" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="-269,634,121,88" Id="C6j9cIgmSXXOmLFPLaopmh">
+          <Node Bounds="-465,498,121,90" Id="C6j9cIgmSXXOmLFPLaopmh">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll" LastDependency="VL.CoreLib.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -1733,7 +1702,7 @@
                 <Pin Id="TjWi6idUVvbN20p5jdw96T" Name="Index" Kind="InputPin" />
               </Patch>
               <Patch Id="NxY80DRWbouLdWuPuQfIXi" Name="Dispose" ManuallySortedPins="true" />
-              <Node Bounds="-257,659,25,19" Id="VNOIPICTy6zMDRUaUmOSaL">
+              <Node Bounds="-453,524,25,19" Id="VNOIPICTy6zMDRUaUmOSaL">
                 <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="=" />
@@ -1742,17 +1711,15 @@
                 <Pin Id="M1yp2HgfKEBM2MLKXGHiTG" Name="Input 2" Kind="InputPin" />
                 <Pin Id="NFBvFjAeL4bQG5kP72LSHt" Name="Result" Kind="OutputPin" />
               </Node>
-              <ControlPoint Id="NqwuwPfXkmnN88DWH0ua2Z" Bounds="-254,699" />
-              <ControlPoint Id="KJnsnkpkoUjLD6ZxJ7xbVW" Bounds="-202,668" />
+              <ControlPoint Id="NqwuwPfXkmnN88DWH0ua2Z" Bounds="-450,564" />
+              <ControlPoint Id="KJnsnkpkoUjLD6ZxJ7xbVW" Bounds="-398,533" />
             </Patch>
-            <ControlPoint Id="FnhqLH0wjM6QYqbjeub3Gp" Bounds="-194,641" Alignment="Top" />
-            <ControlPoint Id="OYfxhR6NkgjLPQDyGH9kPx" Bounds="-202,717" Alignment="Bottom" />
-            <ControlPoint Id="KKP2pRrMt2LLJPSOboeOob" Bounds="-165,717" Alignment="Bottom" />
-            <ControlPoint Id="M1G0UZYoXkUOooQcCDqknj" Bounds="-165,641" Alignment="Top" />
+            <ControlPoint Id="FnhqLH0wjM6QYqbjeub3Gp" Bounds="-390,505" Alignment="Top" />
+            <ControlPoint Id="OYfxhR6NkgjLPQDyGH9kPx" Bounds="-398,583" Alignment="Bottom" />
+            <ControlPoint Id="KKP2pRrMt2LLJPSOboeOob" Bounds="-361,583" Alignment="Bottom" />
+            <ControlPoint Id="M1G0UZYoXkUOooQcCDqknj" Bounds="-361,505" Alignment="Top" />
           </Node>
-          <ControlPoint Id="PEwYrGumc6cP4TnfjpEBNJ" Bounds="-449,909" />
-          <ControlPoint Id="Q1fwl6FDQoYMINMDKsHR5h" Bounds="19,869" />
-          <Node Bounds="-207,738,52,19" Id="G1ATES3KMHCOQawcQae4OT">
+          <Node Bounds="-467,606,52,19" Id="G1ATES3KMHCOQawcQae4OT">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="Spread" NeedsToBeDirectParent="true" />
@@ -1763,13 +1730,7 @@
             <Pin Id="MxsTvDLWLVfOnzI2yPP41J" Name="Index" Kind="InputPin" />
             <Pin Id="Kwvm56cx1qQP9Q5kdBJrWD" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="IOOnRmsmwpNQMFrt5Pelsl" Comment="Input" Bounds="-123,743,35,15" ShowValueBox="true" isIOBox="true" Value="17">
-            <p:TypeAnnotation>
-              <Choice Kind="ImmutableTypeFlag" Name="Integer32" />
-              <CategoryReference Kind="Category" Name="Primitive" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Node Bounds="-93,783,25,19" Id="IMze6FA9D2yLnVgt1wRLwI">
+          <Node Bounds="-467,664,25,19" Id="IMze6FA9D2yLnVgt1wRLwI">
             <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="=" />
@@ -1778,7 +1739,7 @@
             <Pin Id="DQ0ff5GwKEvMHxjBEyttEB" Name="Input 2" Kind="InputPin" DefaultValue="17" />
             <Pin Id="OrlWnKmdwOsNKx89mLzvHh" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="-106,946,45,19" Id="DzNUUMXewKhOxhL4QpFvL9">
+          <Node Bounds="-467,707,45,19" Id="DzNUUMXewKhOxhL4QpFvL9">
             <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
@@ -1789,12 +1750,12 @@
             <Pin Id="VTmUbs4HGsGLxCF7UsNbGt" Name="Input 2" Kind="InputPin" />
             <Pin Id="FlRvgpOh4drNhe7RMoWmFk" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="V4Z3SMgrTkfLKRP5dYvVDF" Comment="" Bounds="-65,902,72,15" ShowValueBox="true" isIOBox="true" Value="String">
+          <Pad Id="V4Z3SMgrTkfLKRP5dYvVDF" Comment="" Bounds="-425,689,72,15" ShowValueBox="true" isIOBox="true" Value="String">
             <p:TypeAnnotation LastCategoryFullName="System" LastSymbolSource="System.Runtime.dll">
               <Choice Kind="TypeFlag" Name="TypeCode" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="-502,636,73,19" Id="H5OpLO34tSHNLH8PbzUhtc">
+          <Node Bounds="-536,768,73,19" Id="H5OpLO34tSHNLH8PbzUhtc">
             <p:NodeReference LastCategoryFullName="System.Convert" LastSymbolSource="System.Runtime.dll" OverloadStrategy="AllPinsThatAreNotCommon">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="AssemblyCategory" Name="Convert" NeedsToBeDirectParent="true" />
@@ -1805,22 +1766,11 @@
             <Pin Id="BLYeMJratYLLlYmemawTfe" Name="Type Code" Kind="InputPin" DefaultValue="Object" />
             <Pin Id="ULN8rrdJWU0LyBALHNhLSq" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="GVTKyu9uk0ENI6eN4s114P" Comment="Type Code" Bounds="-412,592,72,15" ShowValueBox="true" isIOBox="true" Value="String">
+          <Pad Id="GVTKyu9uk0ENI6eN4s114P" Comment="Type Code" Bounds="-466,747,72,15" ShowValueBox="true" isIOBox="true" Value="String">
             <p:TypeAnnotation LastCategoryFullName="System" LastSymbolSource="System.Runtime.dll">
               <Choice Kind="TypeFlag" Name="TypeCode" />
             </p:TypeAnnotation>
           </Pad>
-          <Pin Id="BrZPfVzube0LLP8sj3GC5g" Name="Input" Kind="InputPin">
-            <p:TypeAnnotation LastCategoryFullName="VL.IO.Sparkplug" LastSymbolSource="VL.IO.Sparkplug.vl">
-              <Choice Kind="TypeFlag" Name="Metric" />
-            </p:TypeAnnotation>
-          </Pin>
-          <Pin Id="PslS5wTDBtDNbggsWW1aaL" Name="Name" Kind="OutputPin" Bounds="-1202,1036" />
-          <Pin Id="G4OYbo7MEdkO1eAzDgnNqW" Name="Timestamp" Kind="OutputPin" Bounds="-983,1041" />
-          <Pin Id="C7vAMBfxwRkP21csiYeCel" Name="Value" Kind="OutputPin" Bounds="-417,721" />
-          <Pin Id="GYjvOMR82wYM07ouzPGmrY" Name="Data Type" Kind="OutputPin" Bounds="679,982" />
-          <Pin Id="AruJFG7zSYUQCFIXEMNYH8" Name="TypeCode" Kind="OutputPin" Bounds="187,805" />
-          <Pin Id="QURVL5w40lmNF5qdsRXF0x" Name="Index" Kind="OutputPin" Bounds="896,975" />
           <Link Id="UZKdLnSgmqDMQRN6AhDKO9" Ids="BrZPfVzube0LLP8sj3GC5g,Fgj3NY9gX3JOK4MrtySVLc" IsHidden="true" />
           <Link Id="KpxhmyH2MbTNcYyB4KCjjq" Ids="DWeTBRJsdEOPsppok1wwVt,C7vAMBfxwRkP21csiYeCel" IsHidden="true" />
           <Link Id="LtwecxcF4k4LSPM9Jz894Q" Ids="F6hLsfU5MhHPH84YWjABV4,RqFSztI4VlhK98XIA7v8J5" />
@@ -1834,8 +1784,6 @@
           <Link Id="ALRNe42mv7XPyKYdwVRwHE" Ids="Fgj3NY9gX3JOK4MrtySVLc,Azd1FGaeuxAQNx9Vwp5vat" />
           <Link Id="AZNSCVkFQZJOGcxpMvJvE2" Ids="JaqSMp88VRcNOcrQdSe6pN,AruJFG7zSYUQCFIXEMNYH8" IsHidden="true" />
           <Link Id="J1OzySXE5qhQcth6K94Uy5" Ids="HNLAv3taXlcMPiPTvjxLc9,Bq9NhiqTrQtLT6MGxiO4wL" />
-          <Link Id="KemXhROGLDNMdADfOaM3RU" Ids="PQ2sOUoUDifOJ3ixdnMylz,JaqSMp88VRcNOcrQdSe6pN" />
-          <Link Id="RQ5zIMADggdPeWqCLq97cE" Ids="A6o3TjDSnEuOqj4dHyjbIU,O3N9r1D7IhtPdcIaOxAi0U" />
           <Link Id="APFi49d7jN9No6MScfByqF" Ids="UmBSq5oNoJGPtAPtlsYrgo,I54AvaNBaGgLZ7ye0EnOwN" />
           <Link Id="RxniVrefaQ5NQVvK7meHP0" Ids="A6o3TjDSnEuOqj4dHyjbIU,R5CGi2fYK6lLocfdyB5wvx" />
           <Link Id="JdXAiBdvtgjNhXZhuvrH1t" Ids="P31iqF99OiKPoKLyjbwEOc,FnhqLH0wjM6QYqbjeub3Gp" />
@@ -1847,11 +1795,7 @@
           <Link Id="JepSv7em9Z6PncTjfbm29g" Ids="KJnsnkpkoUjLD6ZxJ7xbVW,OYfxhR6NkgjLPQDyGH9kPx" />
           <Link Id="TuWyj5zAMFMMLn2ztfvztu" Ids="M1G0UZYoXkUOooQcCDqknj,KKP2pRrMt2LLJPSOboeOob" IsFeedback="true" />
           <Link Id="Q1dKrxXR1glLqYZsiAaXqP" Ids="KJnsnkpkoUjLD6ZxJ7xbVW,KKP2pRrMt2LLJPSOboeOob" />
-          <Link Id="QwFrNsJcVdFNYBPzC8itUz" Ids="F6hLsfU5MhHPH84YWjABV4,PEwYrGumc6cP4TnfjpEBNJ" />
-          <Link Id="QX3SJJ9K1syMm8vBdmkoK1" Ids="PEwYrGumc6cP4TnfjpEBNJ,GYjvOMR82wYM07ouzPGmrY" IsHidden="true" />
-          <Link Id="TXQNBOYXt9HMXpLCTJ28mL" Ids="Q1fwl6FDQoYMINMDKsHR5h,QURVL5w40lmNF5qdsRXF0x" IsHidden="true" />
           <Link Id="SXjZDAQEvSJNQNegOSGMxa" Ids="OYfxhR6NkgjLPQDyGH9kPx,NGSwbrlwTwkLN52Q8NxhZ6" />
-          <Link Id="P8JJqNVy1BaLK7UujLonIr" Ids="Kwvm56cx1qQP9Q5kdBJrWD,Q1fwl6FDQoYMINMDKsHR5h" />
           <Link Id="Dy0ttmZbsP8QbHdlv45dRh" Ids="QOiZNHR8hLCQTpdHo6GQcP,EgxpEPD2g0MMoc64iDNaBO" />
           <Link Id="HlwqFcardHSM9mLZcn3NZg" Ids="Kwvm56cx1qQP9Q5kdBJrWD,FhW3YtoSj1PMUsTdbPPVkb" />
           <Link Id="QxJCiBAkqWJNVm05L934Vy" Ids="Kwvm56cx1qQP9Q5kdBJrWD,Bcby5wUzhHkOAQfE4SzXrB" />
@@ -1861,18 +1805,26 @@
           <Link Id="VcEeyyMASc4Nto1jRF3rSS" Ids="V4Z3SMgrTkfLKRP5dYvVDF,VTmUbs4HGsGLxCF7UsNbGt" />
           <Link Id="L2MIuIoSPKwLvgclSq78el" Ids="GVTKyu9uk0ENI6eN4s114P,BLYeMJratYLLlYmemawTfe" />
           <Link Id="Vfe75eBIDFxOMwE847QjEN" Ids="ULN8rrdJWU0LyBALHNhLSq,DWeTBRJsdEOPsppok1wwVt" />
+          <Pad Id="BjLFjbu4KM7Lv0ErmSe3Gy" Bounds="-335,688,172,75" ShowValueBox="true" isIOBox="true" Value="Workaournd for Ord2Enum bug can not convert Value 17 aka string">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pin Id="BrZPfVzube0LLP8sj3GC5g" Name="Input" Kind="InputPin">
+            <p:TypeAnnotation LastCategoryFullName="VL.IO.Sparkplug" LastSymbolSource="VL.IO.Sparkplug.vl">
+              <Choice Kind="TypeFlag" Name="Metric" />
+            </p:TypeAnnotation>
+          </Pin>
+          <Pin Id="PslS5wTDBtDNbggsWW1aaL" Name="Name" Kind="OutputPin" Bounds="-1202,1036" />
+          <Pin Id="C7vAMBfxwRkP21csiYeCel" Name="Value" Kind="OutputPin" Bounds="-417,721" />
+          <Pin Id="AruJFG7zSYUQCFIXEMNYH8" Name="TypeCode" Kind="OutputPin" Bounds="187,805" Visibility="Optional" />
+          <Pin Id="G4OYbo7MEdkO1eAzDgnNqW" Name="Timestamp" Kind="OutputPin" Bounds="-983,1041" />
+          <Link Id="Nlpkpbabyw9M3D6bMfjqZX" Ids="FlRvgpOh4drNhe7RMoWmFk,JaqSMp88VRcNOcrQdSe6pN" />
         </Patch>
-      </Node>
-      <!--
-
-    ************************ Operation ************************
-
--->
-      <Node Name="Operation" Bounds="213,59,288,300" Id="NMINd1RJJA7OlcFwGbOuYp">
-        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
-          <Choice Kind="OperationDefinition" Name="Operation" />
-        </p:NodeReference>
-        <Patch Id="IgSM6ZOhlGGOOO5STfPZ7w" />
       </Node>
       <!--
 
@@ -2516,6 +2468,173 @@
             </p:TypeAnnotation>
           </Pin>
           <Pin Id="SdmSiIpkVc4L55Pa1tYZ8F" Name="Value" Kind="OutputPin" Bounds="156,710" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ ParseMetric2 ************************
+
+-->
+      <Node Name="ParseMetric2" Bounds="-1510,281,317,495" Id="QEIOEAuAF3GLYtvRsJy6yW">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+          <Choice Kind="OperationDefinition" Name="Operation" />
+        </p:NodeReference>
+        <Patch Id="OxwEV9afwiAQYxa2lwonfi">
+          <ControlPoint Id="BwHZFaOFHD2OraTNqd2ePt" Bounds="-1492,299" />
+          <ControlPoint Id="JrJQVfiH9dKMqnp0hL5s1v" Bounds="-1356,759" />
+          <Node Bounds="-1496,377,83,26" Id="AmJUZtJjPD7NzBUCh5EOzn">
+            <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.ValueBaseVersionB" LastSymbolSource="VL.IO.Sparkplug.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="DataType" />
+            </p:NodeReference>
+            <Pin Id="OU26TnLMMDzLINinkmQ7Ha" Name="Input" Kind="StateInputPin" />
+            <Pin Id="Avc8W5MxAHCM4Uwrx03ybo" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="KLQxiDRz1y9QEp959VVouO" Name="Data Type" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="-1498,526,42,26" Id="Mqaz6HCXOGaOb1OUBgXdv4">
+            <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.Metric" LastSymbolSource="VL.IO.Sparkplug.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="Metric" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="Name" />
+            </p:NodeReference>
+            <Pin Id="TBNYxnen7qjPKnSV3YUsUw" Name="Input" Kind="StateInputPin" />
+            <Pin Id="Ne54azAwqEINXS51ROVNCZ" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="JyaW2CSUnHzMDCjQwrVXH7" Name="Name" Kind="OutputPin" />
+          </Node>
+          <ControlPoint Id="PBa8usI5PV7O2274JCVuDR" Bounds="-1458,576" />
+          <Node Bounds="-1396,534,41,26" Id="EuYl07We2cQPamRO3n8uXE">
+            <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.Metric" LastSymbolSource="VL.IO.Sparkplug.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="Metric" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="Value" />
+            </p:NodeReference>
+            <Pin Id="IM8meh2bNNAQa1zxQq0RPk" Name="Input" Kind="StateInputPin" />
+            <Pin Id="Td2JHewxB7GOxFPUaU1O7c" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="CjdLI8pFmmYPK5ktisF2nM" Name="Value" Kind="OutputPin" />
+          </Node>
+          <Link Id="D6ZAo7u6hEZOB9G395iO7e" Ids="UZGvhk4SyytOfbOBhEXgoo,BwHZFaOFHD2OraTNqd2ePt" IsHidden="true" />
+          <Link Id="D7uwmSNjwvzOr4Cfs4q006" Ids="JrJQVfiH9dKMqnp0hL5s1v,J75BEPlUpNuNR1Q9SWXcb3" IsHidden="true" />
+          <Link Id="K64PTVpVBoMLOAMAmOpHPw" Ids="BwHZFaOFHD2OraTNqd2ePt,OU26TnLMMDzLINinkmQ7Ha" />
+          <Link Id="BdRmH54ajvCMp9IXr8F6pp" Ids="BwHZFaOFHD2OraTNqd2ePt,TBNYxnen7qjPKnSV3YUsUw" />
+          <Link Id="V1FFMBn0V0xMDo62TVuRAM" Ids="JyaW2CSUnHzMDCjQwrVXH7,PBa8usI5PV7O2274JCVuDR" />
+          <Link Id="VrthA1OOV4OPnBzQwYnL57" Ids="PBa8usI5PV7O2274JCVuDR,SZxHxTLCVMSNiUSvXS4BUG" IsHidden="true" />
+          <Link Id="EUBaXS9lKQWMr0QPNzETUg" Ids="BwHZFaOFHD2OraTNqd2ePt,IM8meh2bNNAQa1zxQq0RPk" />
+          <ControlPoint Id="A5kDuzOj8YkO7TrEwqvqp4" Bounds="-1262,758" />
+          <Link Id="NMWUwqoTvUMLxTFxvf1EBo" Ids="KLQxiDRz1y9QEp959VVouO,A5kDuzOj8YkO7TrEwqvqp4" />
+          <Link Id="SidXJTCwnsHL4RjaDXMxBq" Ids="A5kDuzOj8YkO7TrEwqvqp4,DGsNM8OKo2LPNDfuGat0HI" IsHidden="true" />
+          <Pin Id="UZGvhk4SyytOfbOBhEXgoo" Name="Input" Kind="InputPin">
+            <p:TypeAnnotation LastCategoryFullName="VL.IO.Sparkplug" LastSymbolSource="VL.IO.Sparkplug.vl">
+              <Choice Kind="TypeFlag" Name="Metric" />
+            </p:TypeAnnotation>
+          </Pin>
+          <Pin Id="SZxHxTLCVMSNiUSvXS4BUG" Name="Name" Kind="OutputPin" Bounds="-1202,1036" />
+          <Pin Id="J75BEPlUpNuNR1Q9SWXcb3" Name="Value" Kind="OutputPin" Bounds="-417,721" />
+          <Pin Id="DGsNM8OKo2LPNDfuGat0HI" Name="Data Type" Kind="OutputPin" Bounds="-1259,578" />
+          <Link Id="Kze8woYQ4SKO13Er05AMdj" Ids="CjdLI8pFmmYPK5ktisF2nM,JrJQVfiH9dKMqnp0hL5s1v" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ PublishDeviceCommand ************************
+
+-->
+      <Node Name="PublishDeviceCommand" Bounds="584,490,149,80" Id="QGv0rN0ESf5QWMlU091i3p">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" Name="Operation" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+        <Patch Id="Dsf5T3oKWWPNkrXvPDIIn1" IsGeneric="true">
+          <Node Bounds="596,518,125,26" AutoConnect="true" Id="PE3T6LG2mBaQPGlyLdtdHP">
+            <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Application.SparkplugApplicationBase`1" LastSymbolSource="SparkplugNet.dll">
+              <Choice Kind="OperationNode" Name="PublishDeviceCommand" />
+              <FullNameCategoryReference ID="SparkplugNet.Core.Application.SparkplugApplicationBase`1" />
+            </p:NodeReference>
+            <Pin Id="Kiy23ASN0YvOD8A1yJ9NWB" Name="Input" Kind="StateInputPin" />
+            <Pin Id="BIsXVEtYBxQLwlljN8gFaa" Name="Metrics" Kind="InputPin" />
+            <Pin Id="EoRRtxcOxjZQLfTMzzYGQf" Name="Group Identifier" Kind="InputPin" />
+            <Pin Id="A3Ps6ekIayCLkdRiXBUc6p" Name="Edge Node Identifier" Kind="InputPin" />
+            <Pin Id="EFCgHXzi5mqPz8pPqVJ6n0" Name="Device Identifier" Kind="InputPin" />
+            <Pin Id="GKqgDSOe1c5LSqyhguX36O" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="QJfEFOmS8teP4nnkUxMbEr" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pin Id="UVjpQxMVSfJMitJM0g12af" Name="Input" Kind="InputPin" />
+          <Pin Id="LIVMvL6xIHEQDvjvySqZH0" Name="Metrics" Kind="InputPin" />
+          <Pin Id="MXQzbqsHUBzODWBwVNAjid" Name="Group Identifier" Kind="InputPin" />
+          <Pin Id="RYeWqr9QHXxL2ObcIrhaPI" Name="Edge Node Identifier" Kind="InputPin" />
+          <Pin Id="JbYICmqf4QdPUPJ1sSxmY8" Name="Device Identifier" Kind="InputPin" />
+          <Pin Id="E5dnlFKsfq9Oq6tVvdBByh" Name="Output" Kind="OutputPin" />
+          <Pin Id="JvqhlWWBBktLHkhqshWeUz" Name="Result" Kind="OutputPin" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ KnownMetricsStorage ************************
+
+-->
+      <Node Name="KnownMetricsStorage" Bounds="876,371,138,80" Id="POLGv5CHOnTOyyouyNOi6c">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" Name="Operation" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+        <Patch Id="LeLZY0RoSJCLmK8EcneElQ" IsGeneric="true">
+          <Node Bounds="888,400,114,26" AutoConnect="true" Id="JWOaS3mc47FMkd6cuGfGz7">
+            <p:NodeReference LastCategoryFullName="SparkplugNet.Core.SparkplugBase`1" LastSymbolSource="SparkplugNet.dll">
+              <Choice Kind="OperationNode" Name="KnownMetricsStorage" />
+              <FullNameCategoryReference ID="SparkplugNet.Core.SparkplugBase`1" />
+            </p:NodeReference>
+            <Pin Id="P0IZflfbh52OKXvHv4H2Zu" Name="Input" Kind="StateInputPin" />
+            <Pin Id="Go1nCwa3jPtL19jdKZ7qtX" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="Ejh3ZlVyEu4M6FX6o2my1t" Name="Known Metrics Storage" Kind="OutputPin" />
+          </Node>
+          <Pin Id="F1Fp7MZFSYGNDnBIpbc4Jq" Name="Input" Kind="InputPin" />
+          <Pin Id="UeaYKbvGyr0PYANkl3qdp5" Name="Output" Kind="OutputPin" />
+          <Pin Id="GwoyHN3ECDaMm6fqC4CNkn" Name="Known Metrics Storage" Kind="OutputPin" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ KnownMetrics ************************
+
+-->
+      <Node Name="KnownMetrics" Bounds="884,497,112,80" Id="R4BH2ju4fpbMZDuMTWI8z5">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" Name="Operation" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+        <Patch Id="Q7CG83be7SaN4XlSWpoIar" IsGeneric="true">
+          <Node Bounds="896,526,80,26" AutoConnect="true" Id="QfMMcn85Kc5POIq77qqqM8">
+            <p:NodeReference LastCategoryFullName="SparkplugNet.Core.SparkplugBase`1" LastSymbolSource="SparkplugNet.dll">
+              <Choice Kind="OperationNode" Name="KnownMetrics" />
+              <FullNameCategoryReference ID="SparkplugNet.Core.SparkplugBase`1" />
+            </p:NodeReference>
+            <Pin Id="Val0ovRct67LfxTQskbch3" Name="Input" Kind="StateInputPin" />
+            <Pin Id="Gweb2b9Dl3COIbPjy0RRq5" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="NTvwyK122OyPZ6pCXMF6wJ" Name="Known Metrics" Kind="OutputPin" />
+          </Node>
+          <Pin Id="LMA3XrBd2BpQXP5OTs2iPp" Name="Input" Kind="InputPin" />
+          <Pin Id="GPPleDj4LU5MO0jzhgLkYk" Name="Output" Kind="OutputPin" />
+          <Pin Id="NEAMTQhGDnpLmNEC7yfNaJ" Name="Known Metrics" Kind="OutputPin" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ KnownMetricStorage ************************
+
+-->
+      <Node Name="KnownMetricStorage" Bounds="842,679" Id="AOpbAnexfYHOpLpkzeU21V">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="SparkplugNet.Core.SparkplugBase`1" LastSymbolSource="SparkplugNet.dll">
+          <Choice Kind="TypeFlag" Name="KnownMetricStorage" />
+        </p:TypeAnnotation>
+        <Patch Id="Sk0NdgTmtorLFNcm34z4nm">
+          <Canvas Id="BxvBUpi2OmFQKnk3cTONFl" BordersChecked="false" CanvasType="Group" />
+          <ProcessDefinition Id="NnpkVc3VfypPeNfnXB89L2" IsHidden="true" />
         </Patch>
       </Node>
     </Canvas>

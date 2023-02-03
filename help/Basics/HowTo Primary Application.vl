@@ -61,6 +61,7 @@
             <Pin Id="IFjk6w3OG4dNCebMHr3vLC" Name="Application" Kind="OutputPin" />
             <Pin Id="GlN6tBjsDiRLT4PXQSttKK" Name="Is Connected" Kind="OutputPin" />
             <Pin Id="CJtBunhF8FUOTv1x78JzbD" Name="Node States" Kind="OutputPin" />
+            <Pin Id="P3XqzUOHsG5QbdkWVH2YmV" Name="Known Metrics Storage" Kind="OutputPin" />
           </Node>
           <Pad Id="TK79RkTQtTMLKk0kr7qgib" Comment="Broker Address" Bounds="406,186,87,15" ShowValueBox="true" isIOBox="true" Value="localhost">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
@@ -190,7 +191,6 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="VeLClsHhV07LUyzjCNhDra" Comment="Node States" Bounds="912,461,190,132" ShowValueBox="true" isIOBox="true" />
           <Pad Id="EitcfPJBFTzOPu5IWdSca8" Comment="Is Primary Application" Bounds="566,116,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
@@ -200,7 +200,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Nt2TKFXdbxdLqJFV1CoCFc" Comment="Is Connected" Bounds="599,339,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Nt2TKFXdbxdLqJFV1CoCFc" Comment="Is Connected" Bounds="556,363,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="ASHWdCYsziaLoWYZD6HxMx" Comment="Scada Host Identifier" Bounds="527,88,64,15" ShowValueBox="true" isIOBox="true" Value="PrimaryApp">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
@@ -382,7 +382,7 @@
             <Pin Id="SNuuoS8YbleM26spDj3yDu" Name="Input 2" Kind="InputPin" />
             <Pin Id="UyVOhGxxEE3PZ3R9RHUE9Y" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="324,491,45,19" Id="DW2dvG1lLi0LWRXVBsx1TZ">
+          <Node Bounds="344,468,45,19" Id="DW2dvG1lLi0LWRXVBsx1TZ">
             <p:NodeReference LastCategoryFullName="Animation" LastSymbolSource="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="LFO" />
@@ -481,7 +481,6 @@
         <Link Id="EmFj8rWFw6gPgCQFfCIs64" Ids="CWdCixHHf6hMgs5KDSWcdF,PJz5nVKBCYzL3xUUCgWtwy" />
         <Link Id="VLwWQF5v69kMlftKP0vCWa" Ids="TpcBYpcX0xuO9eqR4SPcaX,Bj1KGt7LHUVMha4rWKBF7N" />
         <Link Id="CBG6VKmSmcUMT3GtEZT3N0" Ids="C1uconPo6KkQJOJTULpHrG,LwlHwnabiJrOqY2cQerWoe" />
-        <Link Id="K0EkBWrtu9GMXjQp8rxoAm" Ids="CJtBunhF8FUOTv1x78JzbD,VeLClsHhV07LUyzjCNhDra" />
         <Link Id="HXrRZXNPLw9L8Mw0LwD3zf" Ids="EitcfPJBFTzOPu5IWdSca8,PSvlIUlzHnEL9VgSxQbvJS" />
         <Link Id="BVWy2QBAAf7NXZ9KDdjXY1" Ids="IFjk6w3OG4dNCebMHr3vLC,Mxxqg5NnOO2LqhfivPgNlV" />
         <Link Id="QzpUlTOdcUiM51R1egj0f9" Ids="GlN6tBjsDiRLT4PXQSttKK,Nt2TKFXdbxdLqJFV1CoCFc" />
@@ -499,7 +498,6 @@
         <Link Id="IHQcodUYk1FPJVF2fQqNr8" Ids="BZt8FjYrPpYN1uB9JuLVt0,ONnOMqAduTbOsihDjk2BEI" />
         <Link Id="N5PzO5cMKw9LNzpyydlQid" Ids="Th6tu7jmiyKOV0HxNsYTBs,LSxGqI4K5HIOVSd9A4wOxl" />
         <Link Id="N6N5dV88dX7L62BEODhcfO" Ids="DkBa3fLLIgxM4ocHXStzjn,OQnmZ5Q1fmaNzYPNoiwzHn" />
-        <Link Id="Co9dmmgFv3cL0hA2l5smtV" Ids="VpP89C5qwqdNBQre2EE6zn,O7KXIPkTuJbQNlYutEJgED" />
         <Link Id="HsQOdKFtJNQPIdBZHCszg2" Ids="QzUwTxS26yzPA2QnSSPvKc,UO6AihgBc3nLqPidUIviRM" />
         <Link Id="Ccvx23LLdBdNXonpJSxq9A" Ids="BwUtDUZRMysNrLyXtt51eX,RmdyIGBoWs0PFSsKA73rC6" />
         <Link Id="MbY7MTRyLrNLb0MEgDnXxa" Ids="LH210z8J7wdLiAaCeiyaXq,CDVVHLDd368MI4iaUOmlOB" />
@@ -521,6 +519,7 @@
         <Link Id="EzObbrrmQsAMzbgdAvYmsG" Ids="LYWzBsuvu1WMzRjBc5guom,H6ZhV1g2L0PNcRinj0oDNh" />
         <Link Id="IGFApT6QYxEMUY3tQ8aKdt" Ids="H2PfKvHcUmSLhb80Idd1NA,GjCZH094RFDLqXcxKCNGng" />
         <Link Id="Aj5J18FiwYwOdG9BNTcp8J" Ids="FY0aYd3JyIOL4uiycrjqbY,TlP1Q3s18jgLvtezWc8XtU" />
+        <Link Id="J4DsS2tmquWNW1i9B18vx6" Ids="VpP89C5qwqdNBQre2EE6zn,O7KXIPkTuJbQNlYutEJgED" />
       </Patch>
     </Node>
   </Patch>
