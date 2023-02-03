@@ -215,7 +215,7 @@
             <Pin Id="OfdWBqMsizDO4vQ1R989vu" Name="Value" Kind="InputPin" />
             <Pin Id="HxPvqucw0lIPGfX5b5eupy" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="-132,753,85,19" Id="H5c9W0SFFXsNgRVPVYnMb4">
+          <Node Bounds="-166,743,85,19" Id="H5c9W0SFFXsNgRVPVYnMb4">
             <p:NodeReference LastCategoryFullName="Animation.FrameBased" LastSymbolSource="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Counter" />
@@ -227,8 +227,8 @@
             <Pin Id="QAL6iGkSD0uOiNuO8FyBUG" Name="Reset" Kind="ApplyPin" />
             <Pin Id="UiSwL1eApChNy9yc6rZitz" Name="Value" Kind="OutputPin" />
           </Node>
-          <Pad Id="P2kdxsjaeA3PYD2uYSFcKL" Comment="" Bounds="-129,806,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="DPXp6S68LOwMNtE7OvpZu4" Comment="Reset" Bounds="-53,692,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="P2kdxsjaeA3PYD2uYSFcKL" Comment="" Bounds="-163,796,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="DPXp6S68LOwMNtE7OvpZu4" Comment="Reset" Bounds="-87,682,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -247,7 +247,7 @@
             <Pin Id="MvBcYGZ1ySAMJVUC5RMOmj" Name="Value" Kind="OutputPin" />
             <Pin Id="HDnMj6gLDtvM9KXr9XVqag" Name="On Data" Kind="OutputPin" />
           </Node>
-          <Node Bounds="-186,495,155,165" Id="Bxnquo1XI19OSs0Ba6K2Dl">
+          <Node Bounds="-186,495,157,107" Id="Bxnquo1XI19OSs0Ba6K2Dl">
             <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.CoreLib.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ForEach" />
@@ -263,7 +263,7 @@
                 <Pin Id="QRPpIVz8ZHHM83QQVYlyoV" Name="Output" Kind="OutputPin" />
               </Patch>
               <ControlPoint Id="EciHCQbbrLTM1wTOcQ30re" Bounds="-170,503" />
-              <ControlPoint Id="ONnOMqAduTbOsihDjk2BEI" Bounds="-86,643" />
+              <ControlPoint Id="ONnOMqAduTbOsihDjk2BEI" Bounds="-84,595" />
               <Node Bounds="-174,538,92,26" Id="OSRE4BLMtaQOpTaqV5oInA">
                 <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.DeviceDataEventArgs" LastSymbolSource="VL.IO.Sparkplug.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -274,19 +274,9 @@
                 <Pin Id="UicGWkHFrNrLxp89Oq7ozt" Name="Output" Kind="StateOutputPin" />
                 <Pin Id="BZt8FjYrPpYN1uB9JuLVt0" Name="Device Identifier" Kind="OutputPin" />
               </Node>
-              <Node Bounds="-148,614,41,26" Id="Fm8D7R3KvVuLTDYKkHhlZb">
-                <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.Metric" LastSymbolSource="VL.IO.Sparkplug.vl">
-                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="ClassType" Name="Metric" />
-                  <Choice Kind="OperationCallFlag" Name="Value" />
-                </p:NodeReference>
-                <Pin Id="FJVmRmqwPOJLZcXWvgbnVD" Name="Input" Kind="StateInputPin" />
-                <Pin Id="Ul7wxF80RqbN7Bl847FVfj" Name="Output" Kind="StateOutputPin" />
-                <Pin Id="Imc6VLBx9D0PwckU8TXKLR" Name="Value" Kind="OutputPin" />
-              </Node>
             </Patch>
           </Node>
-          <Pad Id="TKvCHEX8oLoLVc5XjWafe3" Comment="" Bounds="-464,1006,241,52" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="TKvCHEX8oLoLVc5XjWafe3" Comment="" Bounds="-182,966,241,52" ShowValueBox="true" isIOBox="true" />
           <Pad Id="Th6tu7jmiyKOV0HxNsYTBs" Comment="Value" Bounds="713,784,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
@@ -317,7 +307,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="VpP89C5qwqdNBQre2EE6zn" Bounds="269,39" />
+          <Pad Id="VpP89C5qwqdNBQre2EE6zn" Bounds="275,283" />
           <Node Bounds="680,928,72,26" Id="KPgeg7wsPLmN5wgUlikYjN">
             <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.Metric" LastSymbolSource="VL.IO.Sparkplug.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -382,12 +372,12 @@
             <Pin Id="SNuuoS8YbleM26spDj3yDu" Name="Input 2" Kind="InputPin" />
             <Pin Id="UyVOhGxxEE3PZ3R9RHUE9Y" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="344,468,45,19" Id="DW2dvG1lLi0LWRXVBsx1TZ">
+          <Node Bounds="373,462,45,19" Id="DW2dvG1lLi0LWRXVBsx1TZ">
             <p:NodeReference LastCategoryFullName="Animation" LastSymbolSource="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="LFO" />
             </p:NodeReference>
-            <Pin Id="S4a5GjNSRuFOToBqSQQNVW" Name="Period" Kind="InputPin" />
+            <Pin Id="S4a5GjNSRuFOToBqSQQNVW" Name="Period" Kind="InputPin" DefaultValue="1" />
             <Pin Id="R5qZrF108hEPxhlpbRdC7X" Name="Pause" Kind="InputPin" />
             <Pin Id="PCbgQ1mTlrcMOr2g0qk4bV" Name="Reset" Kind="ApplyPin" />
             <Pin Id="FY0aYd3JyIOL4uiycrjqbY" Name="Phase" Kind="OutputPin" />
@@ -519,7 +509,7 @@
         <Link Id="EzObbrrmQsAMzbgdAvYmsG" Ids="LYWzBsuvu1WMzRjBc5guom,H6ZhV1g2L0PNcRinj0oDNh" />
         <Link Id="IGFApT6QYxEMUY3tQ8aKdt" Ids="H2PfKvHcUmSLhb80Idd1NA,GjCZH094RFDLqXcxKCNGng" />
         <Link Id="Aj5J18FiwYwOdG9BNTcp8J" Ids="FY0aYd3JyIOL4uiycrjqbY,TlP1Q3s18jgLvtezWc8XtU" />
-        <Link Id="J4DsS2tmquWNW1i9B18vx6" Ids="VpP89C5qwqdNBQre2EE6zn,O7KXIPkTuJbQNlYutEJgED" />
+        <Link Id="DTb8v8eaqeMM0BA5rv5exp" Ids="UyVOhGxxEE3PZ3R9RHUE9Y,O7KXIPkTuJbQNlYutEJgED" />
       </Patch>
     </Node>
   </Patch>
