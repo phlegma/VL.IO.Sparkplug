@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="JFcWwMkQifEN5jDg3721ob" LanguageVersion="2022.5.0-0335-51a4ee189d" Version="0.128">
-  <NugetDependency Id="VMo4HaTEkVTLtfYj9q9ZYR" Location="VL.CoreLib" Version="2022.5.0-0335-g51a4ee189d" />
+<Document xmlns:p="property" Id="JFcWwMkQifEN5jDg3721ob" LanguageVersion="2022.5.0-0574-ga3c26ef93e" Version="0.128">
+  <NugetDependency Id="VMo4HaTEkVTLtfYj9q9ZYR" Location="VL.CoreLib" Version="2022.5.0-0574-ga3c26ef93e" />
   <Patch Id="EBJpcI9XfAwLRZdOzyKrhP">
     <Canvas Id="DZ4WByYr0iQNUdSbUzWirB" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -37,7 +37,7 @@
       <Patch Id="RcdmicmnND1Pyv3TJj3de9">
         <Canvas Id="Th1wAbWQAPlMOAdCYXCkfd" CanvasType="Group">
           <Node Bounds="799,698,205,19" Id="OnYWzQ64wcaQNzVNJRFxht">
-            <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug" LastSymbolSource="VL.IO.Sparkplug.vl">
+            <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug" LastDependency="VL.IO.Sparkplug.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="EdgeNode" />
             </p:NodeReference>
@@ -47,9 +47,9 @@
             <Pin Id="J9veRNKtwwPNp99G5bDhJy" Name="Client Id" Kind="InputPin" DefaultValue="EdgeNode" />
             <Pin Id="FueVlIaBTv8LKebaZN3iv6" Name="User Name" Kind="InputPin" />
             <Pin Id="Gkln0jyWIv6OIYdckE3n7I" Name="Password" Kind="InputPin" />
-            <Pin Id="QLV79HtnEkELYdRaQMjtJY" Name="Use Tls" Kind="InputPin" />
-            <Pin Id="PSWoQt2ENezLjLS5hx5uTl" Name="Scada Host Identifier" Kind="InputPin" DefaultValue="asdf" />
-            <Pin Id="GetFQoKfkrlORcrmpJlF11" Name="Group Identifier" Kind="InputPin" DefaultValue="vvvv" />
+            <Pin Id="QLV79HtnEkELYdRaQMjtJY" Name="Use Tls" Kind="InputPin" DefaultValue="True" />
+            <Pin Id="PSWoQt2ENezLjLS5hx5uTl" Name="Scada Host Identifier" Kind="InputPin" />
+            <Pin Id="GetFQoKfkrlORcrmpJlF11" Name="Group Identifier" Kind="InputPin" DefaultValue="PLCNext" />
             <Pin Id="S3PFjo3qNn8MTkz7mkfOMt" Name="Edge Node Identifier" Kind="InputPin" DefaultValue="Node" />
             <Pin Id="FHnQRuq6JcNMam9MnU3Kz2" Name="Reconnect Interval" Kind="InputPin" />
             <Pin Id="V2wmD4zSkV6PTWhzBqu9fe" Name="Start" Kind="InputPin" />
@@ -61,8 +61,8 @@
             <Pin Id="F0EvgTliydSOAZOwRJgd7R" Name="Connected" Kind="OutputPin" />
             <Pin Id="Aywci5WDs5fMEwCuNNEn0c" Name="Node" Kind="OutputPin" />
           </Node>
-          <Node Bounds="799,363,65,26" Id="HayoH9SPywXLiuuUFrH9VZ">
-            <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.Metric" LastSymbolSource="VL.IO.Sparkplug.vl" OverloadStrategy="AllPinsThatAreNotCommon">
+          <Node Bounds="781,178,65,26" Id="HayoH9SPywXLiuuUFrH9VZ">
+            <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.Metric" LastDependency="VL.IO.Sparkplug.vl" OverloadStrategy="AllPinsThatAreNotCommon">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="Metric" />
               <Choice Kind="OperationCallFlag" Name="Create" />
@@ -77,8 +77,8 @@
             <Pin Id="EbLdkF7jcipOGiWr73OJa0" Name="Timestamp" Kind="InputPin" />
             <Pin Id="Azocm9JjZStN7LXC8wt7tl" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="800,402,65,26" Id="PZG7pKMAfncNdLBmaklcw4">
-            <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.CoreLib.vl">
+          <Node Bounds="782,217,65,26" Id="PZG7pKMAfncNdLBmaklcw4">
+            <p:NodeReference LastCategoryFullName="Collections.Sequence" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="MutableInterfaceType" Name="Sequence" NeedsToBeDirectParent="true" />
               <Choice Kind="OperationCallFlag" Name="FromValue" />
@@ -86,14 +86,14 @@
             <Pin Id="AE7z0hePfAHLqoqy1g32Oz" Name="Input" Kind="InputPin" />
             <Pin Id="TeSE8ZhLeyVLZqvybAfGIo" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="ApTRIlZepyFPZTS4v1YKsh" Comment="Value" Bounds="841,320,35,15" ShowValueBox="true" isIOBox="true" Value="0.31">
-            <p:TypeAnnotation>
+          <Pad Id="ApTRIlZepyFPZTS4v1YKsh" Comment="Value" Bounds="823,135,35,15" ShowValueBox="true" isIOBox="true" Value="0.31">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Float32" />
               <CategoryReference Kind="Category" Name="Primitive" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="TR3AZZCdRoAOgiW0PNNKuj" Comment="Start" Bounds="1021,555,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
             </p:TypeAnnotation>
@@ -102,7 +102,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="BZYVwU20AjKNSuiiVRTs2C" Comment="Stop" Bounds="1096,611,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
             </p:TypeAnnotation>
@@ -111,18 +111,8 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="K4DeydZoY8pNaTHGKhZZQf" SlotId="FqGJkFfUPkqNYn4wbXtxAP" Bounds="1734,578" />
-          <Pad Id="MoLf4wyvzFkQNPnq13Yo00" Comment="Broker Address" Bounds="822,609,63,15" ShowValueBox="true" isIOBox="true" Value="localhost">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="G8cVwaz5sk7M7HKcvVoLFd" Comment="Port" Bounds="842,640,42,18" ShowValueBox="true" isIOBox="true" Value="1883">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="Integer32" />
-            </p:TypeAnnotation>
-          </Pad>
           <Node Bounds="1547,1006,106,80" Id="PMaSXJtr96sPVWP4pW4lZN">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll" LastDependency="VL.CoreLib.vl">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <CategoryReference Kind="Category" Name="Primitive" />
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -132,7 +122,7 @@
               <Patch Id="RgCLHEXvvw6LwZerZ1Ap9D" Name="Create" ManuallySortedPins="true" />
               <Patch Id="PxWI8geV4NHNuxWgS3z6um" Name="Then" ManuallySortedPins="true" />
               <Node Bounds="1559,1035,82,26" Id="M9WAPMFShHTNcPXk4eSSka">
-                <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug" LastSymbolSource="VL.IO.Sparkplug.vl">
+                <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug" LastDependency="VL.IO.Sparkplug.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="PublishMetrics" />
                 </p:NodeReference>
@@ -144,7 +134,7 @@
             </Patch>
           </Node>
           <Pad Id="DY9dTfvXWeRN2zvWe4YSe6" Comment="Condition" Bounds="1549,941,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
             </p:TypeAnnotation>
@@ -152,16 +142,16 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="934,296,36,19" Id="Bg6hXkB6rCiNq9zHdwqKzs">
-            <p:NodeReference LastCategoryFullName="System.DateTime (UTC)" LastSymbolSource="VL.CoreLib.vl">
+          <Node Bounds="916,111,36,19" Id="Bg6hXkB6rCiNq9zHdwqKzs">
+            <p:NodeReference LastCategoryFullName="System.DateTime (UTC)" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="DateTime (UTC)" />
               <Choice Kind="OperationCallFlag" Name="Now" />
             </p:NodeReference>
             <Pin Id="SkspB8CzDasPVWHZIBovnp" Name="Now" Kind="OutputPin" />
           </Node>
-          <Node Bounds="933,330,46,26" Id="JP6KMnFBNbiNA9Ar0x5SM5">
-            <p:NodeReference LastCategoryFullName="Primitive.Nullable" LastSymbolSource="VL.CoreLib.vl">
+          <Node Bounds="915,145,46,26" Id="JP6KMnFBNbiNA9Ar0x5SM5">
+            <p:NodeReference LastCategoryFullName="Primitive.Nullable" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="Nullable" />
               <Choice Kind="OperationCallFlag" Name="Create" />
@@ -170,7 +160,7 @@
             <Pin Id="PWB3gf3cymbNgjQx2ivk3x" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="1687,1007,126,80" Id="S7eMhnguRllP4lHq3kGPoA">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll" LastDependency="VL.CoreLib.vl">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <CategoryReference Kind="Category" Name="Primitive" />
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -180,7 +170,7 @@
               <Patch Id="RktUWqZXWT3PxZRLbedQCR" Name="Create" ManuallySortedPins="true" />
               <Patch Id="J2XVGpyCb9hQXw69xNPmWd" Name="Then" ManuallySortedPins="true" />
               <Node Bounds="1701,1036,100,26" Id="NogmqzBFmLFMnU1vFxF1hp">
-                <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug" LastSymbolSource="VL.IO.Sparkplug.vl">
+                <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug" LastDependency="VL.IO.Sparkplug.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="PublishDeviceData" />
                 </p:NodeReference>
@@ -193,7 +183,7 @@
             </Patch>
           </Node>
           <Pad Id="VNHA6lCrutBLbb4KTyvOFe" Comment="Condition" Bounds="1690,941,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
             </p:TypeAnnotation>
@@ -201,13 +191,13 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Lk8ebWqj2L2QAq0kJ4bSi6" Comment="" Bounds="1796,853,76,15" ShowValueBox="true" isIOBox="true" Value="Device">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+          <Pad Id="Lk8ebWqj2L2QAq0kJ4bSi6" Comment="" Bounds="1796,853,76,15" ShowValueBox="true" isIOBox="true" Value="vvvvDevice">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="1870,1012,163,80" Id="GnggAOtqVh2LbbZQ9NhFYN">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll" LastDependency="VL.CoreLib.vl">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <CategoryReference Kind="Category" Name="Primitive" />
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -217,7 +207,7 @@
               <Patch Id="JRefQTIHkqcL7jzcjHmFKV" Name="Create" ManuallySortedPins="true" />
               <Patch Id="Co31duDK9ORPoh0bkcXAMx" Name="Then" ManuallySortedPins="true" />
               <Node Bounds="1882,1041,139,26" Id="JXBSnbiCwQ2PR50DG2pkCI">
-                <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug" LastSymbolSource="VL.IO.Sparkplug.vl">
+                <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug" LastDependency="VL.IO.Sparkplug.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="PublishDeviceBirthMessage" />
                 </p:NodeReference>
@@ -229,8 +219,8 @@
               </Node>
             </Patch>
           </Node>
-          <Pad Id="Txo7i8xY931P1t6vNvPWgX" Comment="Condition" Bounds="1871,966,46,32" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+          <Pad Id="Txo7i8xY931P1t6vNvPWgX" Comment="Condition" Bounds="1871,928,46,32" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
             </p:TypeAnnotation>
@@ -239,7 +229,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="2093,1006,171,80" Id="Td9irSYrY6sOPybSz4q3rO">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll" LastDependency="VL.CoreLib.vl">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <CategoryReference Kind="Category" Name="Primitive" />
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -249,7 +239,7 @@
               <Patch Id="NMWRAmwVUUPNxfG3oa5ziV" Name="Create" ManuallySortedPins="true" />
               <Patch Id="IDMzLVr4DfvMjzSactmuWj" Name="Then" ManuallySortedPins="true" />
               <Node Bounds="2107,1035,145,26" Id="MMEgRrRAHiFQDpoiFwRLA1">
-                <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug" LastSymbolSource="VL.IO.Sparkplug.vl">
+                <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug" LastDependency="VL.IO.Sparkplug.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="PublishDeviceDeathMessage" />
                 </p:NodeReference>
@@ -261,7 +251,7 @@
             </Patch>
           </Node>
           <Pad Id="MjBxriIkA5eMZbDHe2TRZm" Comment="Condition" Bounds="2091,921,46,32" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
             </p:TypeAnnotation>
@@ -270,12 +260,12 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="UZObPOSryh0NRZuXmHlu4q" Comment="Edge Node Identifier" Bounds="982,667,75,16" ShowValueBox="true" isIOBox="true" Value="vvvvNode">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="554,960,65,19" Id="Lqv2AZk2VzuQTy5Xi6v8xo">
-            <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.CoreLib.vl">
+            <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
               <Choice Kind="ProcessAppFlag" Name="S+H" />
@@ -285,7 +275,7 @@
             <Pin Id="FaABkaVOX9KOlBaRYQI5cG" Name="On Data" Kind="OutputPin" />
           </Node>
           <Node Bounds="553,836,171,75" Id="BkEpRwMfMCROAeuHaFlUyD">
-            <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.CoreLib.vl">
+            <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ForEach" />
               <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
@@ -302,7 +292,7 @@
               <ControlPoint Id="MTthz221TX4MXm4mII2p8L" Bounds="567,844" />
               <ControlPoint Id="PS055LJHct0QJbEbI5iICX" Bounds="669,904" />
               <Node Bounds="565,859,107,26" Id="LK0E97eybsLNGkTQAqDzPq">
-                <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.NodeCommandEventArgs" LastSymbolSource="VL.IO.Sparkplug.vl">
+                <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.NodeCommandEventArgs" LastDependency="VL.IO.Sparkplug.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="ClassType" Name="NodeCommandEventArgs" />
                   <Choice Kind="OperationCallFlag" Name="Metric" />
@@ -314,7 +304,7 @@
             </Patch>
           </Node>
           <Node Bounds="1012,798,85,19" Id="PzTQofiYNKrO87ycbgn9La">
-            <p:NodeReference LastCategoryFullName="Animation.FrameBased" LastSymbolSource="VL.CoreLib.vl">
+            <p:NodeReference LastCategoryFullName="Animation.FrameBased" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Counter" />
             </p:NodeReference>
@@ -327,7 +317,7 @@
           </Node>
           <Pad Id="JPBfbDCzX72OnpE0xuiR1I" Comment="" Bounds="1014,857,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="MCYQw263a0lPm29mcC6rj2" Comment="Reset" Bounds="1094,755,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
             </p:TypeAnnotation>
@@ -336,7 +326,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="992,757,65,19" Id="T90ExWBXdxlMdVn9WoPZuP">
-            <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.CoreLib.vl">
+            <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
             </p:NodeReference>
@@ -345,13 +335,8 @@
             <Pin Id="JMIuKdJy2GaNliAKLJapSn" Name="Value" Kind="OutputPin" />
             <Pin Id="TUw3PnO7X33OYZlV3IEWRP" Name="On Data" Kind="OutputPin" />
           </Node>
-          <Pad Id="QZ8aeyM9gsKPcXmHApN9Jo" Comment="Scada Host Identifier" Bounds="939,524,110,15" ShowValueBox="true" isIOBox="true" Value="PrimaryApp">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-          </Pad>
           <Node Bounds="261,826,89,100" Id="L0Nw4XJWS1wPyb3SdXSpa9">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll" LastDependency="VL.CoreLib.vl">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <CategoryReference Kind="Category" Name="Primitive" />
               <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
@@ -362,7 +347,7 @@
               <Patch Id="A7cPlHrXUEnOTvUeRfcZIE" Name="Update" ManuallySortedPins="true" />
               <Patch Id="ICRPa4VtPEqOeuTtFReDCG" Name="Dispose" ManuallySortedPins="true" />
               <Node Bounds="276,849,62,26" Id="CvtXGiRmCKzNVENEZrLpBk">
-                <p:NodeReference LastCategoryFullName="Collections.Common.KeyValuePair" LastSymbolSource="VL.CoreLib.vl">
+                <p:NodeReference LastCategoryFullName="Collections.Common.KeyValuePair" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="ClassType" Name="KeyValuePair" />
                   <Choice Kind="OperationCallFlag" Name="Split" />
@@ -381,7 +366,7 @@
             </p:Value>
           </Pad>
           <Node Bounds="540,1008,151,71" Id="N5evohu92lgP15fuFrNtlA">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll" LastDependency="VL.CoreLib.vl">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <CategoryReference Kind="Category" Name="Primitive" />
               <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
@@ -396,7 +381,7 @@
               <Patch Id="Hq7LUbVXedNLWOtRnH9FzP" Name="Update" ManuallySortedPins="true" />
               <Patch Id="T4ANvEAG21ML8BoODczebR" Name="Dispose" ManuallySortedPins="true" />
               <Node Bounds="552,1034,125,19" Id="AvBOkqIRQ7ILp6rOtyVYsq">
-                <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug" LastSymbolSource="VL.IO.Sparkplug.vl" OverloadStrategy="AllPinsThatAreNotCommon">
+                <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug" LastDependency="VL.IO.Sparkplug.vl" OverloadStrategy="AllPinsThatAreNotCommon">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="ParseMetric" />
                   <PinReference Kind="OutputPin" Name="Data Type" />
@@ -414,7 +399,7 @@
             <p:Value />
           </Pad>
           <Node Bounds="1018,604,30,19" Id="Voyi8ueA8uON1Aue9TiLjB">
-            <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="VL.CoreLib.vl">
+            <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="OR" />
             </p:NodeReference>
@@ -423,7 +408,7 @@
             <Pin Id="BTUscW9NHCBMzOKK9KljJC" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="1098,561,54,19" Id="JP5W9da6uhmOnF5AZFk0HF">
-            <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="VL.CoreLib.vl">
+            <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OnOpen" />
             </p:NodeReference>
@@ -432,7 +417,7 @@
           </Node>
           <Pad Id="QCdYWlqmqeTOZncZTFRaBJ" Comment="" Bounds="598,1205,141,96" ShowValueBox="true" isIOBox="true" Value="0" />
           <Node Bounds="696,1009,85,19" Id="U80Vu6cFSwAQF2En4CJjkk">
-            <p:NodeReference LastCategoryFullName="Animation.FrameBased" LastSymbolSource="VL.CoreLib.vl">
+            <p:NodeReference LastCategoryFullName="Animation.FrameBased" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Counter" />
             </p:NodeReference>
@@ -444,41 +429,8 @@
             <Pin Id="QNXiiGhamG9Ms0cVmO4WGf" Name="Value" Kind="OutputPin" />
           </Node>
           <Pad Id="K9idgNTMPebMqEibBW4xDE" Bounds="698,1050,35,15" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="929,1222,65,19" Id="Tg3EHIyx02MM7zitg7ZEu1">
-            <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug" LastSymbolSource="VL.IO.Sparkplug.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="Parse (Generic)" />
-            </p:NodeReference>
-            <Pin Id="LL9A5d4UmuQMo4CFFtnjfC" Name="Input" Kind="InputPin" />
-            <Pin Id="T1p6omqGaZhOgCbBe3ct2h" Name="Name" Kind="OutputPin" />
-            <Pin Id="DiAEeCAtkQFOoLEKlQJbBb" Name="Value" Kind="OutputPin" />
-            <Pin Id="Q22l0QdCdngPJx0STWc59A" Name="Data Type" Kind="OutputPin" />
-            <Pin Id="PmLm0D60IvrM23MW1eEPD2" Name="Timestamp" Kind="OutputPin" />
-          </Node>
-          <Node Bounds="1160,1235,65,19" Id="DOungavgm3oLxi1WiYtqNf">
-            <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug" LastSymbolSource="VL.IO.Sparkplug.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="Parse (Generic)" />
-            </p:NodeReference>
-            <Pin Id="C6fb4ERdLD1OlOOERHzxYH" Name="Input" Kind="InputPin" />
-            <Pin Id="TKRdt6yQOxKLnVTzeDozOq" Name="Name" Kind="OutputPin" />
-            <Pin Id="NhGD4z5ZYtSQcSNVRqx1DU" Name="Value" Kind="OutputPin" />
-            <Pin Id="DPi49EdNDZAPlm4deY0mdK" Name="Data Type" Kind="OutputPin" />
-            <Pin Id="Qkkx9Yb1TRULrkLTNsALnZ" Name="Timestamp" Kind="OutputPin" />
-          </Node>
-          <Pad Id="Qe2xg0PUvqULb97esNMnxr" Comment="Value" Bounds="1183,1306,92,15" ShowValueBox="true" isIOBox="true" Value="0">
-            <p:TypeAnnotation>
-              <Choice Kind="ImmutableTypeFlag" Name="Float32" />
-              <CategoryReference Kind="Category" Name="Primitive" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:precision p:Type="Int32">11</p:precision>
-              <p:stepsize p:Type="Single">0.01</p:stepsize>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="IOmt6UwMUstLdpcuZkU7jv" Comment="Name" Bounds="1162,1279,60,15" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="928,1186,65,19" Id="KVmbql9fQPnQDLfPBsGLdY">
-            <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.CoreLib.vl">
+            <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
             </p:NodeReference>
@@ -488,7 +440,7 @@
             <Pin Id="Aldao5vOwI4QaYkscx6sI5" Name="On Data" Kind="OutputPin" />
           </Node>
           <Node Bounds="1161,1199,65,19" Id="Mbkhrr6KAAeNUNhFRZOVsI">
-            <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.CoreLib.vl">
+            <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
             </p:NodeReference>
@@ -498,7 +450,7 @@
             <Pin Id="E5IzJJOSyS2QGG6GxrFNdT" Name="On Data" Kind="OutputPin" />
           </Node>
           <Node Bounds="1162,1149,97,19" Id="D4Tv4nii10zONKLvckFtan">
-            <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug" LastSymbolSource="VL.IO.Sparkplug.vl">
+            <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug" LastDependency="VL.IO.Sparkplug.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="GetMetricbyName" />
             </p:NodeReference>
@@ -507,12 +459,12 @@
             <Pin Id="B18pW13rGsQLmcVx9KZuBK" Name="Result" Kind="OutputPin" />
           </Node>
           <Pad Id="TlcmBVXXhrAPGxbQaXFpP4" Comment="Name" Bounds="1256,1129,98,17" ShowValueBox="true" isIOBox="true" Value="Temprature">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="929,1149,97,19" Id="SYB2XUPr9KMLhyCuaNV9GP">
-            <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug" LastSymbolSource="VL.IO.Sparkplug.vl">
+            <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug" LastDependency="VL.IO.Sparkplug.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="GetMetricbyName" />
             </p:NodeReference>
@@ -521,7 +473,7 @@
             <Pin Id="UDA4SbdTNHDP3vo7yMJjOo" Name="Result" Kind="OutputPin" />
           </Node>
           <Pad Id="PWoagDuphCMO1mJpY9ni5I" Comment="Name" Bounds="1023,1128,105,15" ShowValueBox="true" isIOBox="true" Value="Node Control/Rebirth">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
@@ -530,24 +482,13 @@
               <Item></Item>
             </p:Value>
           </Pad>
-          <Pad Id="OKFfsLovdn3MJi12Zk8XlF" Comment="Data Type" Bounds="1205,1335,96,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="FdBaR1SupeUNHzDHP2hwiZ" Comment="Timestamp" Bounds="1227,1364,68,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="PnGyZ11xMLBO2Tppg6mdGj" Comment="Name" Bounds="933,1276,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="C6JYEoGo96hL3ZNQ7ezGFb" Comment="Value" Bounds="954,1319,35,15" ShowValueBox="true" isIOBox="true" Value="text">
-            <p:TypeAnnotation>
-              <Choice Kind="ImmutableTypeFlag" Name="String" />
-              <CategoryReference Kind="Category" Name="Primitive" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="CODI2t3I4BbODwAnlMmg8S" Comment="Data Type" Bounds="974,1362,96,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="SucrsuFACuFQAYp9RE0O4K" Comment="Timestamp" Bounds="994,1391,68,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="PS3CB5RtSmAQZwhxye9919" Comment="" Bounds="637,1324,96,65" ShowValueBox="true" isIOBox="true">
             <p:Value>
               <Item>Unknown</Item>
             </p:Value>
           </Pad>
           <Node Bounds="1932,500,82,87" Id="HrbwqhKf1q8NR3kZqLAAzB">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll" LastDependency="VL.CoreLib.vl">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <CategoryReference Kind="Category" Name="Primitive" />
               <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
@@ -558,7 +499,7 @@
               <Patch Id="RDiLa9aqT64LDV3k5JtJFT" Name="Update" ManuallySortedPins="true" />
               <Patch Id="GI8oz9QAkGoOLNM7yQ4Sov" Name="Dispose" ManuallySortedPins="true" />
               <Node Bounds="1945,535,57,26" Id="RUMQ6xWUszaMC4W28qZAVW">
-                <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableList" LastSymbolSource="VL.CoreLib.vl">
+                <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableList" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="ClassType" Name="MutableList" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="Add" />
@@ -573,6 +514,109 @@
             <ControlPoint Id="VBi6OcIvmLCLv8PPX0MlA5" Bounds="1946,507" Alignment="Top" />
           </Node>
           <Pad Id="DTy3zeuULmgLb9FUeH31p5" Bounds="1946,629" />
+          <Node Bounds="915,1240,221,219" Id="HdW77uVP3dGP15utIzWihr">
+            <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Control" />
+              <Choice Kind="ProcessAppFlag" Name="Try" />
+            </p:NodeReference>
+            <Patch Id="EdmtYxi0GmiPyeQPJYMH72" ManuallySortedPins="true">
+              <Patch Id="HIX0XRWuaR4LJXgYK6ump8" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="OdaKEwHwZxbNCEU8KTCJ3U" Name="Update" ManuallySortedPins="true" />
+              <Node Bounds="927,1263,65,19" Id="Tg3EHIyx02MM7zitg7ZEu1">
+                <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug" LastDependency="VL.IO.Sparkplug.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Parse (Generic)" />
+                </p:NodeReference>
+                <Pin Id="LL9A5d4UmuQMo4CFFtnjfC" Name="Input" Kind="InputPin" />
+                <Pin Id="T1p6omqGaZhOgCbBe3ct2h" Name="Name" Kind="OutputPin" />
+                <Pin Id="DiAEeCAtkQFOoLEKlQJbBb" Name="Value" Kind="OutputPin" />
+                <Pin Id="Q22l0QdCdngPJx0STWc59A" Name="Data Type" Kind="OutputPin" />
+                <Pin Id="PmLm0D60IvrM23MW1eEPD2" Name="Timestamp" Kind="OutputPin" />
+              </Node>
+              <Pad Id="PnGyZ11xMLBO2Tppg6mdGj" Comment="Name" Bounds="931,1317" ShowValueBox="true" isIOBox="true" />
+              <Pad Id="C6JYEoGo96hL3ZNQ7ezGFb" Comment="Value" Bounds="952,1360" ShowValueBox="true" isIOBox="true" Value="text">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="ImmutableTypeFlag" Name="String" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Pad Id="CODI2t3I4BbODwAnlMmg8S" Comment="Data Type" Bounds="972,1403" ShowValueBox="true" isIOBox="true" />
+              <Pad Id="SucrsuFACuFQAYp9RE0O4K" Comment="Timestamp" Bounds="992,1432" ShowValueBox="true" isIOBox="true" />
+            </Patch>
+            <Pin Id="C7cyJD66n99PfNCJPBC9Vv" Name="Stick To Last Valid Outputs" Kind="InputPin" />
+            <Pin Id="GH43exLmKwcQPb5nkfrxbM" Name="Reset Region On Failure" Kind="InputPin" />
+            <Pin Id="Jq7dyCuA8XmMF9OFctFrSx" Name="Success" Kind="OutputPin" />
+            <Pin Id="ATEvXyytTBJNL3fCePaVGJ" Name="Failure" Kind="OutputPin" />
+            <Pin Id="CDdNFlsLZBcNtiMEUKbLNV" Name="Error Message" Kind="OutputPin" />
+            <Pin Id="NG5s9xqpytiP1yUbeZdml6" Name="Exceptions" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="1182,1252,235,180" Id="P7l7UB8STBwLcT7RPQmOeU">
+            <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Control" />
+              <Choice Kind="ProcessAppFlag" Name="Try" />
+            </p:NodeReference>
+            <Patch Id="TeBcIZ4Kk8eMikzESi3Tzv" ManuallySortedPins="true">
+              <Patch Id="Hj8s7WJCC8yLlDWWu7fHuw" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="D09hqK6qVs5MxWZu4fn3km" Name="Update" ManuallySortedPins="true" />
+              <Node Bounds="1196,1275,65,19" Id="DOungavgm3oLxi1WiYtqNf">
+                <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug" LastDependency="VL.IO.Sparkplug.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Parse (Generic)" />
+                </p:NodeReference>
+                <Pin Id="C6fb4ERdLD1OlOOERHzxYH" Name="Input" Kind="InputPin" />
+                <Pin Id="TKRdt6yQOxKLnVTzeDozOq" Name="Name" Kind="OutputPin" />
+                <Pin Id="NhGD4z5ZYtSQcSNVRqx1DU" Name="Value" Kind="OutputPin" />
+                <Pin Id="DPi49EdNDZAPlm4deY0mdK" Name="Data Type" Kind="OutputPin" />
+                <Pin Id="Qkkx9Yb1TRULrkLTNsALnZ" Name="Timestamp" Kind="OutputPin" />
+              </Node>
+              <Pad Id="Qe2xg0PUvqULb97esNMnxr" Comment="Value" Bounds="1219,1346,82,15" ShowValueBox="true" isIOBox="true" Value="0">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="ImmutableTypeFlag" Name="Float32" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                </p:TypeAnnotation>
+                <p:ValueBoxSettings>
+                  <p:precision p:Type="Int32">11</p:precision>
+                  <p:stepsize p:Type="Single">0.01</p:stepsize>
+                </p:ValueBoxSettings>
+              </Pad>
+              <Pad Id="IOmt6UwMUstLdpcuZkU7jv" Comment="Name" Bounds="1198,1319,35,15" ShowValueBox="true" isIOBox="true" />
+              <Pad Id="OKFfsLovdn3MJi12Zk8XlF" Comment="Data Type" Bounds="1241,1375,96,15" ShowValueBox="true" isIOBox="true" />
+              <Pad Id="FdBaR1SupeUNHzDHP2hwiZ" Comment="Timestamp" Bounds="1263,1404,35,15" ShowValueBox="true" isIOBox="true" />
+            </Patch>
+            <Pin Id="Fy31iCCN5H8QR5acx3vgBr" Name="Stick To Last Valid Outputs" Kind="InputPin" />
+            <Pin Id="PgQRQtnseccPjZjSpVcMlT" Name="Reset Region On Failure" Kind="InputPin" />
+            <Pin Id="SwamLemcnE1LnfeQ70k179" Name="Success" Kind="OutputPin" />
+            <Pin Id="KK7W1fFa5zsOuTNFWR63W8" Name="Failure" Kind="OutputPin" />
+            <Pin Id="BiWxoXUfABdQMWv7bkJU4k" Name="Error Message" Kind="OutputPin" />
+            <Pin Id="Dfgo9exKty4OTKCgEETnID" Name="Exceptions" Kind="OutputPin" />
+          </Node>
+          <Pad Id="PcdYIjyFMGRNfpYX1UlPvI" Comment="Broker Address" Bounds="814,333,304,15" ShowValueBox="true" isIOBox="true" Value="f0af03455d7d487dac61ebdda80cd23f.s2.eu.hivemq.cloud">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="OjsQZF4magtMiOTpl0pJxs" Comment="Port" Bounds="835,358,35,15" ShowValueBox="true" isIOBox="true" Value="8883">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="BWgxQPYnE27MCeG6KVBfHU" Comment="Client Id" Bounds="855,384,162,18" ShowValueBox="true" isIOBox="true" Value="basescreen_solarpower_Node">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="NbTZeFd5Pr0PrUFc08LuZu" Comment="User Name" Bounds="875,407,157,16" ShowValueBox="true" isIOBox="true" Value="basescreen_solarpower">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Q8ms4ufACALMMFow0hd8EY" Comment="Password" Bounds="896,437,103,15" ShowValueBox="true" isIOBox="true" Value="bssolar2023">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
         </Canvas>
         <Patch Id="UMHvqj8Id8pO2ddYAbC8xP" Name="Create" ParticipatingElements="Bg6hXkB6rCiNq9zHdwqKzs,UkssJRE0jtaPtklU6x4ghc" />
         <Patch Id="SUuys83bkbYO7pfz05VSQu" Name="Update" ParticipatingElements="K2krtbSRQleNmPJKWUXWl4" />
@@ -586,8 +630,6 @@
         <Link Id="VanK79Au4LHOKQ6yxqRUHX" Ids="BZYVwU20AjKNSuiiVRTs2C,ILeNqKKoakIOS5bprEWjDh" />
         <Slot Id="FqGJkFfUPkqNYn4wbXtxAP" Name="Result" />
         <Link Id="EvAx4v8fezSLTlqxPm78XZ" Ids="TeSE8ZhLeyVLZqvybAfGIo,K4DeydZoY8pNaTHGKhZZQf" />
-        <Link Id="G5rRfiH0g5qQH4al1NpiBB" Ids="MoLf4wyvzFkQNPnq13Yo00,Dlb1EDqbMZjLnHKddo5IDk" />
-        <Link Id="Ix81A54AnDOPFiUyya2015" Ids="G8cVwaz5sk7M7HKcvVoLFd,O1QrS0Qs3Z4L1tmOrCtbXY" />
         <Link Id="VdOCsKw5gPnMXWYus7jXWk" Ids="K4DeydZoY8pNaTHGKhZZQf,SvgizkhDIpDQV1A3XIpvNR" />
         <Link Id="EbPooyXxd6bMyJhZPNfhak" Ids="Aywci5WDs5fMEwCuNNEn0c,SebMvqOjEQOLRu9rVXZ4re" />
         <Link Id="BL33PIF8A8XOcwRFM2IUOk" Ids="DY9dTfvXWeRN2zvWe4YSe6,UbJ1vlVLv1YOloEbmhmwjR" />
@@ -612,7 +654,6 @@
         <Link Id="Tf8BpQOA6oSOX94ERZVOFl" Ids="F0EvgTliydSOAZOwRJgd7R,VTHMEIQQJbhMxtNCNB3lLC" />
         <Link Id="P7fpCH4kLK2NaIk9trT8KF" Ids="MTthz221TX4MXm4mII2p8L,ErYvovkcLZGQWvP6PfIRIt" />
         <Link Id="OnreS8N7hgGOadnH5eqXuG" Ids="K4DeydZoY8pNaTHGKhZZQf,CNW4BT3Ln8xPKqnFu7zZ5Y" />
-        <Link Id="JOcjlCBSzOfQI6w4mAMMxk" Ids="QZ8aeyM9gsKPcXmHApN9Jo,PSWoQt2ENezLjLS5hx5uTl" />
         <Slot Id="RHxvsuXJ9aYO2BawQnFNGl" Name="Output" />
         <Link Id="K2krtbSRQleNmPJKWUXWl4" Ids="N5CKyrRzkVNQH3j5Jpgytk,AFFrgZFoEPkMoYEjGdJsWx" />
         <Link Id="FvcTmA3T3jbMgbz7pVqU6s" Ids="AFFrgZFoEPkMoYEjGdJsWx,PN6OAeLw8tAPPqvSKhaZD3" />
@@ -630,8 +671,6 @@
         <Link Id="F1cSf1YMpWWMm89NWCIGMz" Ids="I1dQ2qLhbtMM8MTe7GYvg2,H7mKzCZYrNiQCRBhTLRiBq" />
         <Link Id="OyQl6oR9rOOMJltlNDg4V9" Ids="Japs5B2ZXZmPaAnT50CqkB,V0IoVZIZb50NteA1XvnBWN" />
         <Link Id="O2x1moVJSQUQRF7q5QvpCV" Ids="FfBpW1swxouQMW30N0VdDk,PJUmlrjav7AOvvT9FIxnDv" />
-        <Link Id="NQFESZErOwlLRg6QtBCfC4" Ids="NhGD4z5ZYtSQcSNVRqx1DU,Qe2xg0PUvqULb97esNMnxr" />
-        <Link Id="RRgKCctsxdJQTqUyAGm6Y1" Ids="TKRdt6yQOxKLnVTzeDozOq,IOmt6UwMUstLdpcuZkU7jv" />
         <Link Id="CpxypTjJpkmPKeOQUCaztz" Ids="LflwT9WOwe7NF3SAyj2VQC,LL9A5d4UmuQMo4CFFtnjfC" />
         <Link Id="N8N5RYUFSdgPUtoytgwyHK" Ids="EN3BQojFJ4IPatdLRWh22T,C6fb4ERdLD1OlOOERHzxYH" />
         <Link Id="Opn2B8EpjxtNAQa9TaBlTY" Ids="UCFVIMWBsRjLJvP7e4GQB7,V1RTZtUj0doOMOb0R5jxcA" />
@@ -641,12 +680,6 @@
         <Link Id="KqUccwAe73ANJZMcRbBVBR" Ids="UDA4SbdTNHDP3vo7yMJjOo,IvVAXrmwbrxMxa7lN8ZXEk" />
         <Link Id="HwXisU0gvTtNx4PU61ysbu" Ids="PWoagDuphCMO1mJpY9ni5I,OwFuO93plfmQGge3Zr05ts" />
         <Link Id="FdbCbL4jSVoLTb96z96NWl" Ids="H7mKzCZYrNiQCRBhTLRiBq,AeRN6499Qp1OOSRGfSf4IA" />
-        <Link Id="QHVaGdtOjCDOGFGNY5b0xX" Ids="DPi49EdNDZAPlm4deY0mdK,OKFfsLovdn3MJi12Zk8XlF" />
-        <Link Id="EansEjf1gkqLLROt6Nf0UX" Ids="Qkkx9Yb1TRULrkLTNsALnZ,FdBaR1SupeUNHzDHP2hwiZ" />
-        <Link Id="Nk6gB9YcZbSN5Z2rl6vv7a" Ids="T1p6omqGaZhOgCbBe3ct2h,PnGyZ11xMLBO2Tppg6mdGj" />
-        <Link Id="NS7QQbgtnSUPSe6uLufM3N" Ids="DiAEeCAtkQFOoLEKlQJbBb,C6JYEoGo96hL3ZNQ7ezGFb" />
-        <Link Id="UuBn4uldYPdMyacGX6wt3G" Ids="Q22l0QdCdngPJx0STWc59A,CODI2t3I4BbODwAnlMmg8S" />
-        <Link Id="RgqY12NGa9AP72pFjluOoi" Ids="PmLm0D60IvrM23MW1eEPD2,SucrsuFACuFQAYp9RE0O4K" />
         <Link Id="TJjUB01hJIzN2msKH4cIpj" Ids="UCFVIMWBsRjLJvP7e4GQB7,OuhogaN554NP6lbPgA1gBh" />
         <Link Id="BhESCosXGCzOxqDK6IwDCU" Ids="SqeHGL6drmJO8PWzQjVKcD,ERbqWpQkFxQNgXgA5Fhevm" />
         <Link Id="Q6KiPxm6wBdMbOt1BSNrHC" Ids="ERbqWpQkFxQNgXgA5Fhevm,PS3CB5RtSmAQZwhxye9919" />
@@ -657,10 +690,23 @@
         <Link Id="IyAxm3pTeXlLPqS5DAhLWZ" Ids="MmkuMQrciUQPh7TTDdnssJ,DTy3zeuULmgLb9FUeH31p5" />
         <Link Id="SEXPXOR8buKP9ooRU1HQfs" Ids="DTy3zeuULmgLb9FUeH31p5,KrBDV5vKa0KPaxRlzYIymu" />
         <Link Id="NcKY3Zt12foLIt4BB73HTg" Ids="TeSE8ZhLeyVLZqvybAfGIo,OYBBfdxioxoN8kWmRsxFRO" />
+        <Link Id="Nk6gB9YcZbSN5Z2rl6vv7a" Ids="T1p6omqGaZhOgCbBe3ct2h,PnGyZ11xMLBO2Tppg6mdGj" />
+        <Link Id="NS7QQbgtnSUPSe6uLufM3N" Ids="DiAEeCAtkQFOoLEKlQJbBb,C6JYEoGo96hL3ZNQ7ezGFb" />
+        <Link Id="UuBn4uldYPdMyacGX6wt3G" Ids="Q22l0QdCdngPJx0STWc59A,CODI2t3I4BbODwAnlMmg8S" />
+        <Link Id="RgqY12NGa9AP72pFjluOoi" Ids="PmLm0D60IvrM23MW1eEPD2,SucrsuFACuFQAYp9RE0O4K" />
+        <Link Id="NQFESZErOwlLRg6QtBCfC4" Ids="NhGD4z5ZYtSQcSNVRqx1DU,Qe2xg0PUvqULb97esNMnxr" />
+        <Link Id="RRgKCctsxdJQTqUyAGm6Y1" Ids="TKRdt6yQOxKLnVTzeDozOq,IOmt6UwMUstLdpcuZkU7jv" />
+        <Link Id="QHVaGdtOjCDOGFGNY5b0xX" Ids="DPi49EdNDZAPlm4deY0mdK,OKFfsLovdn3MJi12Zk8XlF" />
+        <Link Id="EansEjf1gkqLLROt6Nf0UX" Ids="Qkkx9Yb1TRULrkLTNsALnZ,FdBaR1SupeUNHzDHP2hwiZ" />
+        <Link Id="J09OsncJ3ogPPFHT2dVlOK" Ids="PcdYIjyFMGRNfpYX1UlPvI,Dlb1EDqbMZjLnHKddo5IDk" />
+        <Link Id="PzjhoersM50NfCHnrIysvE" Ids="OjsQZF4magtMiOTpl0pJxs,O1QrS0Qs3Z4L1tmOrCtbXY" />
+        <Link Id="MToLPEbZwcRQQjPm2c3kcn" Ids="BWgxQPYnE27MCeG6KVBfHU,J9veRNKtwwPNp99G5bDhJy" />
+        <Link Id="Gx8qnxzW57BMa9rWgqpDnn" Ids="NbTZeFd5Pr0PrUFc08LuZu,FueVlIaBTv8LKebaZN3iv6" />
+        <Link Id="MboG9KTB7JIMiQxUGwgGTL" Ids="Q8ms4ufACALMMFow0hd8EY,Gkln0jyWIv6OIYdckE3n7I" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="AWADncGnm9GO1XnlR6Z1ft" Location="VL.Skia" Version="2022.5.0-0335-g51a4ee189d" />
+  <NugetDependency Id="AWADncGnm9GO1XnlR6Z1ft" Location="VL.Skia" Version="2022.5.0-0574-ga3c26ef93e" />
   <DocumentDependency Id="JVUavCXsodKLrxy58xWaaZ" Location="../../VL.IO.Sparkplug.vl" />
   <PlatformDependency Id="QvLfGfObZsWNDHRaCh9o8b" Location="System.Runtime" />
 </Document>
