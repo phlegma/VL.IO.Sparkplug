@@ -14,24 +14,18 @@ namespace VL.IO.Sparkplug
         //Base
         public static IObservable<SparkplugBase<Metric>.SparkplugEventArgs> Connected(SparkplugBase<Metric> instance)
         {
-            Subject<SparkplugBase<Metric>.SparkplugEventArgs> subject = new Subject<SparkplugBase<Metric>.SparkplugEventArgs>();
-            instance.ConnectedAsync += args =>
-            {
-                subject.OnNext(args);
-                return Task.CompletedTask;
-            };
-            return subject.AsObservable();
+            return Observable.FromEvent<Func<SparkplugBase<Metric>.SparkplugEventArgs, Task>, SparkplugBase<Metric>.SparkplugEventArgs>(
+                    conversion: action => x => { action(x); return Task.CompletedTask; },
+                    addHandler: handler => instance.ConnectedAsync += handler,
+                    removeHandler: handler => instance.ConnectedAsync -= handler);
         }
 
         public static IObservable<SparkplugBase<Metric>.SparkplugEventArgs> Disconnected(SparkplugBase<Metric> instance)
         {
-            Subject<SparkplugBase<Metric>.SparkplugEventArgs> subject = new Subject<SparkplugBase<Metric>.SparkplugEventArgs>();
-            instance.DisconnectedAsync += args =>
-            {
-                subject.OnNext(args);
-                return Task.CompletedTask;
-            };
-            return subject.AsObservable();
+            return Observable.FromEvent<Func<SparkplugBase<Metric>.SparkplugEventArgs, Task>, SparkplugBase<Metric>.SparkplugEventArgs>(
+                    conversion: action => x => { action(x); return Task.CompletedTask; },
+                    addHandler: handler => instance.DisconnectedAsync += handler,
+                    removeHandler: handler => instance.DisconnectedAsync -= handler);
         }
 
     }

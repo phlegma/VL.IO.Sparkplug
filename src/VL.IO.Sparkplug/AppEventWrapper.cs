@@ -15,69 +15,71 @@ namespace VL.IO.Sparkplug
         // Nodes
         public static IObservable<SparkplugBase<Metric>.NodeBirthEventArgs> NodeBirthReceived(SparkplugApplication instance)
         {
-            Subject<SparkplugBase<Metric>.NodeBirthEventArgs> subject = new Subject<SparkplugBase<Metric>.NodeBirthEventArgs>();
-            instance.NodeBirthReceivedAsync += args =>
-            {
-                subject.OnNext(args);
-                return Task.CompletedTask;
-            };
-            return subject.AsObservable();
+            return Observable.FromEvent<Func<SparkplugBase<Metric>.NodeBirthEventArgs, Task>, SparkplugBase<Metric>.NodeBirthEventArgs>(
+                   conversion: action => x => { 
+                       action(x); 
+                       return Task.CompletedTask; 
+                   },
+                   addHandler: handler => instance.NodeBirthReceivedAsync += handler,
+                   removeHandler: handler => instance.NodeBirthReceivedAsync -= handler);
         }
 
         public static IObservable<SparkplugBase<Metric>.NodeEventArgs> NodeDeathReceived(SparkplugApplication instance)
         {
-            Subject<SparkplugBase<Metric>.NodeEventArgs> subject = new Subject<SparkplugBase<Metric>.NodeEventArgs>();
-            instance.NodeDeathReceivedAsync += args =>
-            {
-                subject.OnNext(args);
-                return Task.CompletedTask;
-            };
-            return subject.AsObservable();
+            return Observable.FromEvent<Func<SparkplugBase<Metric>.NodeEventArgs, Task>, SparkplugBase<Metric>.NodeEventArgs>(
+                   conversion: action => x => { 
+                       action(x); 
+                       return Task.CompletedTask; 
+                   },
+                   addHandler: handler => instance.NodeDeathReceivedAsync += handler,
+                   removeHandler: handler => instance.NodeDeathReceivedAsync -= handler);
         }
 
         public static IObservable<SparkplugApplicationBase<Metric>.NodeDataEventArgs> NodeDataReceived(SparkplugApplication instance)
         {
-            Subject<SparkplugApplicationBase<Metric>.NodeDataEventArgs> subject = new Subject<SparkplugApplicationBase<Metric>.NodeDataEventArgs>();
-            instance.NodeDataReceivedAsync += args =>
-            {
-                subject.OnNext(args);
-                return Task.CompletedTask;
-            };
-            return subject.AsObservable();
+            return Observable.FromEvent<Func<SparkplugApplicationBase<Metric>.NodeDataEventArgs, Task>, SparkplugApplicationBase<Metric>.NodeDataEventArgs>(
+                   conversion: action => x => { action(x); return Task.CompletedTask; },
+                   addHandler: handler => instance.NodeDataReceivedAsync += handler,
+                   removeHandler: handler => instance.NodeDataReceivedAsync -= handler);
         }
 
         // Devices
         public static IObservable<SparkplugBase<Metric>.DeviceBirthEventArgs> DeviceBirthReceived(SparkplugApplication instance)
         {
-            Subject<SparkplugBase<Metric>.DeviceBirthEventArgs> subject = new Subject<SparkplugBase<Metric>.DeviceBirthEventArgs>();
-            instance.DeviceBirthReceivedAsync += args =>
-            {
-                subject.OnNext(args);
-                return Task.CompletedTask;
-            };
-            return subject.AsObservable();
+            return Observable.FromEvent<Func<SparkplugBase<Metric>.DeviceBirthEventArgs, Task>, SparkplugBase<Metric>.DeviceBirthEventArgs>(
+                   conversion: action => x => { 
+                       action(x); 
+                       return Task.CompletedTask; 
+                   },
+                   addHandler: handler => instance.DeviceBirthReceivedAsync += handler,
+                   removeHandler: handler => instance.DeviceBirthReceivedAsync -= handler);
         }
 
         public static IObservable<SparkplugBase<Metric>.DeviceEventArgs> DeviceDeathReceived(SparkplugApplication instance)
         {
-            Subject<SparkplugBase<Metric>.DeviceEventArgs> subject = new Subject<SparkplugBase<Metric>.DeviceEventArgs>();
-            instance.DeviceDeathReceivedAsync += args =>
-            {
-                subject.OnNext(args);
-                return Task.CompletedTask;
-            };
-            return subject.AsObservable();
+            return Observable.FromEvent<Func<SparkplugBase<Metric>.DeviceEventArgs, Task>, SparkplugBase<Metric>.DeviceEventArgs>(
+                   conversion: action => x => { 
+                       action(x); 
+                       return Task.CompletedTask; 
+                   },
+                   addHandler: handler => instance.DeviceDeathReceivedAsync += handler,
+                   removeHandler: handler => instance.DeviceDeathReceivedAsync -= handler);
         }
 
         public static IObservable<SparkplugApplicationBase<Metric>.DeviceDataEventArgs> DeviceDataReceived(SparkplugApplication instance)
         {
-            Subject<SparkplugApplicationBase<Metric>.DeviceDataEventArgs> subject = new Subject<SparkplugApplicationBase<Metric>.DeviceDataEventArgs>();
-            instance.DeviceDataReceivedAsync += args =>
-            {
-                subject.OnNext(args);
-                return Task.CompletedTask;
-            };
-            return subject.AsObservable();
+            return Observable.FromEvent<Func<SparkplugApplicationBase<Metric>.DeviceDataEventArgs, Task>, SparkplugApplicationBase<Metric>.DeviceDataEventArgs>(
+                   conversion: action => x => { action(x); return Task.CompletedTask; },
+                   addHandler: handler => instance.DeviceDataReceivedAsync += handler,
+                   removeHandler: handler => instance.DeviceDataReceivedAsync -= handler);
+        }
+
+        public static IObservable<SparkplugApplicationBase<Metric>.DeviceDataEventArgs> MessagerReceived(SparkplugApplication instance)
+        {
+            return Observable.FromEvent<Func<SparkplugApplicationBase<Metric>.DeviceDataEventArgs, Task>, SparkplugApplicationBase<Metric>.DeviceDataEventArgs>(
+                   conversion: action => x => { action(x); return Task.CompletedTask; },
+                   addHandler: handler => instance.DeviceDataReceivedAsync += handler,
+                   removeHandler: handler => instance.DeviceDataReceivedAsync -= handler);
         }
     }
 }
