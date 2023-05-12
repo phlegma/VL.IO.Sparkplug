@@ -8,7 +8,7 @@
     ************************ Application ************************
 
 -->
-      <Node Name="Application" Bounds="386,368" Id="UsupZERJCZkNZwu1sWcDcC">
+      <Node Name="Application" Bounds="313,171" Id="UsupZERJCZkNZwu1sWcDcC">
         <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
           <Choice Kind="ClassDefinition" Name="Class" />
         </p:NodeReference>
@@ -262,7 +262,6 @@
               <Pin Id="MqxNusy1dHuNf07d9NZCL4" Name="Cancellation Token" Kind="InputPin" />
               <Pin Id="QbYzA3w9xgPNzegN62KYc1" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <ControlPoint Id="Px86uMoqVkKNSVPoyZLkP9" Bounds="931,1263" />
             <Pad Id="VU0kj9WYZVQN3zBse6lEX2" SlotId="Ji1l1j3log5PBdjS3sQsnr" Bounds="726,987" />
             <Node Bounds="711,1007,65,19" Id="KPSjGqr68oIPLsr5jeFTLr">
               <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
@@ -273,26 +272,14 @@
               <Pin Id="JmSfTQT3IOONiz0snCDw6u" Name="Result" Kind="OutputPin" />
               <Pin Id="IZRpWdVUU5bLUSLgdZByj5" Name="Not Assigned" Kind="OutputPin" />
             </Node>
-            <Node Bounds="707,1048,246,154" Id="Io4homgrr2YMgCcqukSdJL">
+            <Node Bounds="707,1048,246,69" Id="Io4homgrr2YMgCcqukSdJL">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <CategoryReference Kind="Category" Name="Primitive" />
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
               </p:NodeReference>
               <Pin Id="NnH8abIaKmjLzQS3TyD700" Name="Condition" Kind="InputPin" />
-              <ControlPoint Id="BWvoKIBAeNeMFBl7p0VASb" Bounds="926,1160" Alignment="Bottom" />
-              <ControlPoint Id="SSj6KLOUWS7OpdyrJy2UWH" Bounds="926,1054" Alignment="Top" />
               <Patch Id="CS3zOOdVQjlO8qb3u8w4sH" ManuallySortedPins="true">
-                <Node Bounds="719,1155,207,26" Id="Smgnei2BiwIPv5OCgMVMHA">
-                  <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Application.SparkplugApplicationOptions" LastDependency="SparkplugNet.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="SparkplugApplicationOptions" />
-                    <Choice Kind="OperationCallFlag" Name="AddSessionNumberToCommandMessages" />
-                  </p:NodeReference>
-                  <Pin Id="EkesIdcGZxdOojBi8yVyUC" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="NcXngFSTyMvMpqJyTGQQbp" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="CLm21uaMWyXMLPxBrXK8Ul" Name="Add Session Number To Command Messages" Kind="OutputPin" />
-                </Node>
                 <Node Bounds="721,1086,220,26" Id="JLGazHCP5cOOM0fdX5OHJp">
                   <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Application.SparkplugApplicationOptions" LastDependency="SparkplugNet.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -321,6 +308,16 @@
               <Pin Id="VkmfPgoMbCBPmub7SFRJ0p" Name="Initial Minimum Level" Kind="InputPin" DefaultValue="Verbose" />
               <Pin Id="Hi3BmIkBToZMbAy6uAkeYf" Name="Output" Kind="StateOutputPin" />
             </Node>
+            <Node Bounds="1406,807,118,26" Id="DkSqBESkEOVPyTjdYdbcd1">
+              <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Application.SparkplugApplicationBase`1" LastDependency="SparkplugNet.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="DeviceStates" />
+              </p:NodeReference>
+              <Pin Id="G78mu6NYYKmNX4KW6rxO5J" Name="Input" Kind="StateInputPin" />
+              <Pin Id="OHoNdniCTdBQUNALIGBbhe" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="OIdzm7pgUwnPjyYfTxLBmP" Name="Device States" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="EosQV0N7VZzLQUJIKcgIP4" Bounds="1522,873" />
           </Canvas>
           <ProcessDefinition Id="K0VZ7ysnlhyPHYV3Wk6EYc" IsHidden="true">
             <Fragment Id="Q4GFcSp3m4KOLTsPT6LCoo" Patch="R0ZmSRV5M2aPzlFiwLG59J" Enabled="true" />
@@ -394,7 +391,6 @@
           <Slot Id="To9IYFnhKNqOfDwi9XedIn" Name="NodeDeathReceived" />
           <Slot Id="F6Y37jMr0A2QGTjXFFZ3pc" Name="NodeDataReceived" />
           <Link Id="VmShXFwhB8mMgg4trgV4qn" Ids="QbYzA3w9xgPNzegN62KYc1,J1iXa1FjkMzQMZnyOzv2QB" />
-          <Link Id="GNwHsoLC4BKPpUTrAgnZGn" Ids="Px86uMoqVkKNSVPoyZLkP9,L4gabvuV1JvLs8d5KeZIrJ" IsHidden="true" />
           <Patch Id="R0ZmSRV5M2aPzlFiwLG59J" Name="Create" ParticipatingElements="VfQmmUA2medOO8eZ5s8pk3,Sh5FcRVScXsLMNxJ3o3vzZ">
             <Pin Id="KYmH2zi4H2ZLdyQDckGXL7" Name="Known Metrics" Kind="InputPin" />
           </Patch>
@@ -422,11 +418,11 @@
             <Pin Id="EJ0VvSmYOvQMoI4K4WTmth" Name="DeviceDataReceived" Kind="OutputPin" />
             <Pin Id="Vh4HaIxdzJkLJ6eQim1P9h" Name="Connected" Kind="OutputPin" />
             <Pin Id="Rdzhu4xGfccLmWgQ4vy8Q1" Name="App" Kind="OutputPin" />
-            <Pin Id="L4gabvuV1JvLs8d5KeZIrJ" Name="Add Session Number To Command Messages" Kind="OutputPin" />
             <Pin Id="V2YnhJ4l3zfPvXRRD5IoSJ" Name="Is Connected" Kind="OutputPin" Bounds="1178,890" />
             <Pin Id="FzBJKabyvPPLwp7zafDK5U" Name="Node States" Kind="OutputPin" Bounds="885,1047" />
             <Pin Id="JindCnW0Gy1Ognyh26fk1u" Name="Known Metrics Storage" Kind="OutputPin" Bounds="1418,698" />
             <Pin Id="IEzhwEfN8HaLb7hqi36WV1" Name="Value" Kind="InputPin" Bounds="953,987" />
+            <Pin Id="VDecwK6vi9VQXqMlrAa7sp" Name="Device States" Kind="OutputPin" Bounds="1524,867" />
           </Patch>
           <Patch Id="IWuiZFwooujMNbEfCKdf8x" Name="Stop" ParticipatingElements="VLgWlhiyPFiLbhL9lImAMX,RGxsi9AnFjXMEreV57ag5L" />
           <Patch Id="B0qayyESIVaNm8FLfXA8Pr" Name="PublishNodeCommand" ParticipatingElements="SJSNbAikCtXOMOnsQmVR3y">
@@ -439,15 +435,14 @@
           <Link Id="Li47krHuKQZM1JUR3FLIpw" Ids="QbYzA3w9xgPNzegN62KYc1,VU0kj9WYZVQN3zBse6lEX2" />
           <Link Id="APmcEbYMdMsL9lIIvQmYjU" Ids="VU0kj9WYZVQN3zBse6lEX2,FmPijOSJ0THMXlBKfdvCst" />
           <Link Id="TVBDKmXyV1CL1fj7uqKzYF" Ids="VU0kj9WYZVQN3zBse6lEX2,HaIWLGJyl4iPkm7jReetwM" />
-          <Link Id="CbUoWNNgltaP0NsHpa6SCI" Ids="DSgUshNXdP4O4qFe7CPyel,EkesIdcGZxdOojBi8yVyUC" />
           <Link Id="LvpLbNNtcHcO8l1SXxb0ST" Ids="JmSfTQT3IOONiz0snCDw6u,NnH8abIaKmjLzQS3TyD700" />
-          <Link Id="BlsXbILpjlcOc3hlinPNjR" Ids="SSj6KLOUWS7OpdyrJy2UWH,BWvoKIBAeNeMFBl7p0VASb" IsFeedback="true" />
-          <Link Id="JlscLGBZBIOQc3FUEcsQSK" Ids="CLm21uaMWyXMLPxBrXK8Ul,BWvoKIBAeNeMFBl7p0VASb" />
-          <Link Id="NEwqzJfI7dAPNV1hdLuR6q" Ids="BWvoKIBAeNeMFBl7p0VASb,Px86uMoqVkKNSVPoyZLkP9" />
           <Link Id="AXTVI986WhkNLMBrSjJjx3" Ids="IESW3S1qwQvLBJlT2sxA9N,KYLLIt2l7mXQYSSuYNFnXf" />
           <Link Id="A4SMaazp4RlNTTHDupHbOV" Ids="IEzhwEfN8HaLb7hqi36WV1,IESW3S1qwQvLBJlT2sxA9N" IsHidden="true" />
           <Link Id="SCDx1Nui1ShNvWKOGGcJac" Ids="O7Es1SYgqhgMQ8snhblyPE,KpLbeNKvROeN0luQlkuLcx" />
           <Link Id="UEV77E9plvKO8e5eTKZAgM" Ids="Hi3BmIkBToZMbAy6uAkeYf,VmElEkPNbeXMa364WjFLMO" />
+          <Link Id="M18CKvtN6mhOpnMtNZycdx" Ids="F4FO4lbxpMtPa5PqRdZNl2,G78mu6NYYKmNX4KW6rxO5J" />
+          <Link Id="K2oyk6ermWRNRmGVx3NYGq" Ids="OIdzm7pgUwnPjyYfTxLBmP,EosQV0N7VZzLQUJIKcgIP4" />
+          <Link Id="RC7YmKlfZywOmL4wXNZfkO" Ids="EosQV0N7VZzLQUJIKcgIP4,VDecwK6vi9VQXqMlrAa7sp" IsHidden="true" />
         </Patch>
       </Node>
       <!--
@@ -455,7 +450,7 @@
     ************************ Application ************************
 
 -->
-      <Node Name="Application" Bounds="388,431" Id="AiirJfEaAg1L89Hxf8xYLz">
+      <Node Name="Application" Bounds="315,234" Id="AiirJfEaAg1L89Hxf8xYLz">
         <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -490,10 +485,10 @@
               <Pin Id="RnNRIsRIxn8L8PMV4WcuIc" Name="DeviceDataReceived" Kind="OutputPin" />
               <Pin Id="EZFZA8eUqN9Ngry4xkzwci" Name="Connected" Kind="OutputPin" />
               <Pin Id="Jpm7HLZJlrnPXgCrkZ39KD" Name="App" Kind="OutputPin" />
-              <Pin Id="QM99h1xqmkXPoYc05lcAMV" Name="Add Session Number To Command Messages" Kind="OutputPin" />
               <Pin Id="OthLpu9Af9vPEWeNnzgMLL" Name="Is Connected" Kind="OutputPin" />
               <Pin Id="QIgVJtkLPIbP0TyD8YZUH3" Name="Node States" Kind="OutputPin" />
               <Pin Id="TflAisLbgQWNYJsdxHv3ag" Name="Known Metrics Storage" Kind="OutputPin" />
+              <Pin Id="AGR9KHrr4D7OGP5ysYPQHh" Name="Device States" Kind="OutputPin" />
             </Node>
             <Node Bounds="616,682,57,26" Id="HWbkQuMMxxENpiMzbMKVIK">
               <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.Application" LastDependency="VL.IO.Sparkplug.vl">
@@ -563,8 +558,8 @@
             <ControlPoint Id="PDVOMY5wZLqMfqtfNGe3Fm" Bounds="757,466" />
             <ControlPoint Id="DY3A4kDZkPuLl3d5jYnlPN" Bounds="798,502" />
             <ControlPoint Id="GNxhAc5CgJeMSH8LZfSIn7" Bounds="843,557" />
-            <ControlPoint Id="BGfylr56amFLyDdC5ua3d4" Bounds="924,799" />
             <ControlPoint Id="AMeuj36vLQ4O4cjnlRKuTF" Bounds="970,326" />
+            <ControlPoint Id="Tp9khxi8CoqMX2sDxMijPH" Bounds="985,761" />
           </Canvas>
           <ProcessDefinition Id="FvcSOKNFnLTNZddMR1VB9C">
             <Fragment Id="GrHsEeOELREOCw636uPkFg" Patch="Tdnk5EyAhUOMZzkTIzugG0" Enabled="true" />
@@ -626,8 +621,6 @@
           <Link Id="RtONZ07i93mMEx5U0r5UAM" Ids="QpJHVwgq197LgK89XOE84L,GNxhAc5CgJeMSH8LZfSIn7" />
           <Link Id="EsOuUUE4kPVNTWXKLaKpUk" Ids="GNxhAc5CgJeMSH8LZfSIn7,OnysUu8XbrsMO1J06DfJ0F" IsHidden="true" />
           <Link Id="LqWYooPJptbOP1LiPpxNEG" Ids="EBo1vhnbOFhP5VlhAcrfSL,BbckQ5NTHx0LeFzieTtS2i" />
-          <Link Id="Sq4dAyX6SAYNmkAjNn65D8" Ids="QM99h1xqmkXPoYc05lcAMV,BGfylr56amFLyDdC5ua3d4" />
-          <Link Id="H3qCsepbZYWNzsNwmwCgN3" Ids="BGfylr56amFLyDdC5ua3d4,TxXup9SJz1pQC1Xx0dJUb3" IsHidden="true" />
           <Patch Id="Tdnk5EyAhUOMZzkTIzugG0" Name="Create" ParticipatingElements="GBsMjUbfvvuP4k5sAgRGl3">
             <Pin Id="PeqPV7yz6B6QIwFb14NYmJ" Name="Known Metrics" Kind="InputPin" Bounds="392,225" />
           </Patch>
@@ -640,11 +633,11 @@
             <Pin Id="KPasOBQP8B5QRuUzoGMXW8" Name="DeviceDataReceived" Kind="OutputPin" Bounds="754,715" />
             <Pin Id="NgcfornBFGzOTndV6PDMy5" Name="Connected" Kind="OutputPin" Bounds="766,696" />
             <Pin Id="GWVQBC5FwQ9NbzfWbyJHYT" Name="Application" Kind="OutputPin" Bounds="782,529" />
-            <Pin Id="TxXup9SJz1pQC1Xx0dJUb3" Name="Add Session Number To Command Messages" Kind="OutputPin" Bounds="924,799" />
             <Pin Id="Iz8xk7RQ48vNdsGgS0Xm0e" Name="Is Connected" Kind="OutputPin" Bounds="796,488" />
             <Pin Id="JdTiH6jQk76QFNXf1mZXeK" Name="Node States" Kind="OutputPin" Bounds="850,588" />
             <Pin Id="DIlcGZabHpVN0wyM8DyaxW" Name="Known Metrics Storage" Kind="OutputPin" Bounds="864,588" />
             <Pin Id="Hig6eogecJgOwcCEukHTwI" Name="Session Number" Kind="InputPin" Bounds="970,326" />
+            <Pin Id="GDAh0QqLiYjOJkYF0VxTTB" Name="Device States" Kind="OutputPin" Bounds="986,762" />
           </Patch>
           <Patch Id="J9y0Pjtvv48L7Et1rH7t66" Name="Start" ParticipatingElements="QYxzmpVZB9WMboij9GcTPl" ManuallySortedPins="true">
             <Pin Id="JP0EADOXYMzNGWwzRhWLQW" Name="Broker Address" Kind="InputPin" Bounds="250,518" />
@@ -664,66 +657,92 @@
           <Patch Id="H3oLySPAxX9Mr2DBNkEW3t" Name="Dispose" ParticipatingElements="FfPy05QaljnNBwWmUHCJEo" />
           <Link Id="Hu2eEHjXBn1MWnaKxOEMj0" Ids="AMeuj36vLQ4O4cjnlRKuTF,KHW6apqHbZBMrRSLZ431cH" />
           <Link Id="GWz293vF0NwOENIoAJIEps" Ids="Hig6eogecJgOwcCEukHTwI,AMeuj36vLQ4O4cjnlRKuTF" IsHidden="true" />
+          <Link Id="RNgkOSMckfPOFP2ojL4leH" Ids="AGR9KHrr4D7OGP5ysYPQHh,Tp9khxi8CoqMX2sDxMijPH" />
+          <Link Id="NbLYHQdQDyMPsjJ1f0RHrM" Ids="Tp9khxi8CoqMX2sDxMijPH,GDAh0QqLiYjOJkYF0VxTTB" IsHidden="true" />
         </Patch>
       </Node>
-      <!--
-
-    ************************ Metric ************************
-
--->
-      <Node Name="Metric" Bounds="1290,135" Id="IVrirSJr0b7QKUhaHXmYwE">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
-          <Choice Kind="TypeFlag" Name="Metric" />
-        </p:TypeAnnotation>
-        <Patch Id="FaiEk5KSjYDMDmgFPlyNLH">
-          <Canvas Id="C8HuEd8qShyMo9LrxNjItR" CanvasType="Group" />
-          <ProcessDefinition Id="TuQKerX7gMvO7tK3rF2NUB" IsHidden="true" />
-        </Patch>
-      </Node>
-      <Pad Id="TfJbhlmUBiiP2rsKlNLjcM" Bounds="546,452,35,19" ShowValueBox="true" isIOBox="true" Value="">
-        <p:TypeAnnotation>
-          <Choice Kind="TypeFlag" Name="String" />
-        </p:TypeAnnotation>
-        <p:ValueBoxSettings>
-          <p:fontsize p:Type="Int32">9</p:fontsize>
-          <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-        </p:ValueBoxSettings>
-      </Pad>
       <!--
 
     ************************ PublishNodeCommand ************************
 
 -->
-      <Node Name="PublishNodeCommand" Bounds="575,361,274,80" Id="AzWVekZS1tPPT2ZvOK68xD">
+      <Node Name="PublishNodeCommand" Bounds="509,137,420,212" Id="AzWVekZS1tPPT2ZvOK68xD">
         <p:NodeReference>
           <Choice Kind="OperationDefinition" Name="Operation" />
           <CategoryReference Kind="Category" Name="Primitive" />
         </p:NodeReference>
         <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-        <Patch Id="DayXgC0eRvLMp81uMr460R" IsGeneric="true">
-          <Node Bounds="587,390,250,26" AutoConnect="true" Id="TEzuD8LuvQrMsSxSM6njBk">
-            <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Application.SparkplugApplicationBase`1" LastDependency="SparkplugNet.dll">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="AssemblyCategory" Name="SparkplugApplicationBase`1" NeedsToBeDirectParent="true" />
-              <Choice Kind="OperationCallFlag" Name="PublishNodeCommand" />
+        <Patch Id="DayXgC0eRvLMp81uMr460R" IsGeneric="true" ManuallySortedPins="true">
+          <Node Bounds="532,248,274,80" Id="TYXoXcF90HgNrsLRomhnXS">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+              <Choice Kind="ApplicationStatefulRegion" Name="If" />
             </p:NodeReference>
-            <Pin Id="BVz12rzua7zNWWAPNqJWJA" Name="Input" Kind="StateInputPin" />
-            <Pin Id="Pt0zu5foMjRLjdTb02enRZ" Name="Metrics" Kind="InputPin" />
-            <Pin Id="N2sXBzTPCuFOiSMCsrZyDP" Name="Group Identifier" Kind="InputPin" />
-            <Pin Id="H36bpn1JtCtQOr9DFUuDnZ" Name="Edge Node Identifier" Kind="InputPin" />
-            <Pin Id="GmrSm7qWZHbOOaULgqz0s6" Name="Output" Kind="StateOutputPin" />
-            <Pin Id="R1vjhzpQ8DyPgzX13jJW1q" Name="Result" Kind="OutputPin" />
+            <Pin Id="Jn3yjCGIHGQMq7ehZ0Wpqz" Name="Condition" Kind="InputPin" />
+            <Patch Id="AXH5ReicGgrM4vu8iGVqng" ManuallySortedPins="true">
+              <Patch Id="QDLVeK8P2mvPdkNsDnQky9" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="Thg1yZuynzcPdEAvZfsfEg" Name="Then" ManuallySortedPins="true" />
+              <Node Bounds="544,277,250,26" Id="TEzuD8LuvQrMsSxSM6njBk">
+                <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Application.SparkplugApplicationBase`1" LastDependency="SparkplugNet.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="AssemblyCategory" Name="SparkplugApplicationBase`1" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="PublishNodeCommand" />
+                </p:NodeReference>
+                <Pin Id="BVz12rzua7zNWWAPNqJWJA" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Pt0zu5foMjRLjdTb02enRZ" Name="Metrics" Kind="InputPin" />
+                <Pin Id="N2sXBzTPCuFOiSMCsrZyDP" Name="Group Identifier" Kind="InputPin" />
+                <Pin Id="H36bpn1JtCtQOr9DFUuDnZ" Name="Edge Node Identifier" Kind="InputPin" />
+                <Pin Id="GmrSm7qWZHbOOaULgqz0s6" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="R1vjhzpQ8DyPgzX13jJW1q" Name="Result" Kind="OutputPin" />
+              </Node>
+            </Patch>
           </Node>
-          <Pin Id="KbJyeoGQK0qNtFx598p7eH" Name="Input" Kind="InputPin" />
-          <Pin Id="Lz3SvybBGxiNgguNuuW7An" Name="Metrics" Kind="InputPin" />
-          <Pin Id="BqQbhnPcK2fQVVWmdKPFuC" Name="Group Identifier" Kind="InputPin" />
-          <Pin Id="OOaTw8iUtU9NXNSuQsPbQg" Name="Edge Node Identifier" Kind="InputPin" />
-          <Pin Id="O19Ff86rYghP2DjKTWBbPT" Name="Output" Kind="OutputPin" />
-          <Pin Id="DhIqz49QKxvQV7fDti8snX" Name="Result" Kind="OutputPin" />
+          <Node Bounds="531,211,37,19" Id="Pf9Aqdr2U2JO9q9XHRKDjh">
+            <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="AND" />
+            </p:NodeReference>
+            <Pin Id="QO3Sg9VRoCINamNxxwMDXI" Name="Input" Kind="StateInputPin" />
+            <Pin Id="R86bengr4O3OYcY8wUsLk8" Name="Input 2" Kind="InputPin" />
+            <Pin Id="PYqQMZTqkIBQD75yUZJNlZ" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Link Id="Vbkl4v340lwLkMYmmS2qnO" Ids="DldZuwGV5nzL83l6gAvRf0,BVz12rzua7zNWWAPNqJWJA" />
+          <Node Bounds="531,186,65,19" Id="R699RqPbdyaOiBNIZZm1XF">
+            <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="IsAssigned" />
+            </p:NodeReference>
+            <Pin Id="LMQH9OCt4bqPSKzaKyEivV" Name="X" Kind="InputPin" />
+            <Pin Id="ESmK3ltns9aN1h8Hs1vk8A" Name="Result" Kind="OutputPin" />
+            <Pin Id="EFRYJqOsUzkOH9F6w6o9G7" Name="Not Assigned" Kind="OutputPin" />
+          </Node>
+          <Link Id="LyqvKbUz4VONHlHGjiJdzA" Ids="DldZuwGV5nzL83l6gAvRf0,LMQH9OCt4bqPSKzaKyEivV" />
+          <Link Id="H82ksSopVpPPTESFcbLBf6" Ids="ESmK3ltns9aN1h8Hs1vk8A,QO3Sg9VRoCINamNxxwMDXI" />
+          <Link Id="BoJ3AzmbjlhP1gCLSL3AmA" Ids="PYqQMZTqkIBQD75yUZJNlZ,Jn3yjCGIHGQMq7ehZ0Wpqz" />
+          <ControlPoint Id="B2ZJIBhfieHNIFNYKoLPNk" Bounds="563,174" />
+          <Link Id="IG54XsxNDBPQYT8taj1C4K" Ids="JognnRBlBmDNnZ975tz4IR,B2ZJIBhfieHNIFNYKoLPNk" IsHidden="true" />
+          <Link Id="KqYpFDxcpASNQxN6HzrqLZ" Ids="B2ZJIBhfieHNIFNYKoLPNk,R86bengr4O3OYcY8wUsLk8" />
+          <Link Id="TCl9u6LGGDyN415nV0iPvj" Ids="JWQEWOIBV4vPHCyLaq4b6p,Pt0zu5foMjRLjdTb02enRZ" />
+          <ControlPoint Id="JWQEWOIBV4vPHCyLaq4b6p" Bounds="624,220" />
+          <Link Id="AjDkOkoX8W9NPSXfWZ8XTA" Ids="FxFWMU32nFxOTInxjhjh50,JWQEWOIBV4vPHCyLaq4b6p" IsHidden="true" />
+          <Link Id="GI6zPezJt2bOxs4G3pH0Jp" Ids="V7STVjfq6FvOJi5nGZup9y,N2sXBzTPCuFOiSMCsrZyDP" />
+          <ControlPoint Id="V7STVjfq6FvOJi5nGZup9y" Bounds="710,222" />
+          <Link Id="VHssiXwgDCYL4lYq7hK0pE" Ids="BSnsXiQvojkQA8yYbUEQTu,V7STVjfq6FvOJi5nGZup9y" IsHidden="true" />
+          <Link Id="B4AxBGLwJQSOkkUO0M6J0b" Ids="P5KWn4fHrEwOLV0sacv8RM,H36bpn1JtCtQOr9DFUuDnZ" />
+          <ControlPoint Id="P5KWn4fHrEwOLV0sacv8RM" Bounds="813,221" />
+          <Link Id="IKlVrJZV8upPS6SLJhXyNW" Ids="TfI0Ez0pbiHLRfKd90vtzd,P5KWn4fHrEwOLV0sacv8RM" IsHidden="true" />
+          <ControlPoint Id="DldZuwGV5nzL83l6gAvRf0" Bounds="546,155" />
+          <Link Id="NZEGL5PaSRaPcrA23uk1Nb" Ids="T4dZtFLOUz9M3mElqq5MLt,DldZuwGV5nzL83l6gAvRf0" IsHidden="true" />
+          <Pin Id="T4dZtFLOUz9M3mElqq5MLt" Name="Input" Kind="InputPin" Bounds="619,315" />
+          <Pin Id="FxFWMU32nFxOTInxjhjh50" Name="Metrics" Kind="InputPin" Bounds="673,362" />
+          <Pin Id="BSnsXiQvojkQA8yYbUEQTu" Name="Group Identifier" Kind="InputPin" Bounds="758,365" />
+          <Pin Id="TfI0Ez0pbiHLRfKd90vtzd" Name="Edge Node Identifier" Kind="InputPin" Bounds="829,336" />
+          <Pin Id="JognnRBlBmDNnZ975tz4IR" Name="Send" Kind="InputPin">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Pin>
         </Patch>
       </Node>
       <!--
@@ -842,7 +861,7 @@
           <Pin Id="AUBKPlq31alOIFSgHFLWxs" Name="Result" Kind="OutputPin" />
         </Patch>
       </Node>
-      <Overlay Id="NaB0BpiMT2ALfudaY2Ftts" Name="Application" Bounds="316,289,764,333" />
+      <Overlay Id="NaB0BpiMT2ALfudaY2Ftts" Name="Application" Bounds="277,89,764,543" />
       <Overlay Id="U0GtTqTtcdINLcdtRdLAi2" Name="Node" Bounds="316,692,598,485" />
       <!--
 
@@ -1415,331 +1434,7 @@
           <Link Id="EktkP5f9EvqLxXLTWL7GBN" Ids="R7HKr3S8fn9Mm4hwORtq9D,EpUTbwdRdRtQUrSrBNHnZB" IsHidden="true" />
         </Patch>
       </Node>
-      <!--
-
-    ************************ DeviceEventArgs ************************
-
--->
-      <Node Name="DeviceEventArgs" Bounds="1292,186" Id="CUYGKTO5fO1LKVNCz0byBq">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="SparkplugNet.Core.SparkplugBase`1" LastDependency="SparkplugNet.dll">
-          <Choice Kind="TypeFlag" Name="DeviceEventArgs" />
-        </p:TypeAnnotation>
-        <Patch Id="LOtNT6kApzONQQFKSPnpPf">
-          <Canvas Id="S4jtKnd7fLKOgQn90p6iRs" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="Gsg0fsROfgzNXwj9IOtfos" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ NodeCommandEventArgs ************************
-
--->
-      <Node Name="NodeCommandEventArgs" Bounds="1295,237" Id="TCoZZqWw892Nc1kNhuOkez">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="SparkplugNet.Core.Node.SparkplugNodeBase`1" LastDependency="SparkplugNet.dll">
-          <Choice Kind="TypeFlag" Name="NodeCommandEventArgs" />
-        </p:TypeAnnotation>
-        <Patch Id="V40gxGMCaHELhxXzmrw45Z">
-          <Canvas Id="UluSI9SNrveOpvC8DGoldu" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="Nrl03B9i9csNO9RlXUhqIZ" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ DeviceDataEventArgs ************************
-
--->
-      <Node Name="DeviceDataEventArgs" Bounds="1295,285" Id="JZFtfNhbGmhQRgqn6ajSKS">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="SparkplugNet.Core.Application.SparkplugApplicationBase`1" LastDependency="SparkplugNet.dll">
-          <Choice Kind="TypeFlag" Name="DeviceDataEventArgs" />
-        </p:TypeAnnotation>
-        <Patch Id="S1xg2GX4EoVOpZobjqPce4">
-          <Canvas Id="JwkxsCpJzMRLmPFmHQxl2a" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="Ov6guTC3Jv5Lv1OT7Jhvk9" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ Payload ************************
-
--->
-      <Node Name="Payload" Bounds="1295,449" Id="U1P2tRIzn0FNck98TLelYV">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
-          <Choice Kind="TypeFlag" Name="Payload" />
-        </p:TypeAnnotation>
-        <Patch Id="LqSKpUhpCLPLoYBFFi9HHn">
-          <Canvas Id="SxOXktfIZmlPYoWh1PRb6N" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="G6X0DzCmAD9Mf5lFhh3C4h" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ Template ************************
-
--->
-      <Node Name="Template" Bounds="1295,500" Id="OXyoSVs8TygOkWpXTJTxi5">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
-          <Choice Kind="TypeFlag" Name="Template" />
-        </p:TypeAnnotation>
-        <Patch Id="MVDfj389JYiP7e6TaDy83E">
-          <Canvas Id="AApi9wR56UDMX0tJFRAV10" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="LwAfv94YwlrOC0rEQKJuxR" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ DataSet ************************
-
--->
-      <Node Name="DataSet" Bounds="1295,551" Id="MwoCL3UQg2WQV8l2NdW9SD">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
-          <Choice Kind="TypeFlag" Name="DataSet" />
-        </p:TypeAnnotation>
-        <Patch Id="HYke3ZdtwKVOWzxeOZXRVy">
-          <Canvas Id="BNCcsp3zSRkLBh9Q24XZLu" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="VFMNpyBVNdgOu6GzZX1KY0" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ DataSetValue ************************
-
--->
-      <Node Name="DataSetValue" Bounds="1295,602" Id="N3G9qqADNzOLSshvNCCnIf">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
-          <Choice Kind="TypeFlag" Name="DataSetValue" />
-        </p:TypeAnnotation>
-        <Patch Id="VoziIxFCT9aLUBcKwuY25j">
-          <Canvas Id="VUcRmQZB05gMJkDOGSmP2n" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="HgchZbPCIQOLy3m36gneCE" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ MetaData ************************
-
--->
-      <Node Name="MetaData" Bounds="1295,653" Id="MklZmCpdXKeLPCGUDtQVyY">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
-          <Choice Kind="TypeFlag" Name="MetaData" />
-        </p:TypeAnnotation>
-        <Patch Id="PqLhxOfuvU0OnmvbJSEs0e">
-          <Canvas Id="FTzuEqStrEnN6WXWMzH2y0" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="AgBGrOo67G4PcOV6GaC9Sw" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ MetricValueExtension ************************
-
--->
-      <Node Name="MetricValueExtension" Bounds="1295,704" Id="P9mruophNfMQZL9Mk9XHj1">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
-          <Choice Kind="TypeFlag" Name="MetricValueExtension" />
-        </p:TypeAnnotation>
-        <Patch Id="J54kJ5bOLoONJ72KVOzB5Z">
-          <Canvas Id="SWgC9nPqvfLPuVeIsv5kop" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="ONaavoOFhFVLjMnKVrx6FO" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ DataSetValueExtension ************************
-
--->
-      <Node Name="DataSetValueExtension" Bounds="1295,755" Id="HcZzWNQWISbQYxINB4d3pp">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
-          <Choice Kind="TypeFlag" Name="DataSetValueExtension" />
-        </p:TypeAnnotation>
-        <Patch Id="DzUT5cv42xgPzR7zo8IW4y">
-          <Canvas Id="D0FLDaPAIA1OcxKFEwJ2qD" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="BOquB49hjn8OT84K9bTsFs" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ Parameter ************************
-
--->
-      <Node Name="Parameter" Bounds="1295,806" Id="Re6tAJ1Fh2oPia7GaX7Irk">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
-          <Choice Kind="TypeFlag" Name="Parameter" />
-        </p:TypeAnnotation>
-        <Patch Id="Dz0dhr54UX5LZCLUCBx98W">
-          <Canvas Id="EUVqYjFnihKPLyqh4mpuV1" CanvasType="Group" />
-          <ProcessDefinition Id="LyQc125fb40QX0TddpwvkP" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ ParameterValueExtension ************************
-
--->
-      <Node Name="ParameterValueExtension" Bounds="1295,857" Id="EOTK5OiTXUOPuUFBn49zL7">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
-          <Choice Kind="TypeFlag" Name="ParameterValueExtension" />
-        </p:TypeAnnotation>
-        <Patch Id="DFyQ72FwnLxNSO5kxnSkOg">
-          <Canvas Id="BKcfDqme7H1MzkbPopOoDu" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="HHJM0ekPsbNQHBmxX5bw5w" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ PropertySet ************************
-
--->
-      <Node Name="PropertySet" Bounds="1295,908" Id="HPSEUdHVRQCO5XVJUCdeb1">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
-          <Choice Kind="TypeFlag" Name="PropertySet" />
-        </p:TypeAnnotation>
-        <Patch Id="GOhmmca0FVkQNV3b9Ks1Kn">
-          <Canvas Id="JXfR4jGBazTOmD3gSbqv4j" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="Pni6Iu1UYpDMJot1svYd0H" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ PropertySetList ************************
-
--->
-      <Node Name="PropertySetList" Bounds="1295,959" Id="ORg0A6Ra43dPjQ0lr6d1gN">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
-          <Choice Kind="TypeFlag" Name="PropertySetList" />
-        </p:TypeAnnotation>
-        <Patch Id="N9O8RV9M8qUMgGqarkWatW">
-          <Canvas Id="D0gY0Ha51KQND4LmYNPzbW" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="SDUV0VAmahrPyiPJlzFptG" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ ValueBaseVersionB ************************
-
--->
-      <Node Name="ValueBaseVersionB" Bounds="1295,1010" Id="GC6Er4Cd8FwQbjVBooxmAH">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
-          <Choice Kind="TypeFlag" Name="ValueBaseVersionB" />
-        </p:TypeAnnotation>
-        <Patch Id="FWhIb7mHPKQM2zivFtINnI">
-          <Canvas Id="OllGeQY0PXbMlmQb2yztbU" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="HKb1axOi9sDLS1OehokCF3" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ PropertyValueExtension ************************
-
--->
-      <Node Name="PropertyValueExtension" Bounds="1085,1038" Id="PrnVThCVm6QPz7pjd2Ex6s">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
-          <Choice Kind="TypeFlag" Name="PropertyValueExtension" />
-        </p:TypeAnnotation>
-        <Patch Id="PDuWPd1m5AiPg5FlMlO7yl">
-          <Canvas Id="JJh0WYG8S1nQCwuldRrq9y" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="Q0fSZsdBtIcOYHfXdLXW1j" IsHidden="true" />
-        </Patch>
-      </Node>
       <Overlay Id="TXDfaHivIqyQXmOkkxHdkf" Name="Utils" Bounds="-720,208,878,655" />
-      <!--
-
-    ************************ DataTypeB ************************
-
--->
-      <Node Name="DataTypeB" Bounds="1506,500" Id="Sb58oA8hqQILPydGfdj4tU">
-        <p:NodeReference>
-          <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
-          <Choice Kind="TypeFlag" Name="DataType" />
-        </p:TypeAnnotation>
-        <Patch Id="LwSLZXndd7cQJJq782JvRo">
-          <Canvas Id="PHIIoYlZcNsOqIfNOuRGXl" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="KVuMsrGaNtFMGtESrYDS9r" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ DataTypeA ************************
-
--->
-      <Node Name="DataTypeA" Bounds="1509,554" Id="GR9x3UuqW0MOUwoQT1mMuj">
-        <p:NodeReference>
-          <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionA.Data" LastDependency="SparkplugNet.dll">
-          <Choice Kind="TypeFlag" Name="DataType" />
-        </p:TypeAnnotation>
-        <Patch Id="CJUvgD0nBZLNohBwatA67I">
-          <Canvas Id="SFoPF7B995ELsoO9zk8GOm" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="GTw0bngOZF7Nz8VtKpYC0l" IsHidden="true" />
-        </Patch>
-      </Node>
       <!--
 
     ************************ SetValue (Adaptive) ************************
@@ -2174,8 +1869,9 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Link Id="Nlpkpbabyw9M3D6bMfjqZX" Ids="FlRvgpOh4drNhe7RMoWmFk,JaqSMp88VRcNOcrQdSe6pN" />
           <Pin Id="BrZPfVzube0LLP8sj3GC5g" Name="Input" Kind="InputPin">
-            <p:TypeAnnotation LastCategoryFullName="VL.IO.Sparkplug" LastDependency="VL.IO.Sparkplug.vl">
+            <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
               <Choice Kind="TypeFlag" Name="Metric" />
             </p:TypeAnnotation>
           </Pin>
@@ -2183,7 +1879,6 @@
           <Pin Id="C7vAMBfxwRkP21csiYeCel" Name="Value" Kind="OutputPin" Bounds="-417,721" />
           <Pin Id="AruJFG7zSYUQCFIXEMNYH8" Name="TypeCode" Kind="OutputPin" Bounds="187,805" Visibility="Optional" />
           <Pin Id="G4OYbo7MEdkO1eAzDgnNqW" Name="Timestamp" Kind="OutputPin" Bounds="-983,1041" />
-          <Link Id="Nlpkpbabyw9M3D6bMfjqZX" Ids="FlRvgpOh4drNhe7RMoWmFk,JaqSMp88VRcNOcrQdSe6pN" />
         </Patch>
       </Node>
       <!--
@@ -2608,14 +2303,6 @@
           </Node>
           <Link Id="CDAbh5fAqQxPsSbXh38qhW" Ids="CjdLI8pFmmYPK5ktisF2nM,FT3Yw7KuCenLBKd6x1dk1i" />
           <Link Id="G5O2YFZ4NL0PJuxfobuhMG" Ids="Gne09tP3IaGLbkSHP9Vf6C,JrJQVfiH9dKMqnp0hL5s1v" />
-          <Pin Id="UZGvhk4SyytOfbOBhEXgoo" Name="Input" Kind="InputPin">
-            <p:TypeAnnotation LastCategoryFullName="VL.IO.Sparkplug" LastDependency="VL.IO.Sparkplug.vl">
-              <Choice Kind="TypeFlag" Name="Metric" />
-            </p:TypeAnnotation>
-          </Pin>
-          <Pin Id="SZxHxTLCVMSNiUSvXS4BUG" Name="Name" Kind="OutputPin" Bounds="-1202,1036" />
-          <Pin Id="J75BEPlUpNuNR1Q9SWXcb3" Name="Value" Kind="OutputPin" Bounds="-417,721" />
-          <Pin Id="DGsNM8OKo2LPNDfuGat0HI" Name="Data Type" Kind="OutputPin" Bounds="-1259,578" />
           <Node Bounds="-336,83,67,26" Id="BSa7aoHBrA1PcZMJASkzfU">
             <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.Metric" LastDependency="VL.IO.Sparkplug.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -2629,8 +2316,16 @@
           <Link Id="N55nIOXBcPUO7wSDgm6BoN" Ids="BwHZFaOFHD2OraTNqd2ePt,OabS6p68bDGPf2GK5w6cyD" />
           <ControlPoint Id="HwtfGli1ONZNhpAXCUp1CK" Bounds="-271,157" />
           <Link Id="F4T8jbkXfoyNN1RtbflHz2" Ids="GGw2OLpV3qzLi3LxX3C50I,HwtfGli1ONZNhpAXCUp1CK" />
-          <Pin Id="ApDlplmEFDfMJyT6UfzgGW" Name="Timestamp" Kind="OutputPin" Bounds="-766,303" />
           <Link Id="Ez6lY9goMvROHYgekmNs2m" Ids="HwtfGli1ONZNhpAXCUp1CK,ApDlplmEFDfMJyT6UfzgGW" IsHidden="true" />
+          <Pin Id="UZGvhk4SyytOfbOBhEXgoo" Name="Input" Kind="InputPin">
+            <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
+              <Choice Kind="TypeFlag" Name="Metric" />
+            </p:TypeAnnotation>
+          </Pin>
+          <Pin Id="SZxHxTLCVMSNiUSvXS4BUG" Name="Name" Kind="OutputPin" Bounds="-1202,1036" />
+          <Pin Id="J75BEPlUpNuNR1Q9SWXcb3" Name="Value" Kind="OutputPin" Bounds="-417,721" />
+          <Pin Id="DGsNM8OKo2LPNDfuGat0HI" Name="Data Type" Kind="OutputPin" Bounds="-1259,578" />
+          <Pin Id="ApDlplmEFDfMJyT6UfzgGW" Name="Timestamp" Kind="OutputPin" Bounds="-766,303" />
         </Patch>
       </Node>
       <!--
@@ -2638,33 +2333,87 @@
     ************************ PublishDeviceCommand ************************
 
 -->
-      <Node Name="PublishDeviceCommand" Bounds="584,490,149,80" Id="QGv0rN0ESf5QWMlU091i3p">
+      <Node Name="PublishDeviceCommand" Bounds="530,391,280,214" Id="QGv0rN0ESf5QWMlU091i3p">
         <p:NodeReference>
           <Choice Kind="OperationDefinition" Name="Operation" />
           <CategoryReference Kind="Category" Name="Primitive" />
         </p:NodeReference>
         <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-        <Patch Id="Dsf5T3oKWWPNkrXvPDIIn1" IsGeneric="true">
-          <Node Bounds="596,518,125,26" AutoConnect="true" Id="PE3T6LG2mBaQPGlyLdtdHP">
-            <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Application.SparkplugApplicationBase`1" LastDependency="SparkplugNet.dll">
-              <Choice Kind="OperationNode" Name="PublishDeviceCommand" />
-              <FullNameCategoryReference ID="SparkplugNet.Core.Application.SparkplugApplicationBase`1" />
+        <Patch Id="Dsf5T3oKWWPNkrXvPDIIn1" IsGeneric="true" ManuallySortedPins="true">
+          <Node Bounds="553,504,149,80" Id="KaVjl7BjWbPQTUW0DTcKsV">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+              <Choice Kind="ApplicationStatefulRegion" Name="If" />
             </p:NodeReference>
-            <Pin Id="Kiy23ASN0YvOD8A1yJ9NWB" Name="Input" Kind="StateInputPin" />
-            <Pin Id="BIsXVEtYBxQLwlljN8gFaa" Name="Metrics" Kind="InputPin" />
-            <Pin Id="EoRRtxcOxjZQLfTMzzYGQf" Name="Group Identifier" Kind="InputPin" />
-            <Pin Id="A3Ps6ekIayCLkdRiXBUc6p" Name="Edge Node Identifier" Kind="InputPin" />
-            <Pin Id="EFCgHXzi5mqPz8pPqVJ6n0" Name="Device Identifier" Kind="InputPin" />
-            <Pin Id="GKqgDSOe1c5LSqyhguX36O" Name="Output" Kind="StateOutputPin" />
-            <Pin Id="QJfEFOmS8teP4nnkUxMbEr" Name="Result" Kind="OutputPin" />
+            <Pin Id="M3uAn7D8QR4MktdLRSf0Di" Name="Condition" Kind="InputPin" />
+            <Patch Id="Lvnhb8ae7grMcF8bUGA4dL" ManuallySortedPins="true">
+              <Patch Id="LKDECOmGYICNlqncRsX0rZ" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="S98IDtQlpjrL3sh48y4SQp" Name="Then" ManuallySortedPins="true" />
+              <Node Bounds="565,533,125,26" Id="PE3T6LG2mBaQPGlyLdtdHP">
+                <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Application.SparkplugApplicationBase`1" LastDependency="SparkplugNet.dll">
+                  <Choice Kind="OperationNode" Name="PublishDeviceCommand" />
+                  <FullNameCategoryReference ID="SparkplugNet.Core.Application.SparkplugApplicationBase`1" />
+                </p:NodeReference>
+                <Pin Id="Kiy23ASN0YvOD8A1yJ9NWB" Name="Input" Kind="StateInputPin" />
+                <Pin Id="BIsXVEtYBxQLwlljN8gFaa" Name="Metrics" Kind="InputPin" />
+                <Pin Id="EoRRtxcOxjZQLfTMzzYGQf" Name="Group Identifier" Kind="InputPin" />
+                <Pin Id="A3Ps6ekIayCLkdRiXBUc6p" Name="Edge Node Identifier" Kind="InputPin" />
+                <Pin Id="EFCgHXzi5mqPz8pPqVJ6n0" Name="Device Identifier" Kind="InputPin" />
+                <Pin Id="GKqgDSOe1c5LSqyhguX36O" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="QJfEFOmS8teP4nnkUxMbEr" Name="Result" Kind="OutputPin" />
+              </Node>
+            </Patch>
           </Node>
-          <Pin Id="UVjpQxMVSfJMitJM0g12af" Name="Input" Kind="InputPin" />
-          <Pin Id="LIVMvL6xIHEQDvjvySqZH0" Name="Metrics" Kind="InputPin" />
-          <Pin Id="MXQzbqsHUBzODWBwVNAjid" Name="Group Identifier" Kind="InputPin" />
-          <Pin Id="RYeWqr9QHXxL2ObcIrhaPI" Name="Edge Node Identifier" Kind="InputPin" />
-          <Pin Id="JbYICmqf4QdPUPJ1sSxmY8" Name="Device Identifier" Kind="InputPin" />
-          <Pin Id="E5dnlFKsfq9Oq6tVvdBByh" Name="Output" Kind="OutputPin" />
-          <Pin Id="JvqhlWWBBktLHkhqshWeUz" Name="Result" Kind="OutputPin" />
+          <Link Id="T9QeLzfybIsPE6X9t0YYNt" Ids="Bm30dNFNVizQGNQcBlaQo5,Kiy23ASN0YvOD8A1yJ9NWB" />
+          <ControlPoint Id="Bm30dNFNVizQGNQcBlaQo5" Bounds="568,409" />
+          <Link Id="DjnnYVZvGNRNJz0Gq9Vgil" Ids="RagMkxqwXguM1RN8xaLBub,Bm30dNFNVizQGNQcBlaQo5" IsHidden="true" />
+          <Node Bounds="553,468,37,19" Id="Tq4YOHhmyxnLmeywDudFlF">
+            <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="AND" />
+            </p:NodeReference>
+            <Pin Id="NPH69wuqgUbLSXfSXrL2P2" Name="Input" Kind="StateInputPin" />
+            <Pin Id="UXBay2p25TwOGkcrJMCMO1" Name="Input 2" Kind="InputPin" />
+            <Pin Id="UlzYHSQYWyQODqyVKaAx8W" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="553,443,65,19" Id="OPANwveDET2M6V7tQb1HbY">
+            <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="IsAssigned" />
+            </p:NodeReference>
+            <Pin Id="BGmPWW417JWPFzDookEERK" Name="X" Kind="InputPin" />
+            <Pin Id="IznckywWd84MwRsFQf9fSZ" Name="Result" Kind="OutputPin" />
+            <Pin Id="DPSy387BcxVLSGmRQDMK9q" Name="Not Assigned" Kind="OutputPin" />
+          </Node>
+          <ControlPoint Id="M6ZuL7YOQrqNKsJFHIzdVg" Bounds="585,431" />
+          <Link Id="MIAnFyOxGFeN3OwQrdXiRa" Ids="IznckywWd84MwRsFQf9fSZ,NPH69wuqgUbLSXfSXrL2P2" />
+          <Link Id="UfgmKz8lQePOiO2WCyVzkk" Ids="JxE8Ek32Y0NQSpG4TYo402,M6ZuL7YOQrqNKsJFHIzdVg" IsHidden="true" />
+          <Link Id="HaYANcKzLeLMv38z5RNnMF" Ids="M6ZuL7YOQrqNKsJFHIzdVg,UXBay2p25TwOGkcrJMCMO1" />
+          <Link Id="SZuj45xcCsMLQy9LkniCoG" Ids="Bm30dNFNVizQGNQcBlaQo5,BGmPWW417JWPFzDookEERK" />
+          <Link Id="S3hTTKxrQaHMOyYOJieq0K" Ids="UlzYHSQYWyQODqyVKaAx8W,M3uAn7D8QR4MktdLRSf0Di" />
+          <Link Id="BfRwJZXcL7nNK8prB30Kib" Ids="MNaKtjCn0C1OM7CM2TY4tM,BIsXVEtYBxQLwlljN8gFaa" />
+          <ControlPoint Id="MNaKtjCn0C1OM7CM2TY4tM" Bounds="612,487" />
+          <Link Id="PfljwCr93ihLgBcGsrb5SP" Ids="DYmMBbddFeiMCcGqhudEjN,MNaKtjCn0C1OM7CM2TY4tM" IsHidden="true" />
+          <Link Id="Os0yPrtnlHQO2UGkUOEpzq" Ids="Gbsrueclh9oNcjzaWftUBh,EoRRtxcOxjZQLfTMzzYGQf" />
+          <ControlPoint Id="Gbsrueclh9oNcjzaWftUBh" Bounds="655,441" />
+          <Link Id="O0swSCE24O7MwYf26H9ZIk" Ids="U5vZoId88ghQZeW4afDDZ9,Gbsrueclh9oNcjzaWftUBh" IsHidden="true" />
+          <Link Id="FKJWgrfmaWvNEgnVfY78Fz" Ids="J1RZYwMova9LABiP3iYiqU,A3Ps6ekIayCLkdRiXBUc6p" />
+          <ControlPoint Id="J1RZYwMova9LABiP3iYiqU" Bounds="678,468" />
+          <Link Id="RfvRhhGaVPbMicmrbDl9Oj" Ids="SLh2qFcrE9iPRiBmLj4HgD,J1RZYwMova9LABiP3iYiqU" IsHidden="true" />
+          <Link Id="DVMyV1gyHAeP3pZESUwLdE" Ids="D71LIhQS1jsLzwG3KWYKgo,EFCgHXzi5mqPz8pPqVJ6n0" />
+          <ControlPoint Id="D71LIhQS1jsLzwG3KWYKgo" Bounds="713,484" />
+          <Link Id="JFOdtSCrJUKPmgQzGhAutS" Ids="ICIcFlGwfqdM3ImfuSJQup,D71LIhQS1jsLzwG3KWYKgo" IsHidden="true" />
+          <Pin Id="RagMkxqwXguM1RN8xaLBub" Name="Input" Kind="InputPin" Bounds="542,416" />
+          <Pin Id="DYmMBbddFeiMCcGqhudEjN" Name="Metrics" Kind="InputPin" Bounds="661,493" />
+          <Pin Id="U5vZoId88ghQZeW4afDDZ9" Name="Group Identifier" Kind="InputPin" Bounds="721,489" />
+          <Pin Id="SLh2qFcrE9iPRiBmLj4HgD" Name="Edge Node Identifier" Kind="InputPin" Bounds="755,501" />
+          <Pin Id="ICIcFlGwfqdM3ImfuSJQup" Name="Device Identifier" Kind="InputPin" Bounds="761,499" />
+          <Pin Id="JxE8Ek32Y0NQSpG4TYo402" Name="Send" Kind="InputPin">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Pin>
         </Patch>
       </Node>
       <!--
@@ -2672,14 +2421,14 @@
     ************************ KnownMetricsStorage ************************
 
 -->
-      <Node Name="KnownMetricsStorage" Bounds="876,371,138,80" Id="POLGv5CHOnTOyyouyNOi6c">
+      <Node Name="KnownMetricsStorage" Bounds="307,373,138,80" Id="POLGv5CHOnTOyyouyNOi6c">
         <p:NodeReference>
           <Choice Kind="OperationDefinition" Name="Operation" />
           <CategoryReference Kind="Category" Name="Primitive" />
         </p:NodeReference>
         <p:HideCategory p:Type="Boolean">false</p:HideCategory>
         <Patch Id="LeLZY0RoSJCLmK8EcneElQ" IsGeneric="true">
-          <Node Bounds="888,400,114,26" AutoConnect="true" Id="JWOaS3mc47FMkd6cuGfGz7">
+          <Node Bounds="319,402,114,26" AutoConnect="true" Id="JWOaS3mc47FMkd6cuGfGz7">
             <p:NodeReference LastCategoryFullName="SparkplugNet.Core.SparkplugBase`1" LastDependency="SparkplugNet.dll">
               <Choice Kind="OperationNode" Name="KnownMetricsStorage" />
               <FullNameCategoryReference ID="SparkplugNet.Core.SparkplugBase`1" />
@@ -2698,14 +2447,14 @@
     ************************ KnownMetrics ************************
 
 -->
-      <Node Name="KnownMetrics" Bounds="884,497,112,80" Id="R4BH2ju4fpbMZDuMTWI8z5">
+      <Node Name="KnownMetrics" Bounds="322,496,112,80" Id="R4BH2ju4fpbMZDuMTWI8z5">
         <p:NodeReference>
           <Choice Kind="OperationDefinition" Name="Operation" />
           <CategoryReference Kind="Category" Name="Primitive" />
         </p:NodeReference>
         <p:HideCategory p:Type="Boolean">false</p:HideCategory>
         <Patch Id="Q7CG83be7SaN4XlSWpoIar" IsGeneric="true">
-          <Node Bounds="896,526,80,26" AutoConnect="true" Id="QfMMcn85Kc5POIq77qqqM8">
+          <Node Bounds="334,525,80,26" AutoConnect="true" Id="QfMMcn85Kc5POIq77qqqM8">
             <p:NodeReference LastCategoryFullName="SparkplugNet.Core.SparkplugBase`1" LastDependency="SparkplugNet.dll">
               <Choice Kind="OperationNode" Name="KnownMetrics" />
               <FullNameCategoryReference ID="SparkplugNet.Core.SparkplugBase`1" />
@@ -2724,7 +2473,7 @@
     ************************ KnownMetricStorage ************************
 
 -->
-      <Node Name="KnownMetricStorage" Bounds="862,617" Id="AOpbAnexfYHOpLpkzeU21V">
+      <Node Name="KnownMetricStorage" Bounds="295,311" Id="AOpbAnexfYHOpLpkzeU21V">
         <p:NodeReference>
           <Choice Kind="ForwardDefinition" Name="Forward" />
           <CategoryReference Kind="Category" Name="Primitive" />
@@ -2811,7 +2560,7 @@
           <Link Id="JPCuXoVFtLHMzTyC0vAJZ4" Ids="PCdmif7KLAWMMsY8t3GXrj,UVYDt1l1jQONRXIFUpugvS" />
           <Link Id="UxRX0QUQBxoPrRDJf06wzy" Ids="UVYDt1l1jQONRXIFUpugvS,OzwIl6KRf8mLb66xk92MVJ" IsHidden="true" />
           <Pin Id="BVyfuzAPcoBOzD34Ok0emE" Name="Input" Kind="InputPin">
-            <p:TypeAnnotation LastCategoryFullName="VL.IO.Sparkplug" LastDependency="VL.IO.Sparkplug.vl">
+            <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
               <Choice Kind="TypeFlag" Name="Metric" />
             </p:TypeAnnotation>
           </Pin>
@@ -2890,7 +2639,7 @@
           <Link Id="T7toUCpwkcZOxuiCEkrCI8" Ids="J3eZ39Y6Yv5M6TGW8fSaQG,HOftYsP5srHMh11d54kGyL" />
           <Link Id="AzdQbSuljvmOflcxQVRPzt" Ids="HOftYsP5srHMh11d54kGyL,GHnxtKootHbMjaqL0lv1fP" IsHidden="true" />
           <Pin Id="HSDjamrWhKUQZXZb1NGeqY" Name="Input" Kind="InputPin" Bounds="-1472,728">
-            <p:TypeAnnotation LastCategoryFullName="VL.IO.Sparkplug" LastDependency="VL.IO.Sparkplug.vl">
+            <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
               <Choice Kind="TypeFlag" Name="Metric" />
             </p:TypeAnnotation>
           </Pin>
@@ -3191,56 +2940,465 @@
       </Node>
       <!--
 
+    ************************ Metric ************************
+
+-->
+      <Node Name="Metric" Bounds="1279,-40,111,113" Id="KDALhra00pmNXon6pu0XHp">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+          <Choice Kind="OperationDefinition" Name="Operation" />
+        </p:NodeReference>
+        <Patch Id="UzJmVE6xMd5M2aYqz8LRQS" IsGeneric="true">
+          <Node Bounds="1291,27,65,26" AutoConnect="true" Id="EbnQKqCgTniQXLST7ePGwT">
+            <p:NodeReference LastCategoryFullName="SparkplugNet.VersionB.Data.Metric" LastDependency="SparkplugNet.dll" OverloadStrategy="AllPinsThatAreNotCommon">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="AssemblyCategory" Name="Metric" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+              <PinReference Kind="InputPin" Name="Str Name" />
+              <PinReference Kind="InputPin" Name="Data Type" />
+              <PinReference Kind="InputPin" Name="Value" />
+              <PinReference Kind="InputPin" Name="Timestamp" />
+            </p:NodeReference>
+            <Pin Id="KzskYA8wJcULw3devjS15C" Name="Str Name" Kind="InputPin" />
+            <Pin Id="NsxDtwbct93Nj5JYomCIBR" Name="Data Type" Kind="InputPin" />
+            <Pin Id="HmgXnVOgxIQLjLzh016ceG" Name="Value" Kind="InputPin" />
+            <Pin Id="Cs0s7iiuiz1LvpEIDCqA5P" Name="Timestamp" Kind="InputPin" />
+            <Pin Id="RhWKhhZD59ALB03L7hjcbj" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="1330,-6,48,19" Id="NhUG5eNYulGN7c9mpkqttY">
+            <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="CastAs (Generic)" />
+            </p:NodeReference>
+            <Pin Id="ShYDJPTFgUNMCwy9mFnkhF" Name="Input" Kind="StateInputPin" />
+            <Pin Id="L8nH1QmtCWsPIflwfTf9Ie" Name="Default" Kind="InputPin" />
+            <Pin Id="RaeugjRDES8Ot7l2xoL49n" Name="Result" Kind="OutputPin" />
+            <Pin Id="I1Ah55UZEyLNHpCr1ThKHX" Name="Success" Kind="OutputPin" />
+          </Node>
+          <Link Id="Fd4PcYOhh7nLxWnNssVYxT" Ids="RaeugjRDES8Ot7l2xoL49n,HmgXnVOgxIQLjLzh016ceG" />
+          <Pin Id="HBHjqv3eVBWOXXurM2R5HB" Name="Str Name" Kind="InputPin" />
+          <Pin Id="PInMorw9DOZOyngwBw8wjV" Name="Data Type" Kind="InputPin" />
+          <Pin Id="HWsRt680Dv5N1vp2agA6mG" Name="Timestamp" Kind="InputPin" />
+          <Pin Id="SFpmDrShCoSLlXQWoe5jOf" Name="Output" Kind="OutputPin" />
+          <ControlPoint Id="Q8MFQgVZOEJN5X7wJnipTj" Bounds="1332,-22" />
+          <Link Id="IsGrKfB2jFLLowQC6RCboi" Ids="Q8MFQgVZOEJN5X7wJnipTj,ShYDJPTFgUNMCwy9mFnkhF" />
+          <Pin Id="VcSWciYbpNPPtGeA50pnOA" Name="Value" Kind="InputPin" Bounds="1356,57" />
+          <Link Id="GcJBqH3YZVDNWXa9JIfeYb" Ids="VcSWciYbpNPPtGeA50pnOA,Q8MFQgVZOEJN5X7wJnipTj" IsHidden="true" />
+        </Patch>
+      </Node>
+      <Canvas Id="E9jkGmtKirTMVACAM46w1M" Name="Advanced" Position="1769,485">
+        <!--
+
+    ************************ DeviceEventArgs ************************
+
+-->
+        <Node Name="DeviceEventArgs" Bounds="272,302" Id="FJ3JGAVWjAdOkRWbo65rWQ">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="SparkplugNet.Core.SparkplugBase`1" LastDependency="SparkplugNet.dll">
+            <Choice Kind="TypeFlag" Name="DeviceEventArgs" />
+          </p:TypeAnnotation>
+          <Patch Id="RWP0if6ah27Pg5pK27C9LA">
+            <Canvas Id="EzOzHdnJFSPPva592aFuW1" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="ClesqkwwypRM5E8VUjenso" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ NodeCommandEventArgs ************************
+
+-->
+        <Node Name="NodeCommandEventArgs" Bounds="275,353" Id="IWchXLvowYpPjRPOtqdIjC">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="SparkplugNet.Core.Node.SparkplugNodeBase`1" LastDependency="SparkplugNet.dll">
+            <Choice Kind="TypeFlag" Name="NodeCommandEventArgs" />
+          </p:TypeAnnotation>
+          <Patch Id="QDiMtVBYK2jP7VqHKh2htC">
+            <Canvas Id="KMEq5jLF1xrP1WonRJZwdq" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="MeOCYp33odHPSojeyIZ6Tv" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ DeviceDataEventArgs ************************
+
+-->
+        <Node Name="DeviceDataEventArgs" Bounds="275,401" Id="LDKCKjjL8mwMf61dCgJDd0">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="SparkplugNet.Core.Application.SparkplugApplicationBase`1" LastDependency="SparkplugNet.dll">
+            <Choice Kind="TypeFlag" Name="DeviceDataEventArgs" />
+          </p:TypeAnnotation>
+          <Patch Id="BmriG2YaKn3M6xPHQDHaku">
+            <Canvas Id="MFEdvcoMjUCOByZMLyuLtX" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="Mklk5By1Ev2M74L65a1btG" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Payload ************************
+
+-->
+        <Node Name="Payload" Bounds="278,533" Id="P2WDhq97pNAPe1B5SCmuZr">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
+            <Choice Kind="TypeFlag" Name="Payload" />
+          </p:TypeAnnotation>
+          <Patch Id="E1OYZr2shghLbeiLLaV8vc">
+            <Canvas Id="Pg2aogd9vwDPXUHk8O9euX" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="VvYfjdiDfVMMuN4V9Zu6yW" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Template ************************
+
+-->
+        <Node Name="Template" Bounds="278,584" Id="U9Sc4PB84pqQGxyMlUpArt">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
+            <Choice Kind="TypeFlag" Name="Template" />
+          </p:TypeAnnotation>
+          <Patch Id="IjHop981WqJMpbGDsGsCVr">
+            <Canvas Id="Kg1TQsjjyemQXEelTg8eCn" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="DDRNUeqsJpwNbOZh1khHl4" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ DataSet ************************
+
+-->
+        <Node Name="DataSet" Bounds="278,635" Id="AuIgRbYsCViML1o56ey8fW">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
+            <Choice Kind="TypeFlag" Name="DataSet" />
+          </p:TypeAnnotation>
+          <Patch Id="U9ZGBcNuOUfMJvAe4qBfY8">
+            <Canvas Id="Pm046LSBCQoNMdb8vxgmbo" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="GmIM0DFWOPmQVhyk9s88n5" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ DataSetValue ************************
+
+-->
+        <Node Name="DataSetValue" Bounds="278,686" Id="VlBbnFU2CxrOTwlHYmsqX9">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
+            <Choice Kind="TypeFlag" Name="DataSetValue" />
+          </p:TypeAnnotation>
+          <Patch Id="KgbH1jnLqZhNS2YVrcpUXk">
+            <Canvas Id="F8hamLEaPvYLiMdBTVfz5D" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="QzCWFpwioKlMDdYWzJKe6i" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ MetaData ************************
+
+-->
+        <Node Name="MetaData" Bounds="278,737" Id="Ay7ESP6fh3tNFCmz7gvs3t">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
+            <Choice Kind="TypeFlag" Name="MetaData" />
+          </p:TypeAnnotation>
+          <Patch Id="RxlvPqUu4neOhajB4Yr4xU">
+            <Canvas Id="KSbaixFREtiM85LKJrG74b" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="KL0leYSh7udOIzJ58rzIJI" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ MetricValueExtension ************************
+
+-->
+        <Node Name="MetricValueExtension" Bounds="278,788" Id="OMHG9u0WWgmLlEECoyJBE3">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
+            <Choice Kind="TypeFlag" Name="MetricValueExtension" />
+          </p:TypeAnnotation>
+          <Patch Id="QAjfrp4adMeMVUSel9bdnj">
+            <Canvas Id="MZTYcKlNbhyL1m4JWx5YFJ" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="NblsGogWZQ2PAI9N1M4Liy" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ DataSetValueExtension ************************
+
+-->
+        <Node Name="DataSetValueExtension" Bounds="278,839" Id="CMUwsiBxnOHNU0qOy5iOAo">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
+            <Choice Kind="TypeFlag" Name="DataSetValueExtension" />
+          </p:TypeAnnotation>
+          <Patch Id="TlHrRwnHYtPOkJdQyXOHiA">
+            <Canvas Id="GTVypZXwVkzOBQGgknXqUX" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="NLCnY8MCXJJO4anQY5LUHM" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Parameter ************************
+
+-->
+        <Node Name="Parameter" Bounds="278,890" Id="GdTqUHotuy3M7dp9g6Xkhi">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
+            <Choice Kind="TypeFlag" Name="Parameter" />
+          </p:TypeAnnotation>
+          <Patch Id="CVqa0xSY86QPpoRtMVGPt3">
+            <Canvas Id="H5oJgo23ifQL6lSw1qG0Q6" CanvasType="Group" />
+            <ProcessDefinition Id="Soa3BUYIeeMM2xFPKc9iFW" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ ParameterValueExtension ************************
+
+-->
+        <Node Name="ParameterValueExtension" Bounds="278,941" Id="EefpqttgX8uPpAeXQAiDsR">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
+            <Choice Kind="TypeFlag" Name="ParameterValueExtension" />
+          </p:TypeAnnotation>
+          <Patch Id="B4xNBvynkgsNlgyZZhQ1hY">
+            <Canvas Id="BAEstMr8r59OBFrshGx60N" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="DezNYKSso0VOthWPsG3OJB" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ PropertySet ************************
+
+-->
+        <Node Name="PropertySet" Bounds="278,992" Id="UwnZTqvMLvkOqPGAMZuAeO">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
+            <Choice Kind="TypeFlag" Name="PropertySet" />
+          </p:TypeAnnotation>
+          <Patch Id="Lq0lPcaoxabOYjjvS5PLWL">
+            <Canvas Id="REeP6mH9mgnMTms8Sn7GTE" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="Iarfv2rr3CYLQzEQZv0AoJ" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ PropertySetList ************************
+
+-->
+        <Node Name="PropertySetList" Bounds="278,1043" Id="TeCdrQKg7nKO0VGNGeTVRs">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
+            <Choice Kind="TypeFlag" Name="PropertySetList" />
+          </p:TypeAnnotation>
+          <Patch Id="VslmLwO5WZINDWX89VhBOy">
+            <Canvas Id="DybgYwDaZayPBduf7AEryV" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="SVx2oTKwUl6MEIuZPSTHXU" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ ValueBaseVersionB ************************
+
+-->
+        <Node Name="ValueBaseVersionB" Bounds="278,1094" Id="OtJg8n1QjDTO5ddv6M6GaG">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
+            <Choice Kind="TypeFlag" Name="ValueBaseVersionB" />
+          </p:TypeAnnotation>
+          <Patch Id="FS1kY50t8n0QLeCDpgH4mz">
+            <Canvas Id="HIg4GBjHwNENcRi822SkGD" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="UnHEvDU8Be6PQnBueRNXm8" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ PropertyValueExtension ************************
+
+-->
+        <Node Name="PropertyValueExtension" Bounds="274,1154" Id="SFfROeICrxVMYNUZgWGHgf">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
+            <Choice Kind="TypeFlag" Name="PropertyValueExtension" />
+          </p:TypeAnnotation>
+          <Patch Id="Vg9nVCwvL2ENnoaDRVPpQc">
+            <Canvas Id="PMXQito2IByNLhZgnGUrwP" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="UtIwm996f1bNnpyxQnGa96" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ DataTypeB ************************
+
+-->
+        <Node Name="DataTypeB" Bounds="489,584" Id="MlrIhoe3dWfL0qqq71qHh2">
+          <p:NodeReference>
+            <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
+            <Choice Kind="TypeFlag" Name="DataType" />
+          </p:TypeAnnotation>
+          <Patch Id="VRk95bNOpUGL4vOmpjJ8t6">
+            <Canvas Id="TciqIvFPAuxLnXTFPtCqa9" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="L4HsuAXSUjYNDLMZB4EQEn" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ DataTypeA ************************
+
+-->
+        <Node Name="DataTypeA" Bounds="492,638" Id="QzPLLbuwvuhMLlhjLNK9Dt">
+          <p:NodeReference>
+            <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionA.Data" LastDependency="SparkplugNet.dll">
+            <Choice Kind="TypeFlag" Name="DataType" />
+          </p:TypeAnnotation>
+          <Patch Id="TUDShPmj8G0O4LREgDxhaB">
+            <Canvas Id="TiwpOE9Xv5tOERGkKv5QbG" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="TFg5YWKCFL4PSkfuco63VR" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
     ************************ StatusMessageEventArgs ************************
 
 -->
-      <Node Name="StatusMessageEventArgs" Bounds="1299,326" Id="C6WhQm5rABMOYL1pQGdOkH">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="SparkplugNet.Core.Node.SparkplugNodeBase`1" LastDependency="SparkplugNet.dll">
-          <Choice Kind="TypeFlag" Name="StatusMessageEventArgs" />
-        </p:TypeAnnotation>
-        <Patch Id="UlkQ7yJh5WKNyJZ7G0FMne">
-          <Canvas Id="T3L6VHaWrBRNrPbgjwmQBh" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="QaI1dbj43XEOi8zJSBjWUM" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
+        <Node Name="StatusMessageEventArgs" Bounds="279,442" Id="UTUIuaigOTVNP33MbCZmGS">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="SparkplugNet.Core.Node.SparkplugNodeBase`1" LastDependency="SparkplugNet.dll">
+            <Choice Kind="TypeFlag" Name="StatusMessageEventArgs" />
+          </p:TypeAnnotation>
+          <Patch Id="KEKxRLzLgOqP9b3Xtpurlx">
+            <Canvas Id="K7I4xyH0jUTNSvh20SpXTQ" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="Vsar9MNQFr1LThAqTd1fN1" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
 
     ************************ DeviceCommandEventArgs ************************
 
 -->
-      <Node Name="DeviceCommandEventArgs" Bounds="1575,286" Id="JfoR1Vyl1BXNKgM3Bcg1tb">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="SparkplugNet.Core.Node.SparkplugNodeBase`1" LastDependency="SparkplugNet.dll">
-          <Choice Kind="TypeFlag" Name="DeviceCommandEventArgs" />
-        </p:TypeAnnotation>
-        <Patch Id="RuGSZDAVVwbPsPfOHHmrPE">
-          <Canvas Id="R66aNpk5Ja7MMC8qtuyorG" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="L2rfNwr1tPpLGcRtEYFLO3" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
+        <Node Name="DeviceCommandEventArgs" Bounds="558,370" Id="RRmOqXeqUXvLyWQj47jZJi">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="SparkplugNet.Core.Node.SparkplugNodeBase`1" LastDependency="SparkplugNet.dll">
+            <Choice Kind="TypeFlag" Name="DeviceCommandEventArgs" />
+          </p:TypeAnnotation>
+          <Patch Id="AGDoiYF8Rx1LPGTS4D0U9f">
+            <Canvas Id="Q2Ll2Z6otmmLYGDmWfyBwy" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="QDgCqkBxKnjP2Qp4RuPGDl" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
 
     ************************ NodeDataEventArgs ************************
 
 -->
-      <Node Name="NodeDataEventArgs" Bounds="1565,233" Id="HzEo3CgbAjrNVd4gpobMMh">
+        <Node Name="NodeDataEventArgs" Bounds="548,317" Id="VJ2VDTjJvoXPXNfwxk866r">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="SparkplugNet.Core.Application.SparkplugApplicationBase`1" LastDependency="SparkplugNet.dll">
+            <Choice Kind="TypeFlag" Name="NodeDataEventArgs" />
+          </p:TypeAnnotation>
+          <Patch Id="QeoOIJ2yFe8MZ0ska8Qqcp">
+            <Canvas Id="QFRKFguuw9XPj1VLhLhDec" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="HtsgOUkRcRDMG2UZcwgAko" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Metric (Advanced) ************************
+
+-->
+        <Node Name="Metric (Advanced)" Bounds="270,246" Id="EMckoEM4HftOMdALeLLz8v">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionB.Data" LastDependency="SparkplugNet.dll">
+            <Choice Kind="TypeFlag" Name="Metric" />
+          </p:TypeAnnotation>
+          <Patch Id="CS8mDFXxi4tNOava2fFgx3">
+            <Canvas Id="Qat8yLXgdJZPzClU57hOqC" CanvasType="Group" />
+            <ProcessDefinition Id="RppfwCktT1NLMnaswoWZVI" IsHidden="true" />
+          </Patch>
+        </Node>
+      </Canvas>
+      <!--
+
+    ************************ MetricState ************************
+
+-->
+      <Node Name="MetricState" Bounds="1067,448" Id="FywABoOwsMOMRsPPTV2a31">
         <p:NodeReference>
           <Choice Kind="ForwardDefinition" Name="Forward" />
           <CategoryReference Kind="Category" Name="Primitive" />
         </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="SparkplugNet.Core.Application.SparkplugApplicationBase`1" LastDependency="SparkplugNet.dll">
-          <Choice Kind="TypeFlag" Name="NodeDataEventArgs" />
+        <p:TypeAnnotation LastCategoryFullName="SparkplugNet.Core" LastDependency="SparkplugNet.dll">
+          <Choice Kind="TypeFlag" Name="MetricState`1" />
         </p:TypeAnnotation>
-        <Patch Id="R2whnElYWCmQIuhKrfqRr6">
-          <Canvas Id="AOqsBRcYJpdQM85dZdYAoX" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="LbjFeYQVtqRPw1P8WVxqWD" IsHidden="true" />
+        <Patch Id="HFGd65ySemyLw0FdgPe1qz">
+          <Canvas Id="Ugpv8QniPluP3pqimfyfJr" BordersChecked="false" CanvasType="Group" />
+          <ProcessDefinition Id="BuKm07ypjVqNkEvxrvl4BL" IsHidden="true" />
         </Patch>
       </Node>
     </Canvas>
