@@ -64,22 +64,6 @@
             <ControlPoint Id="CQIjd69HI6DN5I8sSgV1hJ" Bounds="1115,838" />
             <Pad Id="CP0U40AClqcQQOltToI5k8" Comment="Is Connected" Bounds="1115,864,35,35" ShowValueBox="true" isIOBox="true" />
             <ControlPoint Id="U2koeSqzKosOZ06UW9O9lB" Bounds="1115,920" />
-            <Node Bounds="135,892,119,26" Id="SJSNbAikCtXOMOnsQmVR3y">
-              <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Application.SparkplugApplicationBase`1" LastDependency="SparkplugNet.dll">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="AssemblyCategory" Name="SparkplugApplicationBase`1" />
-                <Choice Kind="OperationCallFlag" Name="PublishNodeCommand" />
-              </p:NodeReference>
-              <Pin Id="QRtW5irb8B9MZcOVz9mbuL" Name="Input" Kind="StateInputPin" />
-              <Pin Id="V4ll8a3Ey1SQCgvpa7OhYN" Name="Metrics" Kind="InputPin" />
-              <Pin Id="PGGKKe17nWkOtMGrYgtKqb" Name="Group Identifier" Kind="InputPin" />
-              <Pin Id="KEQeOwRzCqdMNmV718armb" Name="Edge Node Identifier" Kind="InputPin" />
-              <Pin Id="OLOB14Wfcj3MSBvOlG0P2n" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="KKIUmn9EC9sLpJfBsMLRYB" Name="Result" Kind="OutputPin" />
-            </Node>
-            <ControlPoint Id="SntVNJqaV7zMwNewobuH8o" Bounds="213,847" />
-            <ControlPoint Id="Q9dTJTLhA66PFtnzpIwZkn" Bounds="252,870" />
-            <ControlPoint Id="J1TrpTpVbGeLMHhEQDUDvq" Bounds="175,809" />
             <ControlPoint Id="Ey5qnL4FxLiQNGDwLc24vZ" Bounds="497,672" />
             <Node Bounds="1245,808,118,26" Id="AQeJndsb6T8Mmz8RAYw3Un">
               <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Application.SparkplugApplicationBase`1" LastDependency="SparkplugNet.dll">
@@ -189,7 +173,7 @@
               <Pin Id="JxiDIK36eo8LrPsBYPzGeR" Name="Output" Kind="StateOutputPin" />
               <Pin Id="RVNq4gtUi8HO7imxo96m7z" Name="Result" Kind="OutputPin" />
             </Node>
-            <Node Bounds="633,215,90,26" Id="NLDNTZLjXJDPKuwjA9Pjv9">
+            <Node Bounds="406,71,90,26" Id="NLDNTZLjXJDPKuwjA9Pjv9">
               <p:NodeReference LastCategoryFullName="Serilog.LoggerConfiguration" LastDependency="Serilog.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="LoggerConfiguration" />
@@ -197,7 +181,7 @@
               </p:NodeReference>
               <Pin Id="LQ74Gmg0P5cMldpPeQWBk8" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Node Bounds="633,259,90,26" Id="NhN8brrHAi3NOQoDYT3zTp">
+            <Node Bounds="630,182,90,26" Id="NhN8brrHAi3NOQoDYT3zTp">
               <p:NodeReference LastCategoryFullName="Serilog.LoggerConfiguration" LastDependency="Serilog.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="Serilog" />
@@ -255,14 +239,16 @@
               <Pin Id="UFfy8UKxsYpMKejYGSp9cS" Name="Use Tls" Kind="InputPin" />
               <Pin Id="I2vVDPo3P1IQENLQC4Di5D" Name="Scada Host Identifier" Kind="InputPin" />
               <Pin Id="M4EOOhVSuSQPJGWIUkf9Db" Name="Reconnect Interval" Kind="InputPin" />
-              <Pin Id="MekotqWvUZDOs5Q2CtKKA6" Name="Is Primary Application" Kind="InputPin" />
+              <Pin Id="D5HywM01NctLJTQdLo9G0H" Name="Mqtt Protocol Version" Kind="InputPin" />
+              <Pin Id="Hc6FeKPUsKbOetep60Wzuc" Name="Metric Screen Method" Kind="InputPin" />
               <Pin Id="B8SlvWurEAxL9VEejaC6ry" Name="Get Tls Parameters" Kind="InputPin" />
               <Pin Id="F2FNVgpINc5QKN6HpuUYTu" Name="Web Socket Parameters" Kind="InputPin" />
               <Pin Id="AuGP4fz36JVOyJUmLPR01z" Name="Proxy Options" Kind="InputPin" />
+              <Pin Id="MekotqWvUZDOs5Q2CtKKA6" Name="Is Primary Application" Kind="InputPin" />
               <Pin Id="MqxNusy1dHuNf07d9NZCL4" Name="Cancellation Token" Kind="InputPin" />
               <Pin Id="QbYzA3w9xgPNzegN62KYc1" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Pad Id="VU0kj9WYZVQN3zBse6lEX2" SlotId="Ji1l1j3log5PBdjS3sQsnr" Bounds="726,987" />
+            <Pad Id="VU0kj9WYZVQN3zBse6lEX2" SlotId="Ji1l1j3log5PBdjS3sQsnr" Bounds="714,979" />
             <Node Bounds="711,1007,65,19" Id="KPSjGqr68oIPLsr5jeFTLr">
               <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -272,7 +258,7 @@
               <Pin Id="JmSfTQT3IOONiz0snCDw6u" Name="Result" Kind="OutputPin" />
               <Pin Id="IZRpWdVUU5bLUSLgdZByj5" Name="Not Assigned" Kind="OutputPin" />
             </Node>
-            <Node Bounds="707,1048,246,69" Id="Io4homgrr2YMgCcqukSdJL">
+            <Node Bounds="712,1110,244,80" Id="Io4homgrr2YMgCcqukSdJL">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <CategoryReference Kind="Category" Name="Primitive" />
@@ -280,26 +266,16 @@
               </p:NodeReference>
               <Pin Id="NnH8abIaKmjLzQS3TyD700" Name="Condition" Kind="InputPin" />
               <Patch Id="CS3zOOdVQjlO8qb3u8w4sH" ManuallySortedPins="true">
-                <Node Bounds="721,1086,220,26" Id="JLGazHCP5cOOM0fdX5OHJp">
-                  <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Application.SparkplugApplicationOptions" LastDependency="SparkplugNet.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="SetAddSessionNumberToCommandMessages" />
-                  </p:NodeReference>
-                  <Pin Id="FmPijOSJ0THMXlBKfdvCst" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="KYLLIt2l7mXQYSSuYNFnXf" Name="Value" Kind="InputPin" DefaultValue="False" />
-                  <Pin Id="DSgUshNXdP4O4qFe7CPyel" Name="Output" Kind="StateOutputPin" />
-                </Node>
                 <Patch Id="IaYYEPIi5LxNuHZZ5AKLsd" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="SLMVxfOmAC4O0RXPGymsCe" Name="Then" ManuallySortedPins="true" />
               </Patch>
             </Node>
-            <ControlPoint Id="IESW3S1qwQvLBJlT2sxA9N" Bounds="935,984" />
-            <Pad Id="O7Es1SYgqhgMQ8snhblyPE" Comment="Restricted To Minimum Level" Bounds="760,250,82,15" ShowValueBox="true" isIOBox="true" Value="Verbose">
+            <Pad Id="O7Es1SYgqhgMQ8snhblyPE" Comment="Restricted To Minimum Level" Bounds="738,230,82,15" ShowValueBox="true" isIOBox="true" Value="Verbose">
               <p:TypeAnnotation LastCategoryFullName="Serilog.Events" LastDependency="Serilog.dll">
                 <Choice Kind="TypeFlag" Name="LogEventLevel" />
               </p:TypeAnnotation>
             </Pad>
-            <Node Bounds="853,112,86,26" Id="QDAJpyscvI4LFAyLlgiHzv">
+            <Node Bounds="805,259,86,26" Id="QDAJpyscvI4LFAyLlgiHzv">
               <p:NodeReference LastCategoryFullName="Serilog.Core.LoggingLevelSwitch" LastDependency="Serilog.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="LoggingLevelSwitch" />
@@ -318,13 +294,34 @@
               <Pin Id="OIdzm7pgUwnPjyYfTxLBmP" Name="Device States" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="EosQV0N7VZzLQUJIKcgIP4" Bounds="1522,873" />
+            <Node Bounds="495,145,142,26" Id="F2GqLhcG6hxMJoPx8g3IlS">
+              <p:NodeReference LastCategoryFullName="Serilog.Configuration.LoggerMinimumLevelConfiguration" LastDependency="Serilog.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="LoggerMinimumLevelConfiguration" />
+                <Choice Kind="OperationCallFlag" Name="Is" />
+              </p:NodeReference>
+              <Pin Id="EsBbYupcF44Na80AzU9H5x" Name="Input" Kind="StateInputPin" />
+              <Pin Id="HlDyHkIEbA7NbnOTDIM43I" Name="Minimum Level" Kind="InputPin" DefaultValue="Verbose" />
+              <Pin Id="Un2BWFwkXLAOTLAx6JMQyO" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="DNjuLw4hmSfM3BS4VaWPeo" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="401,110" Id="FsD0i7V96YLOzohidiRagt">
+              <p:NodeReference LastCategoryFullName="Serilog.LoggerConfiguration" LastDependency="Serilog.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="LoggerConfiguration" />
+                <Choice Kind="OperationCallFlag" Name="MinimumLevel" />
+              </p:NodeReference>
+              <Pin Id="EPl2T9hXGwZODSLmdvQSdt" Name="Input" Kind="StateInputPin" />
+              <Pin Id="DFVkAfITAZvLexD6q4y42D" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="M8STl3CBxGYQBOCiPhrGAF" Name="Minimum Level" Kind="OutputPin" />
+            </Node>
           </Canvas>
           <ProcessDefinition Id="K0VZ7ysnlhyPHYV3Wk6EYc" IsHidden="true">
             <Fragment Id="Q4GFcSp3m4KOLTsPT6LCoo" Patch="R0ZmSRV5M2aPzlFiwLG59J" Enabled="true" />
             <Fragment Id="Ogp630VEPnvQNGc4mMEO2T" Patch="BsS2sfXQn4KO71FPYkJeda" />
             <Fragment Id="OpEjLFedFnxNmRGUiI6obL" Patch="K4jKyEXv2WjNxyXYwNCQwq" Enabled="true" />
             <Fragment Id="DkfzgyZLhiRPM25g8mP3E9" Patch="IWuiZFwooujMNbEfCKdf8x" />
-            <Fragment Id="NWyO7drAFJvO1tKveV1xYo" Patch="B0qayyESIVaNm8FLfXA8Pr" />
+            <Fragment Id="NWyO7drAFJvO1tKveV1xYo" Patch="B0qayyESIVaNm8FLfXA8Pr" Enabled="true" />
           </ProcessDefinition>
           <Slot Id="C9htPviyVUkNH8x25Omprl" Name="App" />
           <Link Id="MESNPP4953gPemWtgmRaIY" Ids="KONXArTuGBXPt3C13gXk8B,F4FO4lbxpMtPa5PqRdZNl2" />
@@ -334,13 +331,6 @@
           <Link Id="U6YkFEHNL7QPythU4fncVb" Ids="PlsDJfLrwmYPOosU938QC8,CQIjd69HI6DN5I8sSgV1hJ,CP0U40AClqcQQOltToI5k8" />
           <Link Id="SVpU4nciWpvOceJm04K2ie" Ids="CP0U40AClqcQQOltToI5k8,U2koeSqzKosOZ06UW9O9lB" />
           <Link Id="A7P7h08732oM1X2xJ9JTqm" Ids="U2koeSqzKosOZ06UW9O9lB,V2YnhJ4l3zfPvXRRD5IoSJ" IsHidden="true" />
-          <Link Id="DTRX8wXEKFYMdSfV9yWFCI" Ids="F4FO4lbxpMtPa5PqRdZNl2,QRtW5irb8B9MZcOVz9mbuL" />
-          <Link Id="OEkvz0NcBCTQD1oOI9HOo6" Ids="SntVNJqaV7zMwNewobuH8o,PGGKKe17nWkOtMGrYgtKqb" />
-          <Link Id="CnRDrO3nGWmL6QEEVtvm6z" Ids="Lo0SMFDTPZANT842qiB81D,SntVNJqaV7zMwNewobuH8o" IsHidden="true" />
-          <Link Id="QAqLS4Yh39mOxb02ylYmH5" Ids="Q9dTJTLhA66PFtnzpIwZkn,KEQeOwRzCqdMNmV718armb" />
-          <Link Id="VfV54G6r1ioOydYzSHOzMC" Ids="RPz22co4LqzPu6c8cn0dT4,Q9dTJTLhA66PFtnzpIwZkn" IsHidden="true" />
-          <Link Id="SlXYxrTykyaLdJAkyFCH2r" Ids="J1TrpTpVbGeLMHhEQDUDvq,V4ll8a3Ey1SQCgvpa7OhYN" />
-          <Link Id="PLD5gCezaFfQV0vWy6CF33" Ids="OCPvhRuU8SZOYDfvMPoKcz,J1TrpTpVbGeLMHhEQDUDvq" IsHidden="true" />
           <Link Id="EJ4h4HagW0WLRD6hxFGQxv" Ids="F4FO4lbxpMtPa5PqRdZNl2,Ey5qnL4FxLiQNGDwLc24vZ" />
           <Link Id="AcPAKdLpqBgN12ggnSm6wv" Ids="Ey5qnL4FxLiQNGDwLc24vZ,Rdzhu4xGfccLmWgQ4vy8Q1" IsHidden="true" />
           <Link Id="RWYP7UI8UnjMEbg4HRpgCG" Ids="F4FO4lbxpMtPa5PqRdZNl2,HHK3RRxXDNcONrpr1NP0FZ" />
@@ -379,7 +369,6 @@
           <Link Id="Qwbz9z9OfZDNMqYRoHrKmo" Ids="KUPkd5WOS5iNNlMwFc2uFB,J8kR6QXnJo4LX7ZqmHPj2L" />
           <Link Id="QKB1lQ7v4euLAyowLu1WPC" Ids="J8kR6QXnJo4LX7ZqmHPj2L,LBCFf6blxYxOtibJYRO0f6" />
           <Link Id="BViqPXjlw8cMuMu3oUL4al" Ids="LBCFf6blxYxOtibJYRO0f6,BeS92tWeo5OMymELoVDYA5" IsHidden="true" />
-          <Link Id="AobD3I8dXsvLqx62O7KOFg" Ids="LQ74Gmg0P5cMldpPeQWBk8,CRSEfPg2AZKMwRNZQIhh3S" />
           <Link Id="I5O3EGpgr69NXkfF0XhutO" Ids="RVNq4gtUi8HO7imxo96m7z,BtSuh1eAVGBMYz30kNfDjy" />
           <Link Id="McceO6WAJ79LnUMHWN3Ugh" Ids="LxW39GN82e2OlmfA9jJwoa,VunHjWBkMbhOblaPZXhzc6" />
           <Link Id="OTHHkEEqjgGO8ADgYY7ylw" Ids="Osl086U4KHoL1mOI5BgSrM,QYQEYJqNyvLQXtRLrOc5HP" />
@@ -391,7 +380,16 @@
           <Slot Id="To9IYFnhKNqOfDwi9XedIn" Name="NodeDeathReceived" />
           <Slot Id="F6Y37jMr0A2QGTjXFFZ3pc" Name="NodeDataReceived" />
           <Link Id="VmShXFwhB8mMgg4trgV4qn" Ids="QbYzA3w9xgPNzegN62KYc1,J1iXa1FjkMzQMZnyOzv2QB" />
-          <Patch Id="R0ZmSRV5M2aPzlFiwLG59J" Name="Create" ParticipatingElements="VfQmmUA2medOO8eZ5s8pk3,Sh5FcRVScXsLMNxJ3o3vzZ">
+          <Slot Id="Ji1l1j3log5PBdjS3sQsnr" Name="Output" />
+          <Link Id="Li47krHuKQZM1JUR3FLIpw" Ids="QbYzA3w9xgPNzegN62KYc1,VU0kj9WYZVQN3zBse6lEX2" />
+          <Link Id="TVBDKmXyV1CL1fj7uqKzYF" Ids="VU0kj9WYZVQN3zBse6lEX2,HaIWLGJyl4iPkm7jReetwM" />
+          <Link Id="LvpLbNNtcHcO8l1SXxb0ST" Ids="JmSfTQT3IOONiz0snCDw6u,NnH8abIaKmjLzQS3TyD700" />
+          <Link Id="SCDx1Nui1ShNvWKOGGcJac" Ids="O7Es1SYgqhgMQ8snhblyPE,KpLbeNKvROeN0luQlkuLcx" />
+          <Link Id="UEV77E9plvKO8e5eTKZAgM" Ids="Hi3BmIkBToZMbAy6uAkeYf,VmElEkPNbeXMa364WjFLMO" />
+          <Link Id="M18CKvtN6mhOpnMtNZycdx" Ids="F4FO4lbxpMtPa5PqRdZNl2,G78mu6NYYKmNX4KW6rxO5J" />
+          <Link Id="K2oyk6ermWRNRmGVx3NYGq" Ids="OIdzm7pgUwnPjyYfTxLBmP,EosQV0N7VZzLQUJIKcgIP4" />
+          <Link Id="RC7YmKlfZywOmL4wXNZfkO" Ids="EosQV0N7VZzLQUJIKcgIP4,VDecwK6vi9VQXqMlrAa7sp" IsHidden="true" />
+          <Patch Id="R0ZmSRV5M2aPzlFiwLG59J" Name="Create" ParticipatingElements="VfQmmUA2medOO8eZ5s8pk3,F2GqLhcG6hxMJoPx8g3IlS,Sh5FcRVScXsLMNxJ3o3vzZ">
             <Pin Id="KYmH2zi4H2ZLdyQDckGXL7" Name="Known Metrics" Kind="InputPin" />
           </Patch>
           <Patch Id="BsS2sfXQn4KO71FPYkJeda" Name="Start" ParticipatingElements="UfOsRwsJZRLOyiXC0kVWiY,VBzUNERsWzhLFwCrBXwwP8">
@@ -403,10 +401,12 @@
             <Pin Id="BV5D4Me5OxXQCVecMiNvq6" Name="Use Tls" Kind="InputPin" />
             <Pin Id="IZMaX9B7JHcMSFqFKHZLKx" Name="Scada Host Identifier" Kind="InputPin" />
             <Pin Id="HydOwQPRM8lPdxXpX8zXJZ" Name="Reconnect Interval" Kind="InputPin" />
-            <Pin Id="BXS93WmZNpKNoRJWdH84Ly" Name="Is Primary Application" Kind="InputPin" />
+            <Pin Id="H4hL9GQgABPOhSmkJ7MOIr" Name="Mqtt Protocol Version" Kind="InputPin" />
+            <Pin Id="LXUPV2PFIWLNLD6D3a88VN" Name="Metric Screen Method" Kind="InputPin" />
             <Pin Id="QDUGvRetJQmP4n4kdh1nsb" Name="Get Tls Parameters" Kind="InputPin" />
             <Pin Id="FgP5vhnMEdJPWgby5MSud3" Name="Web Socket Parameters" Kind="InputPin" />
             <Pin Id="RWR5XYE9CPNOEmRMWhYgKr" Name="Proxy Options" Kind="InputPin" />
+            <Pin Id="BXS93WmZNpKNoRJWdH84Ly" Name="Is Primary Application" Kind="InputPin" />
             <Pin Id="AQiynbny8hhL2Dstg5ql6w" Name="Cancellation Token" Kind="InputPin" />
           </Patch>
           <Patch Id="K4jKyEXv2WjNxyXYwNCQwq" Name="Update" ParticipatingElements="LQrtIp2VbwrNd38UGWzJdW">
@@ -421,28 +421,14 @@
             <Pin Id="V2YnhJ4l3zfPvXRRD5IoSJ" Name="Is Connected" Kind="OutputPin" Bounds="1178,890" />
             <Pin Id="FzBJKabyvPPLwp7zafDK5U" Name="Node States" Kind="OutputPin" Bounds="885,1047" />
             <Pin Id="JindCnW0Gy1Ognyh26fk1u" Name="Known Metrics Storage" Kind="OutputPin" Bounds="1418,698" />
-            <Pin Id="IEzhwEfN8HaLb7hqi36WV1" Name="Value" Kind="InputPin" Bounds="953,987" />
             <Pin Id="VDecwK6vi9VQXqMlrAa7sp" Name="Device States" Kind="OutputPin" Bounds="1524,867" />
           </Patch>
           <Patch Id="IWuiZFwooujMNbEfCKdf8x" Name="Stop" ParticipatingElements="VLgWlhiyPFiLbhL9lImAMX,RGxsi9AnFjXMEreV57ag5L" />
-          <Patch Id="B0qayyESIVaNm8FLfXA8Pr" Name="PublishNodeCommand" ParticipatingElements="SJSNbAikCtXOMOnsQmVR3y">
-            <Pin Id="OCPvhRuU8SZOYDfvMPoKcz" Name="Metrics" Kind="InputPin" Bounds="179,808" />
-            <Pin Id="Lo0SMFDTPZANT842qiB81D" Name="Group Identifier" Kind="InputPin" Bounds="212,857" />
-            <Pin Id="RPz22co4LqzPu6c8cn0dT4" Name="Edge Node Identifier" Kind="InputPin" Bounds="249,876" />
-          </Patch>
+          <Patch Id="B0qayyESIVaNm8FLfXA8Pr" Name="PublishNodeCommand" />
           <Patch Id="Owz6QxLzO6EP4Yee9C8EdR" Name="Dispose" />
-          <Slot Id="Ji1l1j3log5PBdjS3sQsnr" Name="Output" />
-          <Link Id="Li47krHuKQZM1JUR3FLIpw" Ids="QbYzA3w9xgPNzegN62KYc1,VU0kj9WYZVQN3zBse6lEX2" />
-          <Link Id="APmcEbYMdMsL9lIIvQmYjU" Ids="VU0kj9WYZVQN3zBse6lEX2,FmPijOSJ0THMXlBKfdvCst" />
-          <Link Id="TVBDKmXyV1CL1fj7uqKzYF" Ids="VU0kj9WYZVQN3zBse6lEX2,HaIWLGJyl4iPkm7jReetwM" />
-          <Link Id="LvpLbNNtcHcO8l1SXxb0ST" Ids="JmSfTQT3IOONiz0snCDw6u,NnH8abIaKmjLzQS3TyD700" />
-          <Link Id="AXTVI986WhkNLMBrSjJjx3" Ids="IESW3S1qwQvLBJlT2sxA9N,KYLLIt2l7mXQYSSuYNFnXf" />
-          <Link Id="A4SMaazp4RlNTTHDupHbOV" Ids="IEzhwEfN8HaLb7hqi36WV1,IESW3S1qwQvLBJlT2sxA9N" IsHidden="true" />
-          <Link Id="SCDx1Nui1ShNvWKOGGcJac" Ids="O7Es1SYgqhgMQ8snhblyPE,KpLbeNKvROeN0luQlkuLcx" />
-          <Link Id="UEV77E9plvKO8e5eTKZAgM" Ids="Hi3BmIkBToZMbAy6uAkeYf,VmElEkPNbeXMa364WjFLMO" />
-          <Link Id="M18CKvtN6mhOpnMtNZycdx" Ids="F4FO4lbxpMtPa5PqRdZNl2,G78mu6NYYKmNX4KW6rxO5J" />
-          <Link Id="K2oyk6ermWRNRmGVx3NYGq" Ids="OIdzm7pgUwnPjyYfTxLBmP,EosQV0N7VZzLQUJIKcgIP4" />
-          <Link Id="RC7YmKlfZywOmL4wXNZfkO" Ids="EosQV0N7VZzLQUJIKcgIP4,VDecwK6vi9VQXqMlrAa7sp" IsHidden="true" />
+          <Link Id="PlNnRSoNYFYPDS2qDLXZRA" Ids="LQ74Gmg0P5cMldpPeQWBk8,EPl2T9hXGwZODSLmdvQSdt" />
+          <Link Id="DKwA3ETbaJZP6ExvLlg7nL" Ids="M8STl3CBxGYQBOCiPhrGAF,EsBbYupcF44Na80AzU9H5x" />
+          <Link Id="NTJBAkAMLWlOuLOAHEog6Q" Ids="DNjuLw4hmSfM3BS4VaWPeo,CRSEfPg2AZKMwRNZQIhh3S" />
         </Patch>
       </Node>
       <!--
@@ -475,7 +461,6 @@
                 <Choice Kind="OperationCallFlag" Name="Update" />
               </p:NodeReference>
               <Pin Id="TNkdh609EJvPTXZcvGZjf2" Name="Input" Kind="StateInputPin" />
-              <Pin Id="KHW6apqHbZBMrRSLZ431cH" Name="Value" Kind="InputPin" />
               <Pin Id="IqgwMzdXltRPYwGUHaKIjj" Name="Output" Kind="StateOutputPin" />
               <Pin Id="KpSg6PBL4AUL3IzCbcVqrl" Name="NodeBirthReceived" Kind="OutputPin" />
               <Pin Id="EhrQag7175COmesFyiiqVP" Name="DeviceBirthReceived" Kind="OutputPin" />
@@ -518,10 +503,12 @@
               <Pin Id="LKqWcsIHHBiNV7VBvBNZIB" Name="Use Tls" Kind="InputPin" />
               <Pin Id="KbI2PT16GJeOEJxwB6xWIL" Name="Scada Host Identifier" Kind="InputPin" />
               <Pin Id="T4sd91dLu9wM3LTAw9GKJh" Name="Reconnect Interval" Kind="InputPin" />
-              <Pin Id="Vu8xYQy1gcGNOXT4ouApzi" Name="Is Primary Application" Kind="InputPin" />
+              <Pin Id="L0ugs6EXzRONhqLnO0A4i7" Name="Mqtt Protocol Version" Kind="InputPin" />
+              <Pin Id="SYrP65wQgSOOkuRvSCTu22" Name="Metric Screen Method" Kind="InputPin" />
               <Pin Id="CWC4k5niabSMeglfBLJFCI" Name="Get Tls Parameters" Kind="InputPin" />
               <Pin Id="D4LQS6SE26qMHR7weBxbAu" Name="Web Socket Parameters" Kind="InputPin" />
               <Pin Id="VO4JDLodoyXM2uj9TmWzDq" Name="Proxy Options" Kind="InputPin" />
+              <Pin Id="Vu8xYQy1gcGNOXT4ouApzi" Name="Is Primary Application" Kind="InputPin" />
               <Pin Id="BRcnsDcqWefPM2p6Awgwlw" Name="Cancellation Token" Kind="InputPin" />
               <Pin Id="MjVMIhSiUY7QJisFZwZvBn" Name="Output" Kind="StateOutputPin" />
             </Node>
@@ -533,12 +520,10 @@
             <ControlPoint Id="HHSbYtnFPUHM1rGNoVMq29" Bounds="350,563" />
             <ControlPoint Id="JoeqB3JEGFiOoNp0MmQnp9" Bounds="374,586" />
             <ControlPoint Id="TvTOzgcmT0UPlmVdDKKkMB" Bounds="394,600" />
-            <ControlPoint Id="A4NoAwxN1T1MSfIctFYNHQ" Bounds="414,622" />
-            <ControlPoint Id="BtuRyKlSwpaOXngQ7zDc7Z" Bounds="414,615" />
-            <ControlPoint Id="RLIgjXaEJscNObUTmjZs4O" Bounds="436,634" />
-            <ControlPoint Id="QRuG964pNw6QbEqejpLWZM" Bounds="458,681" />
-            <ControlPoint Id="DGVY2sbmxxfLOJjoyhDcYf" Bounds="456,652" />
-            <ControlPoint Id="EA7xoeOPQHzLrc7Bi6ixM5" Bounds="478,671" />
+            <ControlPoint Id="BtuRyKlSwpaOXngQ7zDc7Z" Bounds="515,600" />
+            <ControlPoint Id="RLIgjXaEJscNObUTmjZs4O" Bounds="472,633" />
+            <ControlPoint Id="DGVY2sbmxxfLOJjoyhDcYf" Bounds="491,650" />
+            <ControlPoint Id="EA7xoeOPQHzLrc7Bi6ixM5" Bounds="529,670" />
             <ControlPoint Id="MPjKJHAa89HNw04kkYsaNA" Bounds="930,682" />
             <ControlPoint Id="MyOXtqiVGh2OTOwtfl0utw" Bounds="906,648" />
             <ControlPoint Id="S29CdupjgsoOyvWVnQdtJx" Bounds="861,579" />
@@ -558,8 +543,9 @@
             <ControlPoint Id="PDVOMY5wZLqMfqtfNGe3Fm" Bounds="757,466" />
             <ControlPoint Id="DY3A4kDZkPuLl3d5jYnlPN" Bounds="798,502" />
             <ControlPoint Id="GNxhAc5CgJeMSH8LZfSIn7" Bounds="843,557" />
-            <ControlPoint Id="AMeuj36vLQ4O4cjnlRKuTF" Bounds="970,326" />
             <ControlPoint Id="Tp9khxi8CoqMX2sDxMijPH" Bounds="985,761" />
+            <ControlPoint Id="Us1YLVxqtf0MXiIOM7Pncc" Bounds="436,652" />
+            <ControlPoint Id="JILxgjfOQBiLUmlnac9ugK" Bounds="419,630" />
           </Canvas>
           <ProcessDefinition Id="FvcSOKNFnLTNZddMR1VB9C">
             <Fragment Id="GrHsEeOELREOCw636uPkFg" Patch="Tdnk5EyAhUOMZzkTIzugG0" Enabled="true" />
@@ -591,11 +577,11 @@
           <Link Id="CEcOHoEwdBTLay9hidXuUw" Ids="EZuwSPGwkZwNFNnnlGltNI,JoeqB3JEGFiOoNp0MmQnp9" IsHidden="true" />
           <Link Id="MYvNkjrWesIQMYQWqcrlVL" Ids="TvTOzgcmT0UPlmVdDKKkMB,T4sd91dLu9wM3LTAw9GKJh" />
           <Link Id="L7uB3YM0evHOeZunzac7QF" Ids="VqXuLNv5cbINWarKBaY2c1,TvTOzgcmT0UPlmVdDKKkMB" IsHidden="true" />
-          <Link Id="EovPyYI9BCxQXoKA0LUrMa" Ids="BtuRyKlSwpaOXngQ7zDc7Z,A4NoAwxN1T1MSfIctFYNHQ,Vu8xYQy1gcGNOXT4ouApzi" />
+          <Link Id="EovPyYI9BCxQXoKA0LUrMa" Ids="BtuRyKlSwpaOXngQ7zDc7Z,Vu8xYQy1gcGNOXT4ouApzi" />
           <Link Id="UcxFT555AFsLRfQ2SJRdrB" Ids="I1Hd8g2yAtZMDQYWHLeu3K,BtuRyKlSwpaOXngQ7zDc7Z" IsHidden="true" />
           <Link Id="NjMTwtT25g8NlfHJ6Z0BKA" Ids="RLIgjXaEJscNObUTmjZs4O,D4LQS6SE26qMHR7weBxbAu" />
           <Link Id="Rt3YbYCcpbSPZyOPjHH47G" Ids="Ul3p5J3Ha1vM2ZdpTN6Adi,RLIgjXaEJscNObUTmjZs4O" IsHidden="true" />
-          <Link Id="Tq3vuqrO2rBNNTiuaNJik4" Ids="DGVY2sbmxxfLOJjoyhDcYf,QRuG964pNw6QbEqejpLWZM,VO4JDLodoyXM2uj9TmWzDq" />
+          <Link Id="Tq3vuqrO2rBNNTiuaNJik4" Ids="DGVY2sbmxxfLOJjoyhDcYf,VO4JDLodoyXM2uj9TmWzDq" />
           <Link Id="HZwLW8JB3BkQWPd3y5ddum" Ids="IM6osdW5OIvNwRk9zNmZsG,DGVY2sbmxxfLOJjoyhDcYf" IsHidden="true" />
           <Link Id="UXSEdSZd2shQBxsgMHKMj8" Ids="EA7xoeOPQHzLrc7Bi6ixM5,BRcnsDcqWefPM2p6Awgwlw" />
           <Link Id="T8165Ju9qOpMfMtsIO70Wh" Ids="LAn5wER7ziHP8omOIQd094,EA7xoeOPQHzLrc7Bi6ixM5" IsHidden="true" />
@@ -636,7 +622,6 @@
             <Pin Id="Iz8xk7RQ48vNdsGgS0Xm0e" Name="Is Connected" Kind="OutputPin" Bounds="796,488" />
             <Pin Id="JdTiH6jQk76QFNXf1mZXeK" Name="Node States" Kind="OutputPin" Bounds="850,588" />
             <Pin Id="DIlcGZabHpVN0wyM8DyaxW" Name="Known Metrics Storage" Kind="OutputPin" Bounds="864,588" />
-            <Pin Id="Hig6eogecJgOwcCEukHTwI" Name="Session Number" Kind="InputPin" Bounds="970,326" />
             <Pin Id="GDAh0QqLiYjOJkYF0VxTTB" Name="Device States" Kind="OutputPin" Bounds="986,762" />
           </Patch>
           <Patch Id="J9y0Pjtvv48L7Et1rH7t66" Name="Start" ParticipatingElements="QYxzmpVZB9WMboij9GcTPl" ManuallySortedPins="true">
@@ -652,13 +637,17 @@
             <Pin Id="Ul3p5J3Ha1vM2ZdpTN6Adi" Name="Web Socket Parameters" Kind="InputPin" Bounds="435,633" Visibility="Optional" />
             <Pin Id="IM6osdW5OIvNwRk9zNmZsG" Name="Proxy Options" Kind="InputPin" Bounds="456,652" Visibility="Optional" />
             <Pin Id="LAn5wER7ziHP8omOIQd094" Name="Cancellation Token" Kind="InputPin" Bounds="472,672" Visibility="Optional" />
+            <Pin Id="BFwc678So28OlSW9McVccw" Name="Metric Screen Method" Kind="InputPin" Bounds="436,652" />
+            <Pin Id="Q1yggXFZX61QdSKRerZ29l" Name="Mqtt Protocol Version" Kind="InputPin" Bounds="419,629" />
           </Patch>
           <Patch Id="G9zXFdfdtvPPNJQD1Yoiig" Name="Stop" ParticipatingElements="BCOFwszEagINci0lNuJg8e" />
           <Patch Id="H3oLySPAxX9Mr2DBNkEW3t" Name="Dispose" ParticipatingElements="FfPy05QaljnNBwWmUHCJEo" />
-          <Link Id="Hu2eEHjXBn1MWnaKxOEMj0" Ids="AMeuj36vLQ4O4cjnlRKuTF,KHW6apqHbZBMrRSLZ431cH" />
-          <Link Id="GWz293vF0NwOENIoAJIEps" Ids="Hig6eogecJgOwcCEukHTwI,AMeuj36vLQ4O4cjnlRKuTF" IsHidden="true" />
           <Link Id="RNgkOSMckfPOFP2ojL4leH" Ids="AGR9KHrr4D7OGP5ysYPQHh,Tp9khxi8CoqMX2sDxMijPH" />
           <Link Id="NbLYHQdQDyMPsjJ1f0RHrM" Ids="Tp9khxi8CoqMX2sDxMijPH,GDAh0QqLiYjOJkYF0VxTTB" IsHidden="true" />
+          <Link Id="ORo5lhbSpcfNNw6rSDIDqU" Ids="Us1YLVxqtf0MXiIOM7Pncc,SYrP65wQgSOOkuRvSCTu22" />
+          <Link Id="AHg1DfO7VXBOfV8XPZY7Tz" Ids="BFwc678So28OlSW9McVccw,Us1YLVxqtf0MXiIOM7Pncc" IsHidden="true" />
+          <Link Id="JblCVNN5oEHOX4jKmLqYNT" Ids="JILxgjfOQBiLUmlnac9ugK,L0ugs6EXzRONhqLnO0A4i7" />
+          <Link Id="Pi6tHXYUKxBNo9FrDBJhv3" Ids="Q1yggXFZX61QdSKRerZ29l,JILxgjfOQBiLUmlnac9ugK" IsHidden="true" />
         </Patch>
       </Node>
       <!--
@@ -723,13 +712,10 @@
           <ControlPoint Id="B2ZJIBhfieHNIFNYKoLPNk" Bounds="563,174" />
           <Link Id="IG54XsxNDBPQYT8taj1C4K" Ids="JognnRBlBmDNnZ975tz4IR,B2ZJIBhfieHNIFNYKoLPNk" IsHidden="true" />
           <Link Id="KqYpFDxcpASNQxN6HzrqLZ" Ids="B2ZJIBhfieHNIFNYKoLPNk,R86bengr4O3OYcY8wUsLk8" />
-          <Link Id="TCl9u6LGGDyN415nV0iPvj" Ids="JWQEWOIBV4vPHCyLaq4b6p,Pt0zu5foMjRLjdTb02enRZ" />
-          <ControlPoint Id="JWQEWOIBV4vPHCyLaq4b6p" Bounds="624,220" />
+          <ControlPoint Id="JWQEWOIBV4vPHCyLaq4b6p" Bounds="627,172" />
           <Link Id="AjDkOkoX8W9NPSXfWZ8XTA" Ids="FxFWMU32nFxOTInxjhjh50,JWQEWOIBV4vPHCyLaq4b6p" IsHidden="true" />
-          <Link Id="GI6zPezJt2bOxs4G3pH0Jp" Ids="V7STVjfq6FvOJi5nGZup9y,N2sXBzTPCuFOiSMCsrZyDP" />
           <ControlPoint Id="V7STVjfq6FvOJi5nGZup9y" Bounds="710,222" />
           <Link Id="VHssiXwgDCYL4lYq7hK0pE" Ids="BSnsXiQvojkQA8yYbUEQTu,V7STVjfq6FvOJi5nGZup9y" IsHidden="true" />
-          <Link Id="B4AxBGLwJQSOkkUO0M6J0b" Ids="P5KWn4fHrEwOLV0sacv8RM,H36bpn1JtCtQOr9DFUuDnZ" />
           <ControlPoint Id="P5KWn4fHrEwOLV0sacv8RM" Bounds="813,221" />
           <Link Id="IKlVrJZV8upPS6SLJhXyNW" Ids="TfI0Ez0pbiHLRfKd90vtzd,P5KWn4fHrEwOLV0sacv8RM" IsHidden="true" />
           <ControlPoint Id="DldZuwGV5nzL83l6gAvRf0" Bounds="546,155" />
@@ -743,6 +729,9 @@
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pin>
+          <Link Id="FnQWBUaGN9fL1dWka4tvJP" Ids="JWQEWOIBV4vPHCyLaq4b6p,Pt0zu5foMjRLjdTb02enRZ" />
+          <Link Id="GkBq7cVYUhsPRJ1CybdIb7" Ids="V7STVjfq6FvOJi5nGZup9y,N2sXBzTPCuFOiSMCsrZyDP" />
+          <Link Id="U0xq5LAo3PrOoaoIz7ruVj" Ids="P5KWn4fHrEwOLV0sacv8RM,H36bpn1JtCtQOr9DFUuDnZ" />
         </Patch>
       </Node>
       <!--
@@ -932,12 +921,14 @@
               <Pin Id="Db8vNnJSapOPsJ6pmjdV9Q" Name="Password" Kind="InputPin" />
               <Pin Id="SsyciCqwNjyPlMBQhD9AvF" Name="Use Tls" Kind="InputPin" />
               <Pin Id="GH1KgToa5AQOTLYGNoh1I7" Name="Scada Host Identifier" Kind="InputPin" />
-              <Pin Id="H5ofktwkk5xLBZlBtAWFUL" Name="Group Identifier" Kind="InputPin" />
-              <Pin Id="OlhfEsVAIUANnhLu6AIfKB" Name="Edge Node Identifier" Kind="InputPin" />
               <Pin Id="Iz2RmA9f2nlO5qzmMKI9Rk" Name="Reconnect Interval" Kind="InputPin" />
+              <Pin Id="CbaKSQJuhlxNnbfK4s8E4R" Name="Mqtt Protocol Version" Kind="InputPin" />
+              <Pin Id="M950oOuKEBqMq3JDY020ZI" Name="Metric Screen Method" Kind="InputPin" />
               <Pin Id="HGqMGsewxVOPu0rwZxDCCw" Name="Get Tls Parameters" Kind="InputPin" />
               <Pin Id="SDgwmaosMTaNnoHzKmrC8R" Name="Web Socket Parameters" Kind="InputPin" />
               <Pin Id="VSWscF8BFMwPABZrSp1G9R" Name="Proxy Options" Kind="InputPin" />
+              <Pin Id="H5ofktwkk5xLBZlBtAWFUL" Name="Group Identifier" Kind="InputPin" />
+              <Pin Id="OlhfEsVAIUANnhLu6AIfKB" Name="Edge Node Identifier" Kind="InputPin" />
               <Pin Id="SsikBIXTPo9O0K8Xf3YOXa" Name="Cancellation Token" Kind="InputPin" />
               <Pin Id="VTW6zBz7EFRNRY7MQUcYWj" Name="Output" Kind="StateOutputPin" />
             </Node>
@@ -1094,51 +1085,7 @@
               <Pin Id="QN890hLHMqVQAshuokJ0ZL" Name="Sync Root" Kind="InputPin" />
               <Pin Id="PC6ewSZjjnRQUlLDdaIEgh" Name="Result" Kind="OutputPin" />
             </Node>
-            <Pad Id="CM9lREbuBkLOojpqSGaRkU" SlotId="MZ5RP2txpcZPl6Qz683ntM" Bounds="1114,635" />
-            <Node Bounds="1099,655,65,19" Id="U5jDcKUNQo9LcmAZZWUIG6">
-              <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="IsAssigned" />
-              </p:NodeReference>
-              <Pin Id="OdloMzrYstgNLInB3NkfJm" Name="X" Kind="InputPin" />
-              <Pin Id="RxflcjjbhRrMz3TEyGioP1" Name="Result" Kind="OutputPin" />
-              <Pin Id="ErvhyfFjIkQOE1vW67AZtE" Name="Not Assigned" Kind="OutputPin" />
-            </Node>
-            <Node Bounds="1093,716,246,118" Id="VsR269t8fUhMy6IoYytEtE">
-              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
-                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-                <Choice Kind="ApplicationStatefulRegion" Name="If" />
-              </p:NodeReference>
-              <Pin Id="FYp96mPoxS1NaI4BZhlayd" Name="Condition" Kind="InputPin" />
-              <Patch Id="FDCOLQ9MhfXM62R3AHAhgi" ManuallySortedPins="true">
-                <Node Bounds="1105,787,220,26" Id="UtjFbUNTJp2OitZjL4TrcW">
-                  <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Node.SparkplugNodeOptions" LastDependency="SparkplugNet.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="AddSessionNumberToDataMessages" />
-                  </p:NodeReference>
-                  <Pin Id="D7NN9qSwChmNye2QDVreLH" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="KacpGOdfqriNAsa2Y8YK2O" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="O6rtT7ePN9GNxM7e3T6vTp" Name="Add Session Number To Data Messages" Kind="OutputPin" />
-                </Node>
-                <Patch Id="M5zxYSoAnMCLMrAupeXNb1" Name="Create" ManuallySortedPins="true" />
-                <Patch Id="QSv7RURYROOQGaR4cKCy56" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="1107,739,195,26" Id="PVjIIjmHmQJNAsOLvHZXr9">
-                  <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Node.SparkplugNodeOptions" LastDependency="SparkplugNet.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="SetAddSessionNumberToDataMessages" />
-                  </p:NodeReference>
-                  <Pin Id="FAEdEw2OMCyMBGhqlorCAM" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="BcZMrVyR3bvOpPGfQMF88k" Name="Value" Kind="InputPin" />
-                  <Pin Id="Gvs9g5fgRwXNCXpPJaGWNX" Name="Output" Kind="StateOutputPin" />
-                </Node>
-              </Patch>
-              <ControlPoint Id="MMjCABZzDmxLjLzFCKwO4W" Bounds="1322,828" Alignment="Bottom" />
-              <ControlPoint Id="J5pBbjT5zVkPnKXqhgaGnE" Bounds="1322,722" Alignment="Top" />
-            </Node>
-            <ControlPoint Id="LsvX5LdIh5FMqgZb8RSvfc" Bounds="1323,632" />
             <Pad Id="KjpPV9erCO5PbbIcokFzvD" SlotId="MZ5RP2txpcZPl6Qz683ntM" Bounds="900,562" />
-            <ControlPoint Id="E5qks5VT59FP6k8T7hPF1x" Bounds="1325,878" />
           </Canvas>
           <ProcessDefinition Id="RnzEwMv6VeTL5PqcmVFFfa" IsHidden="true">
             <Fragment Id="SlEFgf23SfzPZrJebhn56R" Patch="ElVRPGz9K7LPh4enRjOTzo" Enabled="true" />
@@ -1187,6 +1134,13 @@
           <Link Id="BtxTD1gQItlO0vAuOu4LOU" Ids="G1bDUh5a5ygO9VRZ5J4pvA,EtxPFmIpYTXNVAtpzuBjko" />
           <Link Id="DemDiFOocgeMPaCttyD0LJ" Ids="EtxPFmIpYTXNVAtpzuBjko,G1IsRPAISovNcDeHSWAxJf" />
           <Link Id="HjUDNETR6WoPvnt2JO9jb4" Ids="G1IsRPAISovNcDeHSWAxJf,SRKRxjW9ho0OtuCA3MPGL7" IsHidden="true" />
+          <Link Id="PoE4O17jAomQFSHi8Vlncn" Ids="SSXgbeDKWUyOXU3w1lUO9H,FL0ReaK6tIRNXaAQOVnkhA" />
+          <Link Id="P97QcCWX4Y0Mw0Vrqr3a1n" Ids="LJ78Bmu7hA1PHstxieFVoZ,KbqSJTQpq1zMSohIZm1geY" />
+          <Link Id="Lqg8rLwgzdUOsc1zfEI8vJ" Ids="NDrSqX5QSmVM0X7rhTUUnZ,SNPiIMPZx1JMXDpIPp7KY7" />
+          <Link Id="TFKrvb7fsg4OfABEclNjTJ" Ids="PC6ewSZjjnRQUlLDdaIEgh,SLap43Eu71YMFmje8rk9et" />
+          <Link Id="QnUNDJwG0GVLjdS7FjYEus" Ids="CHRg6BwSUM6OVU6LOHFDVR,CRXq3R9VOiHObqz4k7Cnzq" />
+          <Slot Id="MZ5RP2txpcZPl6Qz683ntM" Name="Output" />
+          <Link Id="BVc8oaOtM5KMTK8haOeDg6" Ids="VTW6zBz7EFRNRY7MQUcYWj,KjpPV9erCO5PbbIcokFzvD" />
           <Patch Id="ElVRPGz9K7LPh4enRjOTzo" Name="Create" ParticipatingElements="AxCnzmJgnPANhtG8Gxz2Lf,EARLRNNIlYzNPoXCEI5UPH,PESJ9NdNAPXMCnnQXiQAJ6,ORdgDVHN0R3LnT0c8DVdyt,MxvsR7epfN1LE3gfWnxFZH,H8gqOT3PRpFOESWDPM4TwB,HLs15qUcPZdL6gltebJIjY,OOzikG2j9kVQO12R3Gr4w5,EEuydWwIcCXLcOWgdZ7ees,Q1RQ44wbUcPLlUyfYwQCbf,B8hSy8GF2h8LMQcIQZmVdU">
             <Pin Id="FzR6Tps3oMZPzE7Cf4Kxoc" Name="Known Metrics" Kind="InputPin" Bounds="416,294" />
           </Patch>
@@ -1199,8 +1153,6 @@
             <Pin Id="SRKRxjW9ho0OtuCA3MPGL7" Name="StatusMessageReceived" Kind="OutputPin" />
             <Pin Id="Ligw5liCM7bLYtu6lHY9Ss" Name="Connected" Kind="OutputPin" />
             <Pin Id="UwoVFSYSpFFNuVBnD3jde0" Name="Node" Kind="OutputPin" />
-            <Pin Id="D2EUQHmH7hYO3oqEkvyEhd" Name="Value" Kind="InputPin" Bounds="953,987" />
-            <Pin Id="LERdGG8ZBERNcTdVohPJOz" Name="Add Session Number To Data Messages" Kind="OutputPin" Bounds="1354,886" />
           </Patch>
           <Patch Id="G1MtK7rLb9fMB5wepC4xgY" Name="Start" ParticipatingElements="UDx7D0EeANMNNX1uwrqb3W">
             <Pin Id="Csb70NcMpODNU4YpWIFeoI" Name="Broker Address" Kind="InputPin" />
@@ -1210,34 +1162,19 @@
             <Pin Id="Ve78rsG593qOqOvxpxP46N" Name="Password" Kind="InputPin" />
             <Pin Id="VoaeVR7nIrsPbs6FmYn0Gr" Name="Use Tls" Kind="InputPin" />
             <Pin Id="LReGeqDAa3iOAB5aPZNre9" Name="Scada Host Identifier" Kind="InputPin" />
-            <Pin Id="JvtBWSIzEOsO1579CxDLMK" Name="Group Identifier" Kind="InputPin" />
-            <Pin Id="ICfCoSHcqeKN95Q2CycCPv" Name="Edge Node Identifier" Kind="InputPin" />
             <Pin Id="BA8XnivYsFwLtmzeq44vCT" Name="Reconnect Interval" Kind="InputPin" />
+            <Pin Id="FX3Cf7C8zL1P8UwfxBHHta" Name="Mqtt Protocol Version" Kind="InputPin" />
+            <Pin Id="Q6JyiSqiYdYPtXQnqqV3i2" Name="Metric Screen Method" Kind="InputPin" />
             <Pin Id="AETBSPZUKImLwZwxNRdgiP" Name="Get Tls Parameters" Kind="InputPin" />
             <Pin Id="FhAUs2FqozNMhaKGvHZ7MB" Name="Web Socket Parameters" Kind="InputPin" />
             <Pin Id="J5MrhQpZEf0QYJxxC5J196" Name="Proxy Options" Kind="InputPin" />
+            <Pin Id="JvtBWSIzEOsO1579CxDLMK" Name="Group Identifier" Kind="InputPin" />
+            <Pin Id="ICfCoSHcqeKN95Q2CycCPv" Name="Edge Node Identifier" Kind="InputPin" />
             <Pin Id="BsNeAFLSUzWNYZwbpFgS89" Name="Cancellation Token" Kind="InputPin" />
             <Pin Id="IdJaMYc10BhL6OegMg54lc" Name="Known Metrics" Kind="InputPin" Bounds="673,598" />
             <Pin Id="EJbgJ4RS08xMldWgrT4kDY" Name="Result" Kind="OutputPin" Bounds="671,841" />
           </Patch>
           <Patch Id="M50MlwCbvpcNPK0mpO1C4b" Name="Stop" ParticipatingElements="Vnug9oof1CtPsoMeSuH3YL" />
-          <Link Id="PoE4O17jAomQFSHi8Vlncn" Ids="SSXgbeDKWUyOXU3w1lUO9H,FL0ReaK6tIRNXaAQOVnkhA" />
-          <Link Id="P97QcCWX4Y0Mw0Vrqr3a1n" Ids="LJ78Bmu7hA1PHstxieFVoZ,KbqSJTQpq1zMSohIZm1geY" />
-          <Link Id="Lqg8rLwgzdUOsc1zfEI8vJ" Ids="NDrSqX5QSmVM0X7rhTUUnZ,SNPiIMPZx1JMXDpIPp7KY7" />
-          <Link Id="TFKrvb7fsg4OfABEclNjTJ" Ids="PC6ewSZjjnRQUlLDdaIEgh,SLap43Eu71YMFmje8rk9et" />
-          <Link Id="QnUNDJwG0GVLjdS7FjYEus" Ids="CHRg6BwSUM6OVU6LOHFDVR,CRXq3R9VOiHObqz4k7Cnzq" />
-          <Slot Id="MZ5RP2txpcZPl6Qz683ntM" Name="Output" />
-          <Link Id="FIBB7zU2bFyP0ObuaMbZvQ" Ids="CM9lREbuBkLOojpqSGaRkU,FAEdEw2OMCyMBGhqlorCAM" />
-          <Link Id="IazeMRxE5rvMNNU8y5FwHt" Ids="RxflcjjbhRrMz3TEyGioP1,FYp96mPoxS1NaI4BZhlayd" />
-          <Link Id="Jx4rwhFw7VbN4ltHwoWWsM" Ids="D2EUQHmH7hYO3oqEkvyEhd,LsvX5LdIh5FMqgZb8RSvfc" IsHidden="true" />
-          <Link Id="BVc8oaOtM5KMTK8haOeDg6" Ids="VTW6zBz7EFRNRY7MQUcYWj,KjpPV9erCO5PbbIcokFzvD" />
-          <Link Id="Cd8xCWPpTMnPRPi39O4FK8" Ids="KjpPV9erCO5PbbIcokFzvD,OdloMzrYstgNLInB3NkfJm" />
-          <Link Id="IRXQQaBRwiGLElWAcgWSWV" Ids="Gvs9g5fgRwXNCXpPJaGWNX,D7NN9qSwChmNye2QDVreLH" />
-          <Link Id="DqKHc8dpRrPMxPPWdTa8Wu" Ids="LsvX5LdIh5FMqgZb8RSvfc,BcZMrVyR3bvOpPGfQMF88k" />
-          <Link Id="FybmOFo43DNMVPPeD8F5Iu" Ids="J5pBbjT5zVkPnKXqhgaGnE,MMjCABZzDmxLjLzFCKwO4W" IsFeedback="true" />
-          <Link Id="T1Xu3HDjjoQNjlGFADrGZx" Ids="O6rtT7ePN9GNxM7e3T6vTp,MMjCABZzDmxLjLzFCKwO4W" />
-          <Link Id="S4rzkAPWWE7NVH1VdUOdpI" Ids="MMjCABZzDmxLjLzFCKwO4W,E5qks5VT59FP6k8T7hPF1x" />
-          <Link Id="Ozbi6Tas6tUL4aOcnf6CRE" Ids="E5qks5VT59FP6k8T7hPF1x,LERdGG8ZBERNcTdVohPJOz" IsHidden="true" />
         </Patch>
       </Node>
       <!--
@@ -1276,12 +1213,14 @@
               <Pin Id="TSGZf8rDuNKNAIFE5X49zO" Name="Password" Kind="InputPin" />
               <Pin Id="SMxZVFbqlJGOza5nljNRtY" Name="Use Tls" Kind="InputPin" />
               <Pin Id="E1G3JqGAtn6PRSFpYqpwOw" Name="Scada Host Identifier" Kind="InputPin" />
-              <Pin Id="JFdR7GUh2btL410yw4pffV" Name="Group Identifier" Kind="InputPin" />
-              <Pin Id="ETh5fO3aBIuMXIbVJX61YY" Name="Edge Node Identifier" Kind="InputPin" />
               <Pin Id="UCJhAv7HSo2OFGP6FPK0zf" Name="Reconnect Interval" Kind="InputPin" />
+              <Pin Id="Piq1hVtk0GyNN1L4tTwSkO" Name="Mqtt Protocol Version" Kind="InputPin" />
+              <Pin Id="TBJYCwzuWLMMuRnaUJ4te7" Name="Metric Screen Method" Kind="InputPin" />
               <Pin Id="Thz7CnL9dMEM841plscdzJ" Name="Get Tls Parameters" Kind="InputPin" />
               <Pin Id="FPswXN8PZfBN4UqJxzIsAV" Name="Web Socket Parameters" Kind="InputPin" />
               <Pin Id="JkuUYL8I2yvOjQas5Mn5kV" Name="Proxy Options" Kind="InputPin" />
+              <Pin Id="JFdR7GUh2btL410yw4pffV" Name="Group Identifier" Kind="InputPin" />
+              <Pin Id="ETh5fO3aBIuMXIbVJX61YY" Name="Edge Node Identifier" Kind="InputPin" />
               <Pin Id="RxgWCTFmU8pPdmgMr4vMjt" Name="Cancellation Token" Kind="InputPin" />
               <Pin Id="SoOdmqiIZ7AP3bl5GQJABq" Name="Known Metrics" Kind="InputPin" />
               <Pin Id="STPneHAeGxnLbRp91VPgoJ" Name="Output" Kind="StateOutputPin" />
@@ -1311,7 +1250,6 @@
                 <Choice Kind="OperationCallFlag" Name="Update" />
               </p:NodeReference>
               <Pin Id="IOw8tawFqHQLWrN3wptMUx" Name="Input" Kind="StateInputPin" />
-              <Pin Id="VH8DEoX11yQNfdepnbtQqK" Name="Value" Kind="InputPin" />
               <Pin Id="AvPjtmS7WClOXa2E84uwwM" Name="Output" Kind="StateOutputPin" />
               <Pin Id="BzcFea6ACYTMhPhLLPfyp9" Name="Known Devices" Kind="OutputPin" />
               <Pin Id="CxGSolu1pdJQCAw1y6XP57" Name="DeviceCommandReceived" Kind="OutputPin" />
@@ -1321,7 +1259,6 @@
               <Pin Id="QVDmQdRmCg4NiPQdUHZxgr" Name="StatusMessageReceived" Kind="OutputPin" />
               <Pin Id="SNror6vUFzNNajYgg8mGxi" Name="Connected" Kind="OutputPin" />
               <Pin Id="CL4mbYbWPyuNyhu3Ui79Kq" Name="Node" Kind="OutputPin" />
-              <Pin Id="KYfI0bedZy0LlcTaIdXMIQ" Name="Add Session Number To Data Messages" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="UAW8nKxHTCiPHjB2Nuttqr" Bounds="710,471" />
             <ControlPoint Id="NegiMjSgelaM81gwWvc5N7" Bounds="304,396" />
@@ -1337,8 +1274,6 @@
             <ControlPoint Id="TTiDhifm0VdMlDW6wRcv3G" Bounds="796,578" />
             <ControlPoint Id="CrC5zWj0tjROXOGU0Prq3b" Bounds="753,530" />
             <ControlPoint Id="N1DF1ISKDbpP2ZJhIuS1rS" Bounds="814,595" />
-            <ControlPoint Id="HyQgluLcOsaMtsFrgLMD0N" Bounds="869,359" />
-            <ControlPoint Id="R7HKr3S8fn9Mm4hwORtq9D" Bounds="876,710" />
           </Canvas>
           <ProcessDefinition Id="GNmAKZl5pPSLjd62o3Oox0">
             <Fragment Id="F3F5vUlKbheMYurpv1fvn9" Patch="PvPqolsnXlVMvxfXpy8Pny" Enabled="true" />
@@ -1408,8 +1343,6 @@
             <Pin Id="Gjzr1W8SdK1QWtpraLAbqn" Name="StatusMessageReceived" Kind="OutputPin" Bounds="814,596" />
             <Pin Id="QEiWJHnc2nJM7fFBnOURBJ" Name="Connected" Kind="OutputPin" Bounds="780,570" />
             <Pin Id="Ekv1WwAGyC5NUh8EFpU9uL" Name="Node" Kind="OutputPin" Bounds="811,616" />
-            <Pin Id="POU8pAvmZgoLgq9GJxiOR8" Name="Session Number" Kind="InputPin" Bounds="851,292" />
-            <Pin Id="EpUTbwdRdRtQUrSrBNHnZB" Name="Add Session Number To Data Messages" Kind="OutputPin" Bounds="876,710" />
           </Patch>
           <Patch Id="VyoD3bwNqRPNMwfynSso0S" Name="Start" ParticipatingElements="LIO2wd0kBwdODlCkCrEHJ4">
             <Pin Id="IXysxrEr54LQKMnIgSGg4F" Name="Broker Address" Kind="InputPin" />
@@ -1428,10 +1361,6 @@
           </Patch>
           <Patch Id="SsvbdSfSYlXOC4wRaQEvpm" Name="Stop" ParticipatingElements="UxZhhghBetiPVDG1kfpytg" />
           <Link Id="UM8Ra7S9XVCOdxIfcs3iEm" Ids="L6IHX1S4MlcOxKkSjor3qD,DxH2avHruT8N0uZkN4pEJP" />
-          <Link Id="ISkSFUIkjGjMerorsvQvvP" Ids="HyQgluLcOsaMtsFrgLMD0N,VH8DEoX11yQNfdepnbtQqK" />
-          <Link Id="LmCZHEFub2gPX18FE4LYo6" Ids="POU8pAvmZgoLgq9GJxiOR8,HyQgluLcOsaMtsFrgLMD0N" IsHidden="true" />
-          <Link Id="KHMUOHzyRHOMa24CwYpThd" Ids="KYfI0bedZy0LlcTaIdXMIQ,R7HKr3S8fn9Mm4hwORtq9D" />
-          <Link Id="EktkP5f9EvqLxXLTWL7GBN" Ids="R7HKr3S8fn9Mm4hwORtq9D,EpUTbwdRdRtQUrSrBNHnZB" IsHidden="true" />
         </Patch>
       </Node>
       <Overlay Id="TXDfaHivIqyQXmOkkxHdkf" Name="Utils" Bounds="-720,208,878,655" />
@@ -2985,7 +2914,7 @@
           <Link Id="GcJBqH3YZVDNWXa9JIfeYb" Ids="VcSWciYbpNPPtGeA50pnOA,Q8MFQgVZOEJN5X7wJnipTj" IsHidden="true" />
         </Patch>
       </Node>
-      <Canvas Id="E9jkGmtKirTMVACAM46w1M" Name="Advanced" Position="1769,485">
+      <Canvas Id="E9jkGmtKirTMVACAM46w1M" Name="Advanced" Position="1156,310">
         <!--
 
     ************************ DeviceEventArgs ************************
@@ -3294,24 +3223,6 @@
         </Node>
         <!--
 
-    ************************ DataTypeA ************************
-
--->
-        <Node Name="DataTypeA" Bounds="492,638" Id="QzPLLbuwvuhMLlhjLNK9Dt">
-          <p:NodeReference>
-            <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
-            <CategoryReference Kind="Category" Name="Primitive" />
-          </p:NodeReference>
-          <p:TypeAnnotation LastCategoryFullName="SparkplugNet.VersionA.Data" LastDependency="SparkplugNet.dll">
-            <Choice Kind="TypeFlag" Name="DataType" />
-          </p:TypeAnnotation>
-          <Patch Id="TUDShPmj8G0O4LREgDxhaB">
-            <Canvas Id="TiwpOE9Xv5tOERGkKv5QbG" BordersChecked="false" CanvasType="Group" />
-            <ProcessDefinition Id="TFg5YWKCFL4PSkfuco63VR" IsHidden="true" />
-          </Patch>
-        </Node>
-        <!--
-
     ************************ StatusMessageEventArgs ************************
 
 -->
@@ -3382,6 +3293,42 @@
             <ProcessDefinition Id="RppfwCktT1NLMnaswoWZVI" IsHidden="true" />
           </Patch>
         </Node>
+        <!--
+
+    ************************ DeviceBirthEventArgs ************************
+
+-->
+        <Node Name="DeviceBirthEventArgs" Bounds="546,446" Id="NtkcMwej1j2OrqSpKm9WXC">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="SparkplugNet.Core.SparkplugBase`1" LastDependency="SparkplugNet.dll">
+            <Choice Kind="TypeFlag" Name="DeviceBirthEventArgs" />
+          </p:TypeAnnotation>
+          <Patch Id="C23zA3Jfi79OK2zv8SPfIF">
+            <Canvas Id="IJrpRQ1DcHwMm3MVG3ul8x" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="HezkpGa6kefPGW3AiB0aLs" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ NodeBirthEventArgs ************************
+
+-->
+        <Node Name="NodeBirthEventArgs" Bounds="773,448" Id="HAw8fHFOIq0OZBmhEbdEcj">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="SparkplugNet.Core.SparkplugBase`1" LastDependency="SparkplugNet.dll">
+            <Choice Kind="TypeFlag" Name="NodeBirthEventArgs" />
+          </p:TypeAnnotation>
+          <Patch Id="LXRPF9tGCrONoMElDuF4C2">
+            <Canvas Id="QCT8pkEFUlkNLGW4sggFLS" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="CBQ5huLHDsYNqRFQCz9dVY" IsHidden="true" />
+          </Patch>
+        </Node>
       </Canvas>
       <!--
 
@@ -3427,7 +3374,7 @@
     </Node>
   </Patch>
   <PlatformDependency Id="VAjjQiEVxsHPUhzouaG45j" Location="System.Runtime" />
-  <NugetDependency Id="PibqDGbXtKtOKuiIwECC4g" Location="MQTTnet" Version="4.1.4.563" />
+  <NugetDependency Id="PibqDGbXtKtOKuiIwECC4g" Location="MQTTnet" Version="4.2.0.706" />
   <NugetDependency Id="GvOW3a2mSV0PXjxTbQn7DM" Location="Serilog" Version="3.0.0-dev-01842" />
   <NugetDependency Id="MGpydBCqbIBPx5e6PJp4tp" Location="Serilog.Sinks.Console" Version="4.1.1-dev-00901" />
   <NugetDependency Id="N1NJn3XK2pAQNXEddL2CCU" Location="protobuf-net.Core" Version="3.1.25" />
