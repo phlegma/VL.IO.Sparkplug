@@ -1,0 +1,99 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "SeppPenner",
+      "name": "HansM",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9639361?v=4",
+      "profile": "https://franzhuber23.blogspot.de/",
+      "contributions": [
+        "code",
+        "doc",
+        "example",
+        "maintenance",
+        "projectManagement",
+        "test"
+      ]
+    },
+    {
+      "login": "insightdocs",
+      "name": "insightdocs",
+      "avatar_url": "https://avatars.githubusercontent.com/u/23101485?v=4",
+      "profile": "https://github.com/insightdocs",
+      "contributions": [
+        "test"
+      ]
+    },
+    {
+      "login": "OffTravel",
+      "name": "OffTravel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19183574?v=4",
+      "profile": "https://github.com/OffTravel",
+      "contributions": [
+        "code",
+        "test"
+      ]
+    },
+    {
+      "login": "cjmurph",
+      "name": "cjmurph",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2868949?v=4",
+      "profile": "https://github.com/cjmurph",
+      "contributions": [
+        "code",
+        "test"
+      ]
+    },
+    {
+      "login": "BoBiene",
+      "name": "Bo Biene",
+      "avatar_url": "https://avatars.githubusercontent.com/u/23037659?v=4",
+      "profile": "https://github.com/BoBiene",
+      "contributions": [
+        "code",
+        "test"
+      ]
+    },
+    {
+      "login": "TimJoehnk",
+      "name": "Tim Jöhnk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/93274944?v=4",
+      "profile": "https://github.com/TimJoehnk",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Patrick2607",
+      "name": "Patrick.GK",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9799823?v=4",
+      "profile": "https://github.com/Patrick2607",
+      "contributions": [
+        "code",
+        "test",
+        "infra"
+      ]
+    },
+    {
+      "login": "geraldasp",
+      "name": "Gerald Asp",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1334535?v=4",
+      "profile": "https://github.com/geraldasp",
+      "contributions": [
+        "test",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "SparkplugNet",
+  "projectOwner": "SeppPenner",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true,
+  "commitConvention": "angular"
+}
