@@ -32,7 +32,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\ASE\SparkplugNetFiter\src\SparkplugNet\SparkplugNet.csproj" />
+    <ProjectReference Include="..\SparkplugNet\src\SparkplugNet\SparkplugNet.csproj" />
   </ItemGroup>
 
 </Project>

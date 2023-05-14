@@ -239,12 +239,10 @@
               <Pin Id="UFfy8UKxsYpMKejYGSp9cS" Name="Use Tls" Kind="InputPin" />
               <Pin Id="I2vVDPo3P1IQENLQC4Di5D" Name="Scada Host Identifier" Kind="InputPin" />
               <Pin Id="M4EOOhVSuSQPJGWIUkf9Db" Name="Reconnect Interval" Kind="InputPin" />
-              <Pin Id="D5HywM01NctLJTQdLo9G0H" Name="Mqtt Protocol Version" Kind="InputPin" />
-              <Pin Id="Hc6FeKPUsKbOetep60Wzuc" Name="Metric Screen Method" Kind="InputPin" />
+              <Pin Id="MekotqWvUZDOs5Q2CtKKA6" Name="Is Primary Application" Kind="InputPin" />
               <Pin Id="B8SlvWurEAxL9VEejaC6ry" Name="Get Tls Parameters" Kind="InputPin" />
               <Pin Id="F2FNVgpINc5QKN6HpuUYTu" Name="Web Socket Parameters" Kind="InputPin" />
               <Pin Id="AuGP4fz36JVOyJUmLPR01z" Name="Proxy Options" Kind="InputPin" />
-              <Pin Id="MekotqWvUZDOs5Q2CtKKA6" Name="Is Primary Application" Kind="InputPin" />
               <Pin Id="MqxNusy1dHuNf07d9NZCL4" Name="Cancellation Token" Kind="InputPin" />
               <Pin Id="QbYzA3w9xgPNzegN62KYc1" Name="Output" Kind="StateOutputPin" />
             </Node>
@@ -389,6 +387,9 @@
           <Link Id="M18CKvtN6mhOpnMtNZycdx" Ids="F4FO4lbxpMtPa5PqRdZNl2,G78mu6NYYKmNX4KW6rxO5J" />
           <Link Id="K2oyk6ermWRNRmGVx3NYGq" Ids="OIdzm7pgUwnPjyYfTxLBmP,EosQV0N7VZzLQUJIKcgIP4" />
           <Link Id="RC7YmKlfZywOmL4wXNZfkO" Ids="EosQV0N7VZzLQUJIKcgIP4,VDecwK6vi9VQXqMlrAa7sp" IsHidden="true" />
+          <Link Id="PlNnRSoNYFYPDS2qDLXZRA" Ids="LQ74Gmg0P5cMldpPeQWBk8,EPl2T9hXGwZODSLmdvQSdt" />
+          <Link Id="DKwA3ETbaJZP6ExvLlg7nL" Ids="M8STl3CBxGYQBOCiPhrGAF,EsBbYupcF44Na80AzU9H5x" />
+          <Link Id="NTJBAkAMLWlOuLOAHEog6Q" Ids="DNjuLw4hmSfM3BS4VaWPeo,CRSEfPg2AZKMwRNZQIhh3S" />
           <Patch Id="R0ZmSRV5M2aPzlFiwLG59J" Name="Create" ParticipatingElements="VfQmmUA2medOO8eZ5s8pk3,F2GqLhcG6hxMJoPx8g3IlS,Sh5FcRVScXsLMNxJ3o3vzZ">
             <Pin Id="KYmH2zi4H2ZLdyQDckGXL7" Name="Known Metrics" Kind="InputPin" />
           </Patch>
@@ -401,12 +402,10 @@
             <Pin Id="BV5D4Me5OxXQCVecMiNvq6" Name="Use Tls" Kind="InputPin" />
             <Pin Id="IZMaX9B7JHcMSFqFKHZLKx" Name="Scada Host Identifier" Kind="InputPin" />
             <Pin Id="HydOwQPRM8lPdxXpX8zXJZ" Name="Reconnect Interval" Kind="InputPin" />
-            <Pin Id="H4hL9GQgABPOhSmkJ7MOIr" Name="Mqtt Protocol Version" Kind="InputPin" />
-            <Pin Id="LXUPV2PFIWLNLD6D3a88VN" Name="Metric Screen Method" Kind="InputPin" />
+            <Pin Id="BXS93WmZNpKNoRJWdH84Ly" Name="Is Primary Application" Kind="InputPin" />
             <Pin Id="QDUGvRetJQmP4n4kdh1nsb" Name="Get Tls Parameters" Kind="InputPin" />
             <Pin Id="FgP5vhnMEdJPWgby5MSud3" Name="Web Socket Parameters" Kind="InputPin" />
             <Pin Id="RWR5XYE9CPNOEmRMWhYgKr" Name="Proxy Options" Kind="InputPin" />
-            <Pin Id="BXS93WmZNpKNoRJWdH84Ly" Name="Is Primary Application" Kind="InputPin" />
             <Pin Id="AQiynbny8hhL2Dstg5ql6w" Name="Cancellation Token" Kind="InputPin" />
           </Patch>
           <Patch Id="K4jKyEXv2WjNxyXYwNCQwq" Name="Update" ParticipatingElements="LQrtIp2VbwrNd38UGWzJdW">
@@ -426,9 +425,6 @@
           <Patch Id="IWuiZFwooujMNbEfCKdf8x" Name="Stop" ParticipatingElements="VLgWlhiyPFiLbhL9lImAMX,RGxsi9AnFjXMEreV57ag5L" />
           <Patch Id="B0qayyESIVaNm8FLfXA8Pr" Name="PublishNodeCommand" />
           <Patch Id="Owz6QxLzO6EP4Yee9C8EdR" Name="Dispose" />
-          <Link Id="PlNnRSoNYFYPDS2qDLXZRA" Ids="LQ74Gmg0P5cMldpPeQWBk8,EPl2T9hXGwZODSLmdvQSdt" />
-          <Link Id="DKwA3ETbaJZP6ExvLlg7nL" Ids="M8STl3CBxGYQBOCiPhrGAF,EsBbYupcF44Na80AzU9H5x" />
-          <Link Id="NTJBAkAMLWlOuLOAHEog6Q" Ids="DNjuLw4hmSfM3BS4VaWPeo,CRSEfPg2AZKMwRNZQIhh3S" />
         </Patch>
       </Node>
       <!--
@@ -503,14 +499,14 @@
               <Pin Id="LKqWcsIHHBiNV7VBvBNZIB" Name="Use Tls" Kind="InputPin" />
               <Pin Id="KbI2PT16GJeOEJxwB6xWIL" Name="Scada Host Identifier" Kind="InputPin" />
               <Pin Id="T4sd91dLu9wM3LTAw9GKJh" Name="Reconnect Interval" Kind="InputPin" />
-              <Pin Id="L0ugs6EXzRONhqLnO0A4i7" Name="Mqtt Protocol Version" Kind="InputPin" />
-              <Pin Id="SYrP65wQgSOOkuRvSCTu22" Name="Metric Screen Method" Kind="InputPin" />
+              <Pin Id="Vu8xYQy1gcGNOXT4ouApzi" Name="Is Primary Application" Kind="InputPin" />
               <Pin Id="CWC4k5niabSMeglfBLJFCI" Name="Get Tls Parameters" Kind="InputPin" />
               <Pin Id="D4LQS6SE26qMHR7weBxbAu" Name="Web Socket Parameters" Kind="InputPin" />
               <Pin Id="VO4JDLodoyXM2uj9TmWzDq" Name="Proxy Options" Kind="InputPin" />
-              <Pin Id="Vu8xYQy1gcGNOXT4ouApzi" Name="Is Primary Application" Kind="InputPin" />
               <Pin Id="BRcnsDcqWefPM2p6Awgwlw" Name="Cancellation Token" Kind="InputPin" />
               <Pin Id="MjVMIhSiUY7QJisFZwZvBn" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="L0ugs6EXzRONhqLnO0A4i7" Name="Mqtt Protocol Version" Kind="InputPin" />
+              <Pin Id="SYrP65wQgSOOkuRvSCTu22" Name="Metric Screen Method" Kind="InputPin" />
             </Node>
             <ControlPoint Id="NuyoW89bO6POkJvRu2EZLb" Bounds="254,462" />
             <ControlPoint Id="H9kev8EkvZaNtSRuHYRXbi" Bounds="273,486" />
@@ -921,14 +917,12 @@
               <Pin Id="Db8vNnJSapOPsJ6pmjdV9Q" Name="Password" Kind="InputPin" />
               <Pin Id="SsyciCqwNjyPlMBQhD9AvF" Name="Use Tls" Kind="InputPin" />
               <Pin Id="GH1KgToa5AQOTLYGNoh1I7" Name="Scada Host Identifier" Kind="InputPin" />
+              <Pin Id="H5ofktwkk5xLBZlBtAWFUL" Name="Group Identifier" Kind="InputPin" />
+              <Pin Id="OlhfEsVAIUANnhLu6AIfKB" Name="Edge Node Identifier" Kind="InputPin" />
               <Pin Id="Iz2RmA9f2nlO5qzmMKI9Rk" Name="Reconnect Interval" Kind="InputPin" />
-              <Pin Id="CbaKSQJuhlxNnbfK4s8E4R" Name="Mqtt Protocol Version" Kind="InputPin" />
-              <Pin Id="M950oOuKEBqMq3JDY020ZI" Name="Metric Screen Method" Kind="InputPin" />
               <Pin Id="HGqMGsewxVOPu0rwZxDCCw" Name="Get Tls Parameters" Kind="InputPin" />
               <Pin Id="SDgwmaosMTaNnoHzKmrC8R" Name="Web Socket Parameters" Kind="InputPin" />
               <Pin Id="VSWscF8BFMwPABZrSp1G9R" Name="Proxy Options" Kind="InputPin" />
-              <Pin Id="H5ofktwkk5xLBZlBtAWFUL" Name="Group Identifier" Kind="InputPin" />
-              <Pin Id="OlhfEsVAIUANnhLu6AIfKB" Name="Edge Node Identifier" Kind="InputPin" />
               <Pin Id="SsikBIXTPo9O0K8Xf3YOXa" Name="Cancellation Token" Kind="InputPin" />
               <Pin Id="VTW6zBz7EFRNRY7MQUcYWj" Name="Output" Kind="StateOutputPin" />
             </Node>
@@ -1213,14 +1207,12 @@
               <Pin Id="TSGZf8rDuNKNAIFE5X49zO" Name="Password" Kind="InputPin" />
               <Pin Id="SMxZVFbqlJGOza5nljNRtY" Name="Use Tls" Kind="InputPin" />
               <Pin Id="E1G3JqGAtn6PRSFpYqpwOw" Name="Scada Host Identifier" Kind="InputPin" />
+              <Pin Id="JFdR7GUh2btL410yw4pffV" Name="Group Identifier" Kind="InputPin" />
+              <Pin Id="ETh5fO3aBIuMXIbVJX61YY" Name="Edge Node Identifier" Kind="InputPin" />
               <Pin Id="UCJhAv7HSo2OFGP6FPK0zf" Name="Reconnect Interval" Kind="InputPin" />
-              <Pin Id="Piq1hVtk0GyNN1L4tTwSkO" Name="Mqtt Protocol Version" Kind="InputPin" />
-              <Pin Id="TBJYCwzuWLMMuRnaUJ4te7" Name="Metric Screen Method" Kind="InputPin" />
               <Pin Id="Thz7CnL9dMEM841plscdzJ" Name="Get Tls Parameters" Kind="InputPin" />
               <Pin Id="FPswXN8PZfBN4UqJxzIsAV" Name="Web Socket Parameters" Kind="InputPin" />
               <Pin Id="JkuUYL8I2yvOjQas5Mn5kV" Name="Proxy Options" Kind="InputPin" />
-              <Pin Id="JFdR7GUh2btL410yw4pffV" Name="Group Identifier" Kind="InputPin" />
-              <Pin Id="ETh5fO3aBIuMXIbVJX61YY" Name="Edge Node Identifier" Kind="InputPin" />
               <Pin Id="RxgWCTFmU8pPdmgMr4vMjt" Name="Cancellation Token" Kind="InputPin" />
               <Pin Id="SoOdmqiIZ7AP3bl5GQJABq" Name="Known Metrics" Kind="InputPin" />
               <Pin Id="STPneHAeGxnLbRp91VPgoJ" Name="Output" Kind="StateOutputPin" />
