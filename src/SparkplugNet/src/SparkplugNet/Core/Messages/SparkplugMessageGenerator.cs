@@ -470,7 +470,7 @@ internal class SparkplugMessageGenerator
     private static IEnumerable<Metric> AddSessionNumberToMetrics(
         IEnumerable<Metric> metrics,
         long sessionSequenceNumber,
-        bool skipSessionSequenceNumber = true)
+        bool skipSessionSequenceNumber = false)
     {
         // The session sequence number in the message is disabled.
         if (skipSessionSequenceNumber)
