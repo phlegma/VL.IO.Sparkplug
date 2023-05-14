@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="VlX5OhfyZnxMWqcoHkm2Is" LanguageVersion="2022.5.0-0676-g91d259b3a1" Version="0.128">
-  <NugetDependency Id="QKn6N6THAJaLUpRIvNHVXs" Location="VL.CoreLib" Version="2022.5.0-0676-g91d259b3a1" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="OhCgLrHb8WJLHGM4yRDXyV" LanguageVersion="2022.5.0-0765-gb1019f31c5" Version="0.128">
+  <NugetDependency Id="QKn6N6THAJaLUpRIvNHVXs" Location="VL.CoreLib" Version="2022.5.0-0765-gb1019f31c5" />
   <Patch Id="MoSn4hOwqL5OBCfssyLksN">
     <Canvas Id="HXbBkRjXBF8LB6dwVlV9g5" DefaultCategory="VL.IO.Sparkplug" CanvasType="FullCategory">
       <!--
@@ -162,7 +162,7 @@
             <Pad Id="J8kR6QXnJo4LX7ZqmHPj2L" SlotId="F6Y37jMr0A2QGTjXFFZ3pc" Bounds="1,721" />
             <ControlPoint Id="LBCFf6blxYxOtibJYRO0f6" Bounds="1,751" />
             <ControlPoint Id="H0nPnPWEWJnOJd6bsAkWgy" Bounds="222,596" />
-            <Node Bounds="720,366,90,26" Id="EmsSLai5yjxLeLDjDFsa94">
+            <Node Bounds="720,366,90,19" Id="EmsSLai5yjxLeLDjDFsa94">
               <p:NodeReference LastCategoryFullName="Serilog.LoggerConfiguration" LastDependency="Serilog.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="Serilog" />
@@ -173,7 +173,7 @@
               <Pin Id="JxiDIK36eo8LrPsBYPzGeR" Name="Output" Kind="StateOutputPin" />
               <Pin Id="RVNq4gtUi8HO7imxo96m7z" Name="Result" Kind="OutputPin" />
             </Node>
-            <Node Bounds="407,35,90,26" Id="NLDNTZLjXJDPKuwjA9Pjv9">
+            <Node Bounds="407,35,90,19" Id="NLDNTZLjXJDPKuwjA9Pjv9">
               <p:NodeReference LastCategoryFullName="Serilog.LoggerConfiguration" LastDependency="Serilog.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="LoggerConfiguration" />
@@ -181,7 +181,7 @@
               </p:NodeReference>
               <Pin Id="LQ74Gmg0P5cMldpPeQWBk8" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Node Bounds="630,182,90,26" Id="NhN8brrHAi3NOQoDYT3zTp">
+            <Node Bounds="630,182,90,19" Id="NhN8brrHAi3NOQoDYT3zTp">
               <p:NodeReference LastCategoryFullName="Serilog.LoggerConfiguration" LastDependency="Serilog.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="Serilog" />
@@ -192,7 +192,7 @@
               <Pin Id="QCZUTCMVI4HQBOShLScc2K" Name="Output" Kind="StateOutputPin" />
               <Pin Id="LxW39GN82e2OlmfA9jJwoa" Name="Write To" Kind="OutputPin" />
             </Node>
-            <Node Bounds="719,309,165,26" Id="GdRJ6RD5q3LLqLHp6JwbIZ">
+            <Node Bounds="719,309,165,19" Id="GdRJ6RD5q3LLqLHp6JwbIZ">
               <p:NodeReference LastCategoryFullName="Serilog.ConsoleLoggerConfigurationExtensions" LastDependency="Serilog.Sinks.Console.dll" OverloadStrategy="AllPinsThatAreNotCommon">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="Console" />
@@ -212,7 +212,7 @@
               <Pin Id="OKcqG9lA3RhNWSVZt1LBrc" Name="Sync Root" Kind="InputPin" />
               <Pin Id="Osl086U4KHoL1mOI5BgSrM" Name="Result" Kind="OutputPin" />
             </Node>
-            <Node Bounds="523,749,245,26" AutoConnect="true" Id="IiRxqrUjq9ONainQ3MJMyN">
+            <Node Bounds="523,749,285,26" AutoConnect="true" Id="IiRxqrUjq9ONainQ3MJMyN">
               <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Application.SparkplugApplicationOptions" LastDependency="SparkplugNet.dll" OverloadStrategy="AllPinsThatAreNotCommon">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="SparkplugApplicationOptions" />
@@ -275,7 +275,7 @@
                 <Choice Kind="TypeFlag" Name="LogEventLevel" />
               </p:TypeAnnotation>
             </Pad>
-            <Node Bounds="805,259,86,26" Id="QDAJpyscvI4LFAyLlgiHzv">
+            <Node Bounds="805,259,86,19" Id="QDAJpyscvI4LFAyLlgiHzv">
               <p:NodeReference LastCategoryFullName="Serilog.Core.LoggingLevelSwitch" LastDependency="Serilog.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="LoggingLevelSwitch" />
@@ -294,7 +294,7 @@
               <Pin Id="OIdzm7pgUwnPjyYfTxLBmP" Name="Device States" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="EosQV0N7VZzLQUJIKcgIP4" Bounds="1522,873" />
-            <Node Bounds="491,134,142,26" Id="F2GqLhcG6hxMJoPx8g3IlS">
+            <Node Bounds="491,134,142,19" Id="F2GqLhcG6hxMJoPx8g3IlS">
               <p:NodeReference LastCategoryFullName="Serilog.Configuration.LoggerMinimumLevelConfiguration" LastDependency="Serilog.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="LoggerMinimumLevelConfiguration" />
@@ -305,7 +305,7 @@
               <Pin Id="Un2BWFwkXLAOTLAx6JMQyO" Name="Output" Kind="StateOutputPin" />
               <Pin Id="DNjuLw4hmSfM3BS4VaWPeo" Name="Result" Kind="OutputPin" />
             </Node>
-            <Node Bounds="407,91,90,26" Id="FsD0i7V96YLOzohidiRagt">
+            <Node Bounds="407,91,90,19" Id="FsD0i7V96YLOzohidiRagt">
               <p:NodeReference LastCategoryFullName="Serilog.LoggerConfiguration" LastDependency="Serilog.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="LoggerConfiguration" />
@@ -915,7 +915,7 @@
     ************************ PublishMetrics ************************
 
 -->
-      <Node Name="PublishMetrics" Bounds="382,1077,120,80" Id="IoU1DcyUcv9PvIoLyWV0l3">
+      <Node Name="PublishMetrics" Bounds="382,1076,120,80" Id="IoU1DcyUcv9PvIoLyWV0l3">
         <p:NodeReference>
           <Choice Kind="OperationDefinition" Name="Operation" />
           <CategoryReference Kind="Category" Name="Primitive" />
@@ -2341,7 +2341,7 @@
             </Pad>
             <ControlPoint Id="CdUiXUSvbD5Lhlza9OS51J" Bounds="1891,1146" />
             <Pad Id="PJ8HPE33G8xLzJmrl8ooBr" Comment="Type Code" Bounds="1954,626,117,15" ShowValueBox="true" isIOBox="true" Value="Int32">
-              <p:TypeAnnotation LastCategoryFullName="System" LastDependency="System.Runtime.dll">
+              <p:TypeAnnotation LastCategoryFullName="System" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="TypeCode" />
               </p:TypeAnnotation>
             </Pad>
@@ -2435,7 +2435,7 @@
               <Pin Id="AyizQrTkYPdPhD8Zyyn0dt" Name="Output" Kind="OutputPin" />
             </Node>
             <Pad Id="UGuNcykpZwHO7GRWIv62h8" Comment="" Bounds="1876,979,72,15" ShowValueBox="true" isIOBox="true" Value="String">
-              <p:TypeAnnotation LastCategoryFullName="System" LastDependency="System.Runtime.dll">
+              <p:TypeAnnotation LastCategoryFullName="System" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="TypeCode" />
               </p:TypeAnnotation>
             </Pad>
@@ -2451,7 +2451,7 @@
               <Pin Id="K9eHoGq2JWiM7prdmB1ODd" Name="Output" Kind="OutputPin" />
             </Node>
             <Pad Id="ArU9UX3PolTLTYgTuOjDps" Comment="Type Code" Bounds="1835,1037,72,15" ShowValueBox="true" isIOBox="true" Value="String">
-              <p:TypeAnnotation LastCategoryFullName="System" LastDependency="System.Runtime.dll">
+              <p:TypeAnnotation LastCategoryFullName="System" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="TypeCode" />
               </p:TypeAnnotation>
             </Pad>
@@ -2877,12 +2877,11 @@
       </Patch>
     </Node>
   </Patch>
-  <PlatformDependency Id="VAjjQiEVxsHPUhzouaG45j" Location="System.Runtime" />
   <NugetDependency Id="PibqDGbXtKtOKuiIwECC4g" Location="MQTTnet" Version="4.2.0.706" />
   <NugetDependency Id="GvOW3a2mSV0PXjxTbQn7DM" Location="Serilog" Version="3.0.0-dev-01842" />
   <NugetDependency Id="MGpydBCqbIBPx5e6PJp4tp" Location="Serilog.Sinks.Console" Version="4.1.1-dev-00901" />
   <NugetDependency Id="N1NJn3XK2pAQNXEddL2CCU" Location="protobuf-net.Core" Version="3.1.25" />
   <NugetDependency Id="JGBSLbBNsvtMQDbC6nKgFR" Location="protobuf-net" Version="3.1.25" />
-  <PlatformDependency Id="LkUa9wkbt5iLZuKWZBHfs2" Location="./src/VL.IO.Sparkplug/bin/Debug/netstandard2.0/SparkplugNet.dll" />
-  <PlatformDependency Id="TyCZCpsXOyPOyyroJ29azV" Location="./src/VL.IO.Sparkplug/bin/Debug/netstandard2.0/VL.IO.Sparkplug.dll" />
+  <PlatformDependency Id="TTh5UxhvjLdOXRNVkiSj7L" Location="./builds/Release/netstandard2.0/SparkplugNet.dll" />
+  <PlatformDependency Id="NnwQ9sOwljfOPUTnyJlfzq" Location="./builds/Release/netstandard2.0/VL.IO.Sparkplug.dll" />
 </Document>
