@@ -3050,5 +3050,4 @@
   <NugetDependency Id="JGBSLbBNsvtMQDbC6nKgFR" Location="protobuf-net" Version="3.1.25" />
   <PlatformDependency Id="TTh5UxhvjLdOXRNVkiSj7L" Location="./builds/Release/netstandard2.0/SparkplugNet.dll" />
   <PlatformDependency Id="NnwQ9sOwljfOPUTnyJlfzq" Location="./builds/Release/netstandard2.0/VL.IO.Sparkplug.dll" />
-  <NugetDependency Id="PpoO8IKIruSPp3KsCfJVVq" Location="MQTTnet.Extensions.ManagedClient" Version="3.0.12" />
 </Document>
