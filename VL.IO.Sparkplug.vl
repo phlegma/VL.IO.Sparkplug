@@ -371,6 +371,7 @@
                   <Pin Id="UE1nPs7vTtfPVu9qFK8x6x" Name="Result" Kind="OutputPin" />
                 </Node>
               </Patch>
+              <Pin Id="HkQGoCVU8krPXvBxtfV6Ap" Name="Group Filter" Kind="InputPin" />
             </Node>
             <ControlPoint Id="BhFgTnnzDjRL9iiuitZ4CB" Bounds="734,789" />
             <ControlPoint Id="Dg1YfteS8s8OkIk4063KSE" Bounds="738,823" />
@@ -489,6 +490,7 @@
             <Pin Id="RWR5XYE9CPNOEmRMWhYgKr" Name="Proxy Options" Kind="InputPin" />
             <Pin Id="BXS93WmZNpKNoRJWdH84Ly" Name="Is Primary Application" Kind="InputPin" />
             <Pin Id="AQiynbny8hhL2Dstg5ql6w" Name="Cancellation Token" Kind="InputPin" />
+            <Pin Id="SIA496dXLxoMdolbPUS4Go" Name="Group Filter" Kind="InputPin" />
             <Pin Id="VtAm63BsI9ULIhaw9tzTDH" Name="UseTls2" Kind="InputPin" Bounds="744,726" />
             <Pin Id="CZQffTxFootLSfMI36HNbc" Name="IgnoreCertificationErrors" Kind="InputPin" Bounds="742,766" />
             <Pin Id="KYOn3p6KOClLWxk8FwCD4g" Name="AllowUntrustedCertificats" Kind="InputPin" Bounds="766,806" />
@@ -573,7 +575,7 @@
             </Node>
             <ControlPoint Id="ExIpDlJscUsMCELEZ09E9G" Bounds="948,709" />
             <ControlPoint Id="QDieirSrGNkOFVOtPohQNK" Bounds="879,613" />
-            <Node Bounds="232,984,365,26" Id="TG8pXXy32nvMn0VvBSZuIk">
+            <Node Bounds="232,984,385,26" Id="TG8pXXy32nvMn0VvBSZuIk">
               <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.Application" LastDependency="VL.IO.Sparkplug.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="Application" NeedsToBeDirectParent="true">
@@ -596,6 +598,7 @@
               <Pin Id="VO4JDLodoyXM2uj9TmWzDq" Name="Proxy Options" Kind="InputPin" />
               <Pin Id="Vu8xYQy1gcGNOXT4ouApzi" Name="Is Primary Application" Kind="InputPin" />
               <Pin Id="BRcnsDcqWefPM2p6Awgwlw" Name="Cancellation Token" Kind="InputPin" />
+              <Pin Id="S96xjXLFq0lLp5hRhROdX9" Name="Group Filter" Kind="InputPin" />
               <Pin Id="IN90UjiDS3HQA8SVFfKTff" Name="UseTls2" Kind="InputPin" />
               <Pin Id="FOQ6bTsKcpbQb3KXsLpotl" Name="IgnoreCertificationErrors" Kind="InputPin" />
               <Pin Id="UrdiIljIUjuLLOlQPGkubO" Name="AllowUntrustedCertificats" Kind="InputPin" />
@@ -706,7 +709,7 @@
             </Node>
             <ControlPoint Id="PeZkZBpHC9FL8piwT9xMjw" Bounds="555,889" />
             <ControlPoint Id="EAkaOInlmMFNqh0bUBOBvX" Bounds="576,913" />
-            <ControlPoint Id="RT6mpjikD7UMqmBBWHEjxN" Bounds="358,768" />
+            <ControlPoint Id="RT6mpjikD7UMqmBBWHEjxN" Bounds="545,581" />
             <Node Bounds="353,853,46,26" Id="B8fufHL6XZhNiW2SkO0NQF">
               <p:NodeReference LastCategoryFullName="Primitive.Nullable" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -718,6 +721,7 @@
               <Pin Id="LVFE7YNRJRFL35K8FAKN3J" Name="Output" Kind="StateOutputPin" />
             </Node>
             <ControlPoint Id="U8lH2zAzr8EPwSOS5ETBwa" Bounds="595,938" />
+            <ControlPoint Id="FmPA8C6w1vqLbLOvPGtVt3" Bounds="534,950" />
           </Canvas>
           <ProcessDefinition Id="FvcSOKNFnLTNZddMR1VB9C">
             <Fragment Id="GrHsEeOELREOCw636uPkFg" Patch="Tdnk5EyAhUOMZzkTIzugG0" Enabled="true" />
@@ -807,6 +811,7 @@
             <Pin Id="MSfmBJJPwuuLCEQPodgqFl" Name="AllowUntrustedCertificats" Kind="InputPin" Bounds="650,928" />
             <Pin Id="VFwFUkewrVpPdNFER8uT0y" Name="Use Tls" Kind="InputPin" Bounds="357,767" />
             <Pin Id="JUMzxNFrGMzL9GxEL4OkTn" Name="IgnoreCertificateRevocationErrors" Kind="InputPin" Bounds="598,954" />
+            <Pin Id="VIyqRVeX6nrQaGLenuotCv" Name="Group Filter" Kind="InputPin" />
           </Patch>
           <Patch Id="G9zXFdfdtvPPNJQD1Yoiig" Name="Stop" ParticipatingElements="BCOFwszEagINci0lNuJg8e" />
           <Patch Id="H3oLySPAxX9Mr2DBNkEW3t" Name="Dispose" ParticipatingElements="FfPy05QaljnNBwWmUHCJEo" />
@@ -838,6 +843,8 @@
           <Link Id="IjhAw7SVnfTL6k3qs0N7IE" Ids="RT6mpjikD7UMqmBBWHEjxN,IN90UjiDS3HQA8SVFfKTff" />
           <Link Id="LubNOIxk67pPhiOsjfhWTW" Ids="U8lH2zAzr8EPwSOS5ETBwa,B10vofUZGx2NCes8RfBwtP" />
           <Link Id="K3hMuSlgt54MvRCszmU5T5" Ids="JUMzxNFrGMzL9GxEL4OkTn,U8lH2zAzr8EPwSOS5ETBwa" IsHidden="true" />
+          <Link Id="ND0MhpSkqOfNekPenCiuQQ" Ids="FmPA8C6w1vqLbLOvPGtVt3,S96xjXLFq0lLp5hRhROdX9" />
+          <Link Id="NrUDUKgArq1MOdtXYqMXmR" Ids="VIyqRVeX6nrQaGLenuotCv,FmPA8C6w1vqLbLOvPGtVt3" IsHidden="true" />
         </Patch>
       </Node>
       <!--
