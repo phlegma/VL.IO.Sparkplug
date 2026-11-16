@@ -25,6 +25,17 @@ internal static class SparkplugTopicGenerator
     }
 
     /// <summary>
+    /// Gets the wildcard subscription topic for a single group.
+    /// </summary>
+    /// <param name="nameSpace">The namespace.</param>
+    /// <param name="groupIdentifier">The group identifier.</param>
+    /// <returns>The group wildcard subscription topic <see cref="string"/></returns>
+    public static string GetGroupWildcardSubscribeTopic(SparkplugNamespace nameSpace, string groupIdentifier)
+    {
+        return $"{nameSpace.GetDescription()}/{groupIdentifier}/#";
+    }
+
+    /// <summary>
     /// Gets the node command subscription topic.
     /// </summary>
     /// <param name="nameSpace">The namespace.</param>

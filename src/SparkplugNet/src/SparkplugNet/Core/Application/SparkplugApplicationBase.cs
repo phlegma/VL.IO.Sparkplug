@@ -474,7 +474,9 @@ public abstract partial class SparkplugApplicationBase<T> : SparkplugBase<T> whe
     /// <returns>A <see cref="Task"/> representing any asynchronous operation.</returns>
     private async Task SubscribeInternal()
     {
-        var topic = SparkplugTopicGenerator.GetWildcardNamespaceSubscribeTopic(this.NameSpace);
+        var topic = string.IsNullOrWhiteSpace(this.Options?.GroupFilter)
+            ? SparkplugTopicGenerator.GetWildcardNamespaceSubscribeTopic(this.NameSpace)
+            : SparkplugTopicGenerator.GetGroupWildcardSubscribeTopic(this.NameSpace, this.Options!.GroupFilter!);
         await this.Client.SubscribeAsync(topic, (MqttQualityOfServiceLevel)SparkplugQualityOfServiceLevel.AtLeastOnce);
     }
 

@@ -41,6 +41,7 @@ public class SparkplugApplicationOptions : SparkplugBaseOptions
     /// <param name="webSocketParameters">The web socket parameters.</param>
     /// <param name="proxyOptions">The proxy options.</param>
     /// <param name="cancellationToken">The cancellation token.</param>
+    /// <param name="groupFilter">Optional group identifier. If set, only <c>spBv1.0/{groupFilter}/#</c> is subscribed instead of <c>spBv1.0/#</c>.</param>
     /// <seealso cref="SparkplugBaseOptions"/>
     public SparkplugApplicationOptions(
         string? brokerAddress = null,
@@ -57,7 +58,8 @@ public class SparkplugApplicationOptions : SparkplugBaseOptions
         MqttClientOptionsBuilderWebSocketParameters? webSocketParameters = null,
         MqttClientWebSocketProxyOptions? proxyOptions = null,
         bool? isPrimaryApplication = null,
-        SystemCancellationToken? cancellationToken = null)
+        SystemCancellationToken? cancellationToken = null,
+        string? groupFilter = null)
         : base(
             brokerAddress,
             port,
@@ -75,7 +77,14 @@ public class SparkplugApplicationOptions : SparkplugBaseOptions
     {
         this.IsPrimaryApplication = isPrimaryApplication ?? DefaultIsPrimaryApplication;
         this.CancellationToken = cancellationToken ?? SystemCancellationToken.None;
+        this.GroupFilter = groupFilter;
     }
+
+    /// <summary>
+    /// Gets or sets an optional group identifier to restrict the subscription to (<c>spBv1.0/{GroupFilter}/#</c>).
+    /// If <c>null</c> or empty, the whole namespace (<c>spBv1.0/#</c>) is subscribed.
+    /// </summary>
+    public string? GroupFilter { get; set; }
 
     /// <summary>
     /// Gets or sets a value indicating whether the application the primary application or not.

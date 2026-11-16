@@ -29,7 +29,7 @@
               <Pin Id="KONXArTuGBXPt3C13gXk8B" Name="Output" Kind="StateOutputPin" />
             </Node>
             <Pad Id="F4FO4lbxpMtPa5PqRdZNl2" SlotId="C9htPviyVUkNH8x25Omprl" Bounds="498,562" />
-            <Node Bounds="327,1089,118,26" Id="UfOsRwsJZRLOyiXC0kVWiY">
+            <Node Bounds="331,1140,118,26" Id="UfOsRwsJZRLOyiXC0kVWiY">
               <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Application.SparkplugApplicationBase`1" LastDependency="SparkplugNet.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="SparkplugApplicationBase`1" NeedsToBeDirectParent="true" />
@@ -234,7 +234,7 @@
                 <Patch Id="SLMVxfOmAC4O0RXPGymsCe" Name="Then" ManuallySortedPins="true" />
               </Patch>
             </Node>
-            <Pad Id="O7Es1SYgqhgMQ8snhblyPE" Comment="Restricted To Minimum Level" Bounds="738,230,82,15" ShowValueBox="true" isIOBox="true" Value="Verbose">
+            <Pad Id="O7Es1SYgqhgMQ8snhblyPE" Comment="Restricted To Minimum Level" Bounds="738,230,84,15" ShowValueBox="true" isIOBox="true" Value="Verbose">
               <p:TypeAnnotation LastCategoryFullName="Serilog.Events" LastDependency="Serilog.dll">
                 <Choice Kind="TypeFlag" Name="LogEventLevel" />
               </p:TypeAnnotation>
@@ -281,7 +281,7 @@
             </Node>
             <Pad Id="O1o7qIRPhlzO4HgIg877tO" SlotId="Ttg9ofL2FCSOruuMTtwdmh" Bounds="809,456" />
             <ControlPoint Id="Q5DuRTGoxSmM57RQSz6AKw" Bounds="629,86" />
-            <Node Bounds="444,737,217,322" AutoConnect="true" Id="LsiPMvDnfh9Pyl5iyxOuxa">
+            <Node Bounds="444,737,217,340" AutoConnect="true" Id="LsiPMvDnfh9Pyl5iyxOuxa">
               <p:NodeReference LastCategoryFullName="SparkplugNet.Core.Application.SparkplugApplicationOptions" LastDependency="SparkplugNet.dll">
                 <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="SparkplugApplicationOptions" />
@@ -304,7 +304,7 @@
               <Pin Id="SGrA8NnsrVRMRKGvH99xgD" Name="Output" Kind="StateOutputPin" />
               <Patch Id="FIBa6bUs5WMPAVV6B5DIbH" Name="Get Tls Parameters" ManuallySortedPins="true">
                 <Pin Id="RCZwrSg1hUQOof7ccCok07" Name="Result" Kind="OutputPin" />
-                <ControlPoint Id="CNpUHZlCaYyPWLKfGMVuH9" Bounds="459,1052" />
+                <ControlPoint Id="CNpUHZlCaYyPWLKfGMVuH9" Bounds="460,1070" />
                 <Node Bounds="456,760,156,26" Id="QKVQxxVAryPQNrCBClwOyp">
                   <p:NodeReference LastCategoryFullName="VL.IO.Sparkplug.MqttClientOptionsBuilderTlsParameters" LastDependency="VL.IO.Sparkplug.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -2368,7 +2368,7 @@
             <Choice Kind="TypeFlag" Name="MqttClientOptionsBuilder" />
           </p:TypeAnnotation>
           <Patch Id="F0O8xgJkqgtPgDe2ynXHIB">
-            <Canvas Id="IjBgdZMXCdWLJiD1Gc2M4Q" BordersChecked="false" CanvasType="Group" />
+            <Canvas Id="IjBgdZMXCdWLJiD1Gc2M4Q" CanvasType="Group" />
             <ProcessDefinition Id="RHWADRnC5mqOYDu6WLBXHj" IsHidden="true" />
           </Patch>
         </Node>
@@ -2404,7 +2404,7 @@
             <Choice Kind="TypeFlag" Name="MqttClientOptionsBuilderTlsParameters" />
           </p:TypeAnnotation>
           <Patch Id="LSdsB51H3AvLMlRZ6CHwe3">
-            <Canvas Id="QPtzMZwMprzLSGTMfftKgO" BordersChecked="false" CanvasType="Group" />
+            <Canvas Id="QPtzMZwMprzLSGTMfftKgO" CanvasType="Group" />
             <ProcessDefinition Id="N0ESJNUXP5aMHTlxZ0K4Vw" IsHidden="true" />
           </Patch>
         </Node>

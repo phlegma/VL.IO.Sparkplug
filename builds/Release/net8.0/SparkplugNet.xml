@@ -359,7 +359,7 @@
             The default value whether the application is a primary application or not.
             </summary>
         </member>
-        <member name="M:SparkplugNet.Core.Application.SparkplugApplicationOptions.#ctor(System.String,System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Boolean},System.String,System.Nullable{System.TimeSpan},System.Nullable{SparkplugNet.Core.Enumerations.SparkplugMqttProtocolVersion},System.Nullable{SparkplugNet.Core.Enumerations.MetricScreenMethod},SparkplugNet.Core.SparkplugBaseOptions.GetTlsParametersDelegate,MQTTnet.Client.MqttClientOptionsBuilderWebSocketParameters,MQTTnet.Client.MqttClientWebSocketProxyOptions,System.Nullable{System.Boolean},System.Nullable{System.Threading.CancellationToken})">
+        <member name="M:SparkplugNet.Core.Application.SparkplugApplicationOptions.#ctor(System.String,System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Boolean},System.String,System.Nullable{System.TimeSpan},System.Nullable{SparkplugNet.Core.Enumerations.SparkplugMqttProtocolVersion},System.Nullable{SparkplugNet.Core.Enumerations.MetricScreenMethod},SparkplugNet.Core.SparkplugBaseOptions.GetTlsParametersDelegate,MQTTnet.Client.MqttClientOptionsBuilderWebSocketParameters,MQTTnet.Client.MqttClientWebSocketProxyOptions,System.Nullable{System.Boolean},System.Nullable{System.Threading.CancellationToken},System.String)">
             <inheritdoc cref="T:SparkplugNet.Core.SparkplugBaseOptions"/>
             <summary>
             Initializes a new instance of the <see cref="T:SparkplugNet.Core.Application.SparkplugApplicationOptions"/> class.
@@ -379,7 +379,14 @@
             <param name="webSocketParameters">The web socket parameters.</param>
             <param name="proxyOptions">The proxy options.</param>
             <param name="cancellationToken">The cancellation token.</param>
+            <param name="groupFilter">Optional group identifier. If set, only <c>spBv1.0/{groupFilter}/#</c> is subscribed instead of <c>spBv1.0/#</c>.</param>
             <seealso cref="T:SparkplugNet.Core.SparkplugBaseOptions"/>
+        </member>
+        <member name="P:SparkplugNet.Core.Application.SparkplugApplicationOptions.GroupFilter">
+            <summary>
+            Gets or sets an optional group identifier to restrict the subscription to (<c>spBv1.0/{GroupFilter}/#</c>).
+            If <c>null</c> or empty, the whole namespace (<c>spBv1.0/#</c>) is subscribed.
+            </summary>
         </member>
         <member name="P:SparkplugNet.Core.Application.SparkplugApplicationOptions.IsPrimaryApplication">
             <summary>
@@ -1006,6 +1013,14 @@
             </summary>
             <param name="nameSpace">The namespace.</param>
             <returns>The wildcard namespace subscription topic <see cref="T:System.String"/></returns>
+        </member>
+        <member name="M:SparkplugNet.Core.Messages.SparkplugTopicGenerator.GetGroupWildcardSubscribeTopic(SparkplugNet.Core.Enumerations.SparkplugNamespace,System.String)">
+            <summary>
+            Gets the wildcard subscription topic for a single group.
+            </summary>
+            <param name="nameSpace">The namespace.</param>
+            <param name="groupIdentifier">The group identifier.</param>
+            <returns>The group wildcard subscription topic <see cref="T:System.String"/></returns>
         </member>
         <member name="M:SparkplugNet.Core.Messages.SparkplugTopicGenerator.GetNodeCommandSubscribeTopic(SparkplugNet.Core.Enumerations.SparkplugNamespace,System.String,System.String)">
             <summary>
